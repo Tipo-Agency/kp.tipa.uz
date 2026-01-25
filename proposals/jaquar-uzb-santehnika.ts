@@ -13,8 +13,7 @@ export const jaquarUzbSantehnika: ProposalData = {
     { title: "Продажи", description: "Поддержка лидогенерации: шоурум (B2C) и проекты/HoReCa/дизайнеры (B2B)." },
     { title: "Продвижение", description: "Таргет с отдельными воронками под B2C и B2B. Масштабирование по KPI." },
   ],
-  // Картинку добавишь позже в public/proposals/jaquar-uzb-santehnika/services/
-  servicesImageUrl: undefined,
+  servicesImageUrl: "/proposals/jaquar-uzb-santehnika/services/services.png",
   growthTool: {
     title: "Имидж + лиды: две задачи одной системы",
     description:
@@ -32,9 +31,13 @@ export const jaquarUzbSantehnika: ProposalData = {
       "Дизайн-студии и проектные бюро",
     ],
   },
-  audienceImageUrl: undefined,
+  audienceImageUrl: "/proposals/jaquar-uzb-santehnika/audience/audience.png",
   // 3 картинки для блоков рубрик добавишь позже в public/proposals/jaquar-uzb-santehnika/rubrics/
-  rubricBlockImages: [],
+  rubricBlockImages: [
+    "/proposals/jaquar-uzb-santehnika/rubrics/block-1.jpg",
+    "/proposals/jaquar-uzb-santehnika/rubrics/block-2.jpg",
+    "/proposals/jaquar-uzb-santehnika/rubrics/block-3.jpg",
+  ],
   rubrics: [
     { title: "Имидж бренда", description: "Премиальность в деталях: эстетика, ценности, tone of voice.", imageUrl: "" },
     { title: "Продукт", description: "Преимущества, материалы, комплектация, нюансы выбора.", imageUrl: "" },
@@ -51,10 +54,28 @@ export const jaquarUzbSantehnika: ProposalData = {
     description:
       "Надёжный бренд сантехники среднего и премиального сегмента в Узбекистане, который закрывает две ключевые потребности рынка: красивый дизайн и предсказуемый результат на объекте.\n\nДля B2C — это понятный выбор и уверенность в качестве: комплекты, гарантия, сервис, наличие и консультация в шоуруме. Для B2B — скорость и удобство работы по проектам: спецификации, подборы, техподдержка, комплектация и сопровождение на всех этапах — от проектирования до сдачи объекта.\n\nКлючевой образ: «премиально, надежно, удобно в работе» — и для клиента, и для профессионального сегмента.",
     // 4 фото добавишь позже в public/proposals/jaquar-uzb-santehnika/positioning/
-    images: [],
+    images: [
+      "/proposals/jaquar-uzb-santehnika/positioning/positioning-1.jpg",
+      "/proposals/jaquar-uzb-santehnika/positioning/positioning-2.jpg",
+      "/proposals/jaquar-uzb-santehnika/positioning/positioning-3.jpg",
+      "/proposals/jaquar-uzb-santehnika/positioning/positioning-4.jpg",
+    ],
   },
-  // 12 фото добавишь позже в public/proposals/jaquar-uzb-santehnika/visuals/
-  visuals: [],
+  visuals: [
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-01.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-02.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-03.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-04.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-05.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-06.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-07.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-08.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-09.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-10.jpg",
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-11.jpg",
+    // 12-я для анимации сетки (пока используем 1-ю, можно заменить при добавлении новых фото)
+    "/proposals/jaquar-uzb-santehnika/visuals/grid-01.jpg",
+  ],
   ads: [
     { title: "Instagram (основной канал)", description: "Премиальный имидж + лидогенерация на шоурум и проекты." },
     { title: "Telegram (поддержка B2B)", description: "Экспертиза, подборки, кейсы и коммуникация с профсообществом." },
