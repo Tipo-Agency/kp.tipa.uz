@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import Hero from './components/ProposalBlocks/Hero';
 import Services from './components/ProposalBlocks/Services';
 import GrowthTool from './components/ProposalBlocks/GrowthTool';
@@ -10,6 +11,8 @@ import VisualGrid from './components/ProposalBlocks/VisualGrid';
 import AdsPromotion from './components/ProposalBlocks/AdsPromotion';
 import Pricing from './components/ProposalBlocks/Pricing';
 import { ProposalData } from './types';
+
+const PROPOSAL_SLUG = "yangi-ozbekiston-restaurant";
 
 const PROPOSAL_DATA: ProposalData = {
   clientName: "Ресторан в Yangi Oʻzbekiston",
@@ -100,7 +103,7 @@ const PROPOSAL_DATA: ProposalData = {
   }
 };
 
-const App: React.FC = () => {
+const ProposalPage: React.FC = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -137,6 +140,89 @@ const App: React.FC = () => {
         </p>
       </footer>
     </div>
+  );
+};
+
+const HomePage: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="max-w-5xl mx-auto px-6 py-24">
+        <div className="w-12 h-12 bg-[#3337AD] rounded-xl flex items-center justify-center mb-10">
+          <span className="text-white font-black text-xl">T.</span>
+        </div>
+
+        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-6">
+          Коммерческие предложения TIPA
+        </h1>
+        <p className="text-slate-600 text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
+          Если вы хотите получить коммерческое предложение — оставьте заявку на сайте TIPA.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4">
+          <a
+            href="https://tipa.uz"
+            className="inline-flex items-center justify-center bg-[#3337AD] hover:bg-[#4348CD] text-white px-8 py-4 rounded-2xl font-bold transition-all active:scale-[0.99]"
+          >
+            Перейти на tipa.uz
+          </a>
+          <Link
+            to={`/${PROPOSAL_SLUG}`}
+            className="inline-flex items-center justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 px-8 py-4 rounded-2xl font-bold border border-slate-200 transition-all"
+          >
+            Открыть пример КП
+          </Link>
+        </div>
+
+        <div className="mt-14 p-6 rounded-2xl bg-slate-50 border border-slate-100">
+          <p className="text-slate-600 text-sm leading-relaxed">
+            Прямые ссылки на КП доступны по адресам вида <span className="font-semibold">/название</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const NotFoundPage: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="max-w-5xl mx-auto px-6 py-24">
+        <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-10">
+          <span className="text-white font-black text-xl">404</span>
+        </div>
+        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-6">
+          Страница не найдена
+        </h1>
+        <p className="text-slate-600 text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
+          Возможно, ссылка на КП неверная или устарела.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-2xl font-bold transition-all"
+          >
+            На главную
+          </Link>
+          <a
+            href="https://tipa.uz"
+            className="inline-flex items-center justify-center bg-slate-50 hover:bg-slate-100 text-slate-900 px-8 py-4 rounded-2xl font-bold border border-slate-200 transition-all"
+          >
+            Оставить заявку на tipa.uz
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path={`/${PROPOSAL_SLUG}`} element={<ProposalPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
   );
 };
 
