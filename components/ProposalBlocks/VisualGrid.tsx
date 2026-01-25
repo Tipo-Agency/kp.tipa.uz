@@ -8,6 +8,19 @@ interface VisualGridProps {
 }
 
 const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
+  if (!images || images.length < 6) {
+    return (
+      <Section className="bg-slate-50 overflow-hidden">
+        <Container>
+          <div className="mb-10 text-center max-w-3xl mx-auto">
+            <Heading2 className="mb-4">Пример визуального оформления</Heading2>
+            <BodyText>Добавим визуальные примеры после подбора референсов и съёмок.</BodyText>
+          </div>
+        </Container>
+      </Section>
+    );
+  }
+
   // Распределяем картинки на 3 колонки для бесконечного скролла
   const col1 = [...images.slice(0, 4), ...images.slice(0, 4)];
   const col2 = [...images.slice(4, 8), ...images.slice(4, 8)];

@@ -10,6 +10,32 @@ export interface ServiceItem {
   description: string;
 }
 
+export interface SalesTrack {
+  title: string;
+  description: string;
+  items: string[];
+}
+
+export interface FunnelBlock {
+  title: string;
+  audience: string;
+  steps: string[];
+  hypotheses: string[];
+  kpis: string[];
+  budget: {
+    minimum: string;
+    optimal: string;
+  };
+}
+
+export interface CaseItem {
+  title: string;
+  category?: string;
+  summary?: string;
+  metrics?: string[];
+  url?: string;
+}
+
 export interface ProposalData {
   clientName: string;
   hero: {
@@ -39,6 +65,9 @@ export interface ProposalData {
     title: string;
     description: string;
   }[];
+  salesTracks?: SalesTrack[];
+  funnels?: FunnelBlock[];
+  cases?: CaseItem[];
   pricing: {
     amount: string;
     currency: string;
@@ -48,5 +77,7 @@ export interface ProposalData {
       label: string;
       value: string;
     }[];
+    notes?: string[];
+    secondary?: { label: string; value: string }[];
   };
 }

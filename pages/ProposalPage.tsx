@@ -8,6 +8,9 @@ import ContentRubrics from "../components/ProposalBlocks/ContentRubrics";
 import Positioning from "../components/ProposalBlocks/Positioning";
 import VisualGrid from "../components/ProposalBlocks/VisualGrid";
 import AdsPromotion from "../components/ProposalBlocks/AdsPromotion";
+import SalesStructure from "../components/ProposalBlocks/SalesStructure";
+import AdFunnels from "../components/ProposalBlocks/AdFunnels";
+import Cases from "../components/ProposalBlocks/Cases";
 import Pricing from "../components/ProposalBlocks/Pricing";
 import { getProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
@@ -60,6 +63,21 @@ export const ProposalPage: React.FC = () => {
       <div className="reveal">
         <AdsPromotion items={proposal.ads} />
       </div>
+      {proposal.salesTracks && proposal.salesTracks.length > 0 ? (
+        <div className="reveal">
+          <SalesStructure tracks={proposal.salesTracks} />
+        </div>
+      ) : null}
+      {proposal.funnels && proposal.funnels.length > 0 ? (
+        <div className="reveal">
+          <AdFunnels funnels={proposal.funnels} />
+        </div>
+      ) : null}
+      {proposal.cases && proposal.cases.length > 0 ? (
+        <div className="reveal">
+          <Cases cases={proposal.cases} />
+        </div>
+      ) : null}
       <div className="reveal">
         <Pricing
           amount={proposal.pricing.amount}
