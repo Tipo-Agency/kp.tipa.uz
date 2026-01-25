@@ -15,8 +15,12 @@ const Hero: React.FC<HeroProps> = ({ clientName, title, subtitle }) => {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#3337AD]/5 clip-path-diagonal hidden md:block" style={{ clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0% 100%)' }}></div>
       <Container className="relative z-10">
         <div className="mb-12">
-          <div className="w-16 h-16 bg-[#3337AD] rounded-xl flex items-center justify-center mb-10 shadow-lg shadow-[#3337AD]/20">
-            <span className="text-white font-black text-2xl">T.</span>
+          <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-10 shadow-lg shadow-slate-200 bg-white border border-slate-100 overflow-hidden">
+            <img
+              src="/лого типа агентства.svg"
+              alt="Типа агентство"
+              className="w-full h-full object-contain p-2"
+            />
           </div>
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-sm animate-pulse">Персональное предложение</p>
           <Heading1 className="mb-6">
@@ -37,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({ clientName, title, subtitle }) => {
           </div>
           <div>
             <p className="text-slate-400 text-xs uppercase tracking-widest mb-2 font-semibold">Подготовлено</p>
-            <p className="text-slate-900 font-medium">TIPA Growth Agency</p>
+            <p className="text-slate-900 font-medium">Типа агентство</p>
           </div>
           <div>
             <p className="text-slate-400 text-xs uppercase tracking-widest mb-2 font-semibold">Актуально до</p>

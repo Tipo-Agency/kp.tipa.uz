@@ -9,6 +9,19 @@ interface PositioningProps {
   images: string[];
 }
 
+const ImageOrPlaceholder: React.FC<{ src?: string; alt: string; className?: string }> = ({ src, alt, className }) => {
+  if (!src) {
+    return <div className={`w-full h-full bg-slate-200 ${className ?? ""}`} aria-hidden="true" />;
+  }
+  return (
+    <img
+      src={src}
+      className={className}
+      alt={alt}
+    />
+  );
+};
+
 const Positioning: React.FC<PositioningProps> = ({ title, description, images }) => {
   return (
     <Section className="bg-white">
@@ -33,20 +46,20 @@ const Positioning: React.FC<PositioningProps> = ({ title, description, images })
               {/* Левая колонка: Верх 60% (3 части), Низ 40% (2 части) */}
               <div className="flex-1 flex flex-col gap-0">
                 <div className="h-[60%] w-full overflow-hidden">
-                  <img src={images[0]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 1" />
+                  <ImageOrPlaceholder src={images?.[0]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 1" />
                 </div>
                 <div className="h-[40%] w-full overflow-hidden">
-                  <img src={images[2]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 2" />
+                  <ImageOrPlaceholder src={images?.[2]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 2" />
                 </div>
               </div>
               
               {/* Правая колонка: Верх 40% (2 части), Низ 60% (3 части) */}
               <div className="flex-1 flex flex-col gap-0">
                 <div className="h-[40%] w-full overflow-hidden">
-                  <img src={images[1]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 3" />
+                  <ImageOrPlaceholder src={images?.[1]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 3" />
                 </div>
                 <div className="h-[60%] w-full overflow-hidden">
-                  <img src={images[3]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 4" />
+                  <ImageOrPlaceholder src={images?.[3]} className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" alt="Owner 4" />
                 </div>
               </div>
             </div>

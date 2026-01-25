@@ -1,8 +1,8 @@
 
-# TIPA Premium Proposal System - Architecture
+# Типа агентство — система КП (архитектура)
 
 ## Overview
-This application is designed as a high-end B2B sales tool. It allows an agency (TIPA) to generate personalized commercial proposals that feel like bespoke, high-budget digital documents for clients.
+This application is designed as a high-end B2B sales tool. It allows an agency (Типа агентство) to generate personalized commercial proposals that feel like bespoke, high-budget digital documents for clients.
 
 ## Key Design Principles
 1. **Premium Minimalism**: Using plenty of white space, large typography (Inter), and a single accent color (#3337AD).

@@ -1,1 +1,1 @@
-// File removed to focus on specific proposal page
+// Placeholder — генератор можно вернуть позже

@@ -25,7 +25,6 @@ const Audience: React.FC<AudienceProps> = ({ primary, secondary, imageUrl }) => 
             
             <div className="relative aspect-square md:aspect-auto md:h-[400px] bg-slate-50 rounded-3xl overflow-hidden shadow-inner flex items-center justify-center">
               <img src={imageUrl ?? DEFAULT_AUDIENCE_IMAGE} className="w-full h-full object-cover grayscale" alt="Атмосфера аудитории" />
-              <div className="absolute inset-0 bg-[#3337AD]/10 mix-blend-multiply"></div>
             </div>
           </div>
           

@@ -58,9 +58,14 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
                   <p className="text-white/30 uppercase tracking-widest text-[10px] mt-2">Ежемесячное обслуживание</p>
                 </div>
                 
-                <button className="whitespace-nowrap bg-[#3337AD] hover:bg-[#4348CD] text-white px-12 py-6 rounded-2xl font-bold text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95">
+                <a
+                  href="https://t.me/tipa_agency"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap bg-[#3337AD] hover:bg-[#4348CD] text-white px-12 py-6 rounded-2xl font-bold text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95 text-center"
+                >
                   Принять предложение
-                </button>
+                </a>
               </div>
 
               {/* Фоновый декор */}
@@ -70,7 +75,7 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
           
           <div className="mt-16 text-center">
             <p className="text-slate-300 text-[10px] uppercase tracking-[0.4em]">
-              TIPA GROWTH AGENCY • ПРЕДЛОЖЕНИЕ ДЕЙСТВИТЕЛЬНО В ТЕЧЕНИЕ 14 ДНЕЙ
+              ТИПА АГЕНТСТВО • ПРЕДЛОЖЕНИЕ ДЕЙСТВИТЕЛЬНО В ТЕЧЕНИЕ 14 ДНЕЙ
             </p>
           </div>
         </div>
