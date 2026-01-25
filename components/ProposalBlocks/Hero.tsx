@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ clientName, title, subtitle }) => {
             className="h-10 md:h-12 w-auto mb-10"
           />
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-sm animate-pulse">Персональное предложение</p>
-          <Heading1 className="mb-6 text-4xl md:text-6xl">
+          <Heading1 className="mb-6 text-3xl md:text-5xl">
             {title} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3337AD] to-[#6366F1]">
               для {clientName}
