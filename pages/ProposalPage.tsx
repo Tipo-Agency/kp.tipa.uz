@@ -71,13 +71,11 @@ export const ProposalPage: React.FC = () => {
       </div>
 
       <footer className="py-12 bg-white text-center border-t border-slate-100">
-        <div className="w-10 h-10 rounded-lg flex items-center justify-center mx-auto mb-6 bg-white border border-slate-100 overflow-hidden">
-          <img
-            src="/лого типа агентства.svg"
-            alt="Типа агентство"
-            className="w-full h-full object-contain p-1"
-          />
-        </div>
+        <img
+          src="/лого типа агентства.svg"
+          alt="Типа агентство"
+          className="h-8 md:h-9 w-auto mx-auto mb-6"
+        />
         <p className="text-slate-400 text-xs font-semibold tracking-widest uppercase">
           ТИПА АГЕНТСТВО © {new Date().getFullYear()}
         </p>

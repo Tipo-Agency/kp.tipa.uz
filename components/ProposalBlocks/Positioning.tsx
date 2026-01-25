@@ -35,9 +35,6 @@ const Positioning: React.FC<PositioningProps> = ({ title, description, images })
             <BodyText className="text-slate-700 mb-10 leading-relaxed">
               {description}
             </BodyText>
-            <div className="p-8 border-l-2 border-[#3337AD] bg-slate-50 rounded-r-2xl shadow-sm">
-               <p className="text-slate-600 italic text-lg leading-relaxed">"Личность владельца — это гарантия качества, которую невозможно подделать. В этом сегменте люди покупают у людей."</p>
-            </div>
           </div>
           
           <div className="md:w-1/2 w-full flex">

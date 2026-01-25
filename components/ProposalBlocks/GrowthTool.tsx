@@ -15,8 +15,8 @@ const GrowthTool: React.FC<GrowthToolProps> = ({ title, description }) => {
         <div className="text-center max-w-4xl mx-auto mb-20">
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-xs">Наша философия</p>
           <Heading2 className="mb-8">{title}</Heading2>
-          <BodyText className="text-slate-500 italic">
-            «Контент — это не расходы. Это цифровой актив, который работает 24/7 на создание капитала вашего бренда и авторитета».
+          <BodyText className="text-slate-600">
+            {description}
           </BodyText>
         </div>
         
@@ -44,13 +44,6 @@ const GrowthTool: React.FC<GrowthToolProps> = ({ title, description }) => {
             <h4 className="text-xl font-bold mb-4">Автоматизация</h4>
             <p className="text-slate-600">Оптимизация производственных процессов, чтобы владелец мог сосредоточиться на стратегии.</p>
           </div>
-        </div>
-        
-        <div className="mt-20 p-12 bg-slate-900 rounded-[3rem] text-center text-white relative overflow-hidden">
-           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
-           <BodyText className="text-slate-300 max-w-3xl mx-auto relative z-10">
-             {description}
-           </BodyText>
         </div>
       </Container>
     </Section>
