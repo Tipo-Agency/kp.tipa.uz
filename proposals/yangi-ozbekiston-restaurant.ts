@@ -102,7 +102,7 @@ export const yangiOzbekistonRestaurant: ProposalData = {
     "/proposals/yangi-ozbekiston-restaurant/visuals/grid-09.jpg",
     "/proposals/yangi-ozbekiston-restaurant/visuals/grid-04.jpg",
     "/proposals/yangi-ozbekiston-restaurant/rubrics/extra-5.jpg",
-    "/proposals/yangi-ozbekiston-restaurant/visuals/grid-01.jpg",
+    "/proposals/yangi-ozbekiston-restaurant/visuals/grid-01-v2.jpg",
     "/proposals/yangi-ozbekiston-restaurant/visuals/grid-08.jpg",
     "/proposals/yangi-ozbekiston-restaurant/rubrics/extra-6.jpg",
     "/proposals/yangi-ozbekiston-restaurant/visuals/grid-03.jpg",
