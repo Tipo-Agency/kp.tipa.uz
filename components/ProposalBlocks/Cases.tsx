@@ -14,7 +14,7 @@ const Cases: React.FC<CasesProps> = ({ cases }) => {
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-xs">Доказательная база</p>
           <Heading2 className="mb-4">Кейсы</Heading2>
-          <BodyText>Подберём 2–5 релевантных кейсов и добавим ссылки/цифры.</BodyText>
+          <BodyText>Подборка релевантных проектов и примеров работы.</BodyText>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -49,9 +49,7 @@ const Cases: React.FC<CasesProps> = ({ cases }) => {
                     </span>
                   ))}
                 </div>
-              ) : (
-                <p className="text-slate-500 mt-6 text-sm">Ссылки и цифры добавим после согласования.</p>
-              )}
+              ) : null}
             </div>
           ))}
         </div>

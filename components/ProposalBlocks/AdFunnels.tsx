@@ -14,9 +14,7 @@ const AdFunnels: React.FC<AdFunnelsProps> = ({ funnels }) => {
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-xs">Таргет и воронки</p>
           <Heading2 className="mb-4">Структура рекламных воронок</Heading2>
-          <BodyText>
-            Бюджет не ограничен — строим систему гипотез и масштабируем то, что даёт лиды и продажи.
-          </BodyText>
+          <BodyText>Строим систему гипотез и масштабируем то, что даёт лиды и продажи.</BodyText>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10">
