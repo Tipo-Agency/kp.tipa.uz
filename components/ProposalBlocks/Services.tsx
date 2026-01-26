@@ -7,11 +7,14 @@ import { ServiceItem } from '../../types';
 interface ServicesProps {
   services: ServiceItem[];
   imageUrl?: string;
+  description?: string;
 }
 
 const DEFAULT_SERVICES_IMAGE = "https://picsum.photos/seed/strategy/800/1000";
 
-const Services: React.FC<ServicesProps> = ({ services, imageUrl }) => {
+const Services: React.FC<ServicesProps> = ({ services, imageUrl, description }) => {
+  const defaultDescription = "Для нового бренда важно с первого дня выстроить историю, узнаваемость и доверие. Мы запускаем систему контента и продвижения так, чтобы ресторан сразу воспринимался как место-символ: про вкус, культуру и гостеприимство.";
+  
   return (
     <Section className="bg-slate-50">
       <Container>
@@ -19,7 +22,7 @@ const Services: React.FC<ServicesProps> = ({ services, imageUrl }) => {
           <div>
             <Heading2 className="mb-8">Пакет услуг</Heading2>
             <BodyText className="mb-12">
-              Для нового бренда важно с первого дня выстроить историю, узнаваемость и доверие. Мы запускаем систему контента и продвижения так, чтобы ресторан сразу воспринимался как место-символ: про вкус, культуру и гостеприимство.
+              {description ?? defaultDescription}
             </BodyText>
             
             <div className="space-y-8">

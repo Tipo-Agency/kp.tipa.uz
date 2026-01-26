@@ -43,7 +43,7 @@ export const ProposalPage: React.FC = () => {
         <Hero clientName={proposal.clientName} title={proposal.hero.title} subtitle={proposal.hero.subtitle} />
       </div>
       <div className="reveal">
-        <Services services={proposal.services} imageUrl={proposal.servicesImageUrl} />
+        <Services services={proposal.services} imageUrl={proposal.servicesImageUrl} description={proposal.servicesDescription} />
       </div>
       <div className="reveal">
         <GrowthTool title={proposal.growthTool.title} description={proposal.growthTool.description} />

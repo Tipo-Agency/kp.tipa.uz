@@ -44,6 +44,7 @@ export interface ProposalData {
   };
   services: ServiceItem[];
   servicesImageUrl?: string;
+  servicesDescription?: string;
   growthTool: {
     title: string;
     description: string;
