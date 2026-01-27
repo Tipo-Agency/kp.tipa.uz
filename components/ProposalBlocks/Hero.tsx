@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ clientName, title, subtitle }) => {
           </Subheading>
         </div>
         
-        <div className="flex flex-wrap gap-12 mt-16 pt-16 border-t border-slate-100">
+        <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 mt-12 sm:mt-16 pt-12 sm:pt-16 border-t border-slate-100">
           <div>
             <p className="text-slate-400 text-xs uppercase tracking-widest mb-2 font-semibold">Стадия проекта</p>
             <p className="text-slate-900 font-medium">Стратегическое планирование</p>

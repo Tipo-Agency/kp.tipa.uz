@@ -55,13 +55,13 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
               </p>
             </div>
 
-            <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-10 pt-10 mt-10 border-t border-white/5">
-              <div className="text-center lg:text-left">
-                <div className="flex items-baseline gap-3 whitespace-nowrap">
-                  <span className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter leading-none">
+            <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-6 md:gap-10 pt-8 md:pt-10 mt-8 md:mt-10 border-t border-white/5">
+              <div className="text-center lg:text-left w-full lg:w-auto">
+                <div className="flex items-baseline gap-2 sm:gap-3 flex-wrap justify-center lg:justify-start">
+                  <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-none break-words">
                     {amount}
                   </span>
-                  <span className="text-lg sm:text-xl text-white/40">{currency}</span>
+                  <span className="text-base sm:text-lg md:text-xl text-white/40">{currency}</span>
                 </div>
                 <p className="text-white/30 uppercase tracking-widest text-[10px] mt-3">Ежемесячное обслуживание</p>
               </div>
@@ -70,7 +70,7 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
                 href="https://t.me/tipa_agency"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full lg:w-auto whitespace-nowrap bg-[#3337AD] hover:bg-[#4348CD] text-white px-12 py-6 rounded-2xl font-bold text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95 text-center"
+                className="w-full lg:w-auto bg-[#3337AD] hover:bg-[#4348CD] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl font-bold text-base sm:text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95 text-center"
               >
                 Принять предложение
               </a>

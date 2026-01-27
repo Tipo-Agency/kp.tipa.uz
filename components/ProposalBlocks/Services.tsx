@@ -18,7 +18,7 @@ const Services: React.FC<ServicesProps> = ({ services, imageUrl, description }) 
   return (
     <Section className="bg-slate-50">
       <Container>
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
             <Heading2 className="mb-8">Пакет услуг</Heading2>
             <BodyText className="mb-12">

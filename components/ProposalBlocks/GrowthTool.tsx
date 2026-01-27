@@ -20,7 +20,7 @@ const GrowthTool: React.FC<GrowthToolProps> = ({ title, description }) => {
           </BodyText>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <div className="bg-slate-50 p-10 rounded-3xl border border-slate-100 hover:border-[#3337AD]/30 transition-all duration-300">
             <div className="w-12 h-12 bg-[#3337AD] rounded-full flex items-center justify-center mb-8">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>

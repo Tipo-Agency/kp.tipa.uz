@@ -38,7 +38,7 @@ export const ProposalPage: React.FC = () => {
   if (!proposal) return <NotFoundPage />;
 
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden w-full">
       <div className="reveal">
         <Hero clientName={proposal.clientName} title={proposal.hero.title} subtitle={proposal.hero.subtitle} />
       </div>

@@ -30,7 +30,7 @@ const ContentRubrics: React.FC<RubricsProps> = ({ rubrics, blockImages }) => {
           </BodyText>
         </div>
 
-        <div className="space-y-10 md:space-y-14">
+        <div className="space-y-8 md:space-y-10 lg:space-y-14">
           {groups.map((group, blockIdx) => {
             const isImageLeft = blockIdx % 2 === 0; // 1: left, 2: right, 3: left
             const imageUrl = images[blockIdx] ?? group[0]?.imageUrl;
@@ -38,11 +38,11 @@ const ContentRubrics: React.FC<RubricsProps> = ({ rubrics, blockImages }) => {
             return (
               <div
                 key={blockIdx}
-                className="bg-white border border-slate-100 rounded-[2rem] overflow-hidden shadow-sm"
+                className="bg-white border border-slate-100 rounded-xl md:rounded-[2rem] overflow-hidden shadow-sm w-full"
               >
                 <div className={`grid md:grid-cols-2 ${isImageLeft ? '' : 'md:[&>*:first-child]:order-2'}`}>
                   {/* Image */}
-                  <div className="relative min-h-[240px] md:min-h-[420px]">
+                  <div className="relative min-h-[200px] sm:min-h-[240px] md:min-h-[420px] w-full">
                     {imageUrl ? (
                       <>
                         <img
@@ -58,7 +58,7 @@ const ContentRubrics: React.FC<RubricsProps> = ({ rubrics, blockImages }) => {
                   </div>
 
                   {/* Rubrics list */}
-                  <div className="p-8 md:p-10 flex flex-col justify-center">
+                  <div className="p-6 sm:p-8 md:p-10 flex flex-col justify-center w-full">
                     <div className="mb-8">
                       <p className="text-[#3337AD] font-bold tracking-widest uppercase text-[10px]">
                         Блок 0{blockIdx + 1}

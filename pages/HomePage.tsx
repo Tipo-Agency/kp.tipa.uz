@@ -2,8 +2,8 @@ import React from "react";
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-5xl mx-auto px-6 py-24">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 w-full">
         <img
           src="/лого типа агентства.svg"
           alt="Типа агентство"

@@ -15,7 +15,7 @@ const Audience: React.FC<AudienceProps> = ({ primary, secondary, imageUrl }) => 
   return (
     <Section className="bg-white">
       <Container>
-        <div className="grid md:grid-cols-2 gap-24">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 lg:gap-24">
           <div>
             <div className="inline-block px-4 py-2 bg-[#3337AD]/5 rounded-full text-[#3337AD] font-bold text-xs uppercase tracking-widest mb-6">Целевой ландшафт</div>
             <Heading2 className="mb-6">С кем мы говорим?</Heading2>

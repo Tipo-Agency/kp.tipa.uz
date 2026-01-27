@@ -8,13 +8,13 @@ interface ContainerProps {
 }
 
 export const Container: React.FC<ContainerProps> = ({ children, className = "", id }) => (
-  <div id={id} className={`max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 ${className}`}>
+  <div id={id} className={`max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-16 w-full ${className}`}>
     {children}
   </div>
 );
 
 export const Section: React.FC<ContainerProps> = ({ children, className = "", id }) => (
-  <section id={id} className={`py-24 md:py-32 overflow-hidden ${className}`}>
+  <section id={id} className={`py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden w-full ${className}`}>
     {children}
   </section>
 );

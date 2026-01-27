@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const NotFoundPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-5xl mx-auto px-6 py-24">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24 w-full">
         <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center mb-10">
           <span className="text-white font-black text-xl">404</span>
         </div>

@@ -19,9 +19,9 @@ const SalesStructure: React.FC<SalesStructureProps> = ({ tracks }) => {
           </BodyText>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {tracks.map((t, i) => (
-            <div key={i} className="bg-white rounded-[2rem] border border-slate-100 p-8">
+            <div key={i} className="bg-white rounded-xl md:rounded-[2rem] border border-slate-100 p-6 md:p-8 w-full">
               <p className="text-[#3337AD] font-bold tracking-widest uppercase text-[10px] mb-4">Трек 0{i + 1}</p>
               <h3 className="text-2xl font-black tracking-tight text-slate-900 mb-3">{t.title}</h3>
               <p className="text-slate-600 mb-6">{t.description}</p>

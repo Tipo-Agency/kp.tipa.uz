@@ -17,7 +17,7 @@ const AdsPromotion: React.FC<AdsProps> = ({ items }) => {
     <Section className="bg-white">
       <Container>
         <Heading2 className="mb-16">Реклама и продвижение</Heading2>
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           {items.map((item, i) => (
             <div key={i} className="group p-8 border border-slate-100 rounded-3xl hover:border-[#3337AD]/20 hover:shadow-xl transition-all duration-300">
                <div className="text-slate-300 font-black text-4xl mb-6 group-hover:text-[#3337AD]/20 transition-colors">0{i+1}</div>
@@ -27,7 +27,7 @@ const AdsPromotion: React.FC<AdsProps> = ({ items }) => {
           ))}
         </div>
         
-        <div className="mt-20 p-8 md:p-12 bg-slate-50 rounded-[3rem] flex flex-col md:flex-row items-center gap-12">
+        <div className="mt-12 md:mt-20 p-6 sm:p-8 md:p-12 bg-slate-50 rounded-2xl md:rounded-[3rem] flex flex-col md:flex-row items-center gap-6 md:gap-12 w-full">
            <div className="md:w-1/3">
               <div className="bg-white p-6 rounded-2xl shadow-lg flex items-center gap-4">
                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white">

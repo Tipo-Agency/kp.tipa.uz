@@ -17,22 +17,22 @@ const Cases: React.FC<CasesProps> = ({ cases }) => {
           <BodyText>Подборка релевантных проектов и примеров работы.</BodyText>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
           {cases.map((c, i) => (
-            <div key={i} className="bg-white border border-slate-100 rounded-[2rem] p-8">
-              <div className="flex items-start justify-between gap-6">
-                <div>
+            <div key={i} className="bg-white border border-slate-100 rounded-xl md:rounded-[2rem] p-6 md:p-8 w-full">
+              <div className="flex items-start justify-between gap-4 md:gap-6 flex-wrap sm:flex-nowrap">
+                <div className="flex-1 min-w-0">
                   <p className="text-slate-400 text-xs uppercase tracking-widest font-bold mb-2">
                     {c.category ?? `Кейс 0${i + 1}`}
                   </p>
-                  <h3 className="text-2xl font-black tracking-tight text-slate-900">{c.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-black tracking-tight text-slate-900 break-words">{c.title}</h3>
                 </div>
                 {c.url ? (
                   <a
                     href={c.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#3337AD] font-bold text-sm whitespace-nowrap"
+                    className="text-[#3337AD] font-bold text-sm flex-shrink-0"
                   >
                     Смотреть →
                   </a>

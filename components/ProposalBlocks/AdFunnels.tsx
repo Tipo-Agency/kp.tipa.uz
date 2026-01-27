@@ -17,9 +17,9 @@ const AdFunnels: React.FC<AdFunnelsProps> = ({ funnels }) => {
           <BodyText>Строим систему гипотез и масштабируем то, что даёт лиды и продажи.</BodyText>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
           {funnels.map((f, i) => (
-            <div key={i} className="rounded-[2.5rem] border border-slate-100 p-10 bg-slate-50">
+            <div key={i} className="rounded-2xl md:rounded-[2.5rem] border border-slate-100 p-6 md:p-8 lg:p-10 bg-slate-50 w-full">
               <div className="flex items-start justify-between gap-6 mb-8">
                 <div>
                   <p className="text-[#3337AD] font-bold tracking-widest uppercase text-[10px] mb-3">Воронка 0{i + 1}</p>

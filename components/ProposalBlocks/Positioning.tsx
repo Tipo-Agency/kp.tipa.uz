@@ -27,7 +27,7 @@ const Positioning: React.FC<PositioningProps> = ({ title, description, images })
     <Section className="bg-white">
       <Container>
         {/* items-stretch позволяет блоку с фото тянуться под высоту текста */}
-        <div className="flex flex-col md:flex-row gap-20 items-stretch">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-20 items-stretch">
           <div className="md:w-1/2 flex flex-col justify-center py-4">
             <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-xs">Направление 03 / Фундамент</p>
             <Heading2 className="mb-8">Позиционирование</Heading2>
@@ -39,7 +39,7 @@ const Positioning: React.FC<PositioningProps> = ({ title, description, images })
           
           <div className="md:w-1/2 w-full flex">
             {/* Контейнер теперь h-full (тянется за родителем) с ограничением по высоте для баланса */}
-            <div className="flex gap-0 h-full min-h-[480px] md:min-h-[590px] w-full overflow-hidden rounded-[3rem] shadow-2xl bg-slate-100 border-none">
+            <div className="flex gap-0 h-full min-h-[300px] sm:min-h-[400px] md:min-h-[590px] w-full overflow-hidden rounded-2xl md:rounded-[3rem] shadow-2xl bg-slate-100 border-none">
               {/* Левая колонка: Верх 60% (3 части), Низ 40% (2 части) */}
               <div className="flex-1 flex flex-col gap-0">
                 <div className="h-[60%] w-full overflow-hidden">
