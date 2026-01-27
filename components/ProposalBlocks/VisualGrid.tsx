@@ -35,7 +35,7 @@ const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
         </div>
 
         {/* Используем строгое деление на 3 колонки через grid-cols-3, убраны границы и тени */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 md:gap-2 h-[400px] sm:h-[500px] md:h-[700px] overflow-hidden relative max-w-4xl mx-auto w-full">
+        <div className="grid grid-cols-3 gap-1 md:gap-2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px] overflow-hidden relative max-w-full sm:max-w-2xl md:max-w-4xl mx-auto w-full">
           
           {/* Column 1 (Сделана значительно медленнее по просьбе пользователя) */}
           <div className="flex flex-col gap-1 md:gap-2 animate-scroll-vertical-slowest">
