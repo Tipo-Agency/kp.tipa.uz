@@ -3,15 +3,22 @@ import React from 'react';
 import { Container, Section } from '../UI/Container';
 import { Heading2 } from '../UI/Typography';
 
+interface PricingDivision {
+  title: string;
+  amount: string;
+  deliverables: { label: string; value: string }[];
+}
+
 interface PricingProps {
   amount: string;
   currency: string;
   period: string;
   team: string[];
   deliverables: { label: string, value: string }[];
+  divisions?: PricingDivision[];
 }
 
-const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliverables }) => {
+const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliverables, divisions }) => {
   return (
     <Section className="bg-white text-slate-900">
       <Container>
@@ -55,26 +62,63 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
               </p>
             </div>
 
-            <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-6 md:gap-10 pt-8 md:pt-10 mt-8 md:mt-10 border-t border-white/5">
-              <div className="text-center lg:text-left w-full lg:w-auto">
-                <div className="flex items-baseline gap-2 sm:gap-3 flex-wrap justify-center lg:justify-start">
-                  <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-none break-words">
-                    {amount}
-                  </span>
-                  <span className="text-base sm:text-lg md:text-xl text-white/40">{currency}</span>
+            {divisions && divisions.length > 0 ? (
+              <div className="relative z-10 pt-8 md:pt-10 mt-8 md:mt-10 border-t border-white/5">
+                <p className="text-white/30 uppercase tracking-widest text-[10px] mb-6 text-center">Стоимость по направлениям</p>
+                <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                  {divisions.map((division, idx) => (
+                    <div key={idx} className="bg-white/5 rounded-2xl p-6 border border-white/10">
+                      <h4 className="text-white font-bold text-lg mb-4">{division.title}</h4>
+                      <div className="space-y-3 mb-6">
+                        {division.deliverables.map((item, i) => (
+                          <div key={i} className="flex items-center justify-between text-sm">
+                            <span className="text-white/60">{item.label}</span>
+                            <span className="text-white font-semibold">{item.value}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex items-baseline gap-2 pt-4 border-t border-white/10">
+                        <span className="text-3xl sm:text-4xl font-black tracking-tighter leading-none text-white">
+                          {division.amount}
+                        </span>
+                        <span className="text-sm text-white/40">{currency}</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <p className="text-white/30 uppercase tracking-widest text-[10px] mt-3">Ежемесячное обслуживание</p>
+                <div className="text-center">
+                  <a
+                    href="https://t.me/tipa_agency"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#3337AD] hover:bg-[#4348CD] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl font-bold text-base sm:text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95"
+                  >
+                    Принять предложение
+                  </a>
+                </div>
               </div>
+            ) : (
+              <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-6 md:gap-10 pt-8 md:pt-10 mt-8 md:mt-10 border-t border-white/5">
+                <div className="text-center lg:text-left w-full lg:w-auto">
+                  <div className="flex items-baseline gap-2 sm:gap-3 flex-wrap justify-center lg:justify-start">
+                    <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-none break-words">
+                      {amount}
+                    </span>
+                    <span className="text-base sm:text-lg md:text-xl text-white/40">{currency}</span>
+                  </div>
+                  <p className="text-white/30 uppercase tracking-widest text-[10px] mt-3">Ежемесячное обслуживание</p>
+                </div>
 
-              <a
-                href="https://t.me/tipa_agency"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full lg:w-auto bg-[#3337AD] hover:bg-[#4348CD] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl font-bold text-base sm:text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95 text-center"
-              >
-                Принять предложение
-              </a>
-            </div>
+                <a
+                  href="https://t.me/tipa_agency"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full lg:w-auto bg-[#3337AD] hover:bg-[#4348CD] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl font-bold text-base sm:text-lg transition-all shadow-xl shadow-[#3337AD]/20 active:scale-95 text-center"
+                >
+                  Принять предложение
+                </a>
+              </div>
+            )}
 
             {/* Фоновый декор */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#3337AD] opacity-10 blur-[100px] pointer-events-none"></div>

@@ -36,12 +36,6 @@ export interface CaseItem {
   url?: string;
 }
 
-export interface Division {
-  title: string;
-  description?: string;
-  deliverables: { label: string; value: string }[];
-}
-
 export interface ProposalData {
   clientName: string;
   hero: {
@@ -75,7 +69,6 @@ export interface ProposalData {
   salesTracks?: SalesTrack[];
   funnels?: FunnelBlock[];
   cases?: CaseItem[];
-  divisions?: Division[];
   pricing: {
     amount: string;
     currency: string;
@@ -87,5 +80,10 @@ export interface ProposalData {
     }[];
     notes?: string[];
     secondary?: { label: string; value: string }[];
+    divisions?: {
+      title: string;
+      amount: string;
+      deliverables: { label: string; value: string }[];
+    }[];
   };
 }
