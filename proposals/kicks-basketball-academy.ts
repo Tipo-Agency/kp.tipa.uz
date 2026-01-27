@@ -13,13 +13,13 @@ export const kicksBasketballAcademy: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео тренировок, команды, продукции, создающие эстетику премиального сегмента." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию: родители, спортсмены, любители баскетбола." },
   ],
-  servicesImageUrl: undefined,
+  servicesImageUrl: "/proposals/kicks-basketball-academy/services/services.png",
   servicesDescription:
-    "Для баскетбольной академии и магазина важно с первого дня выстроить историю, узнаваемость и доверие. Мы запускаем систему контента и продвижения так, чтобы бренд сразу воспринимался как место-символ: про спорт, развитие, качественную экипировку и результат.",
+    "У нас прекрасная база: не только магазин, но и академия. По итогу мы продаём мечту: мечту забросить свой первый трёхочковый, мечту сыграть где-нибудь в Америке. Коммуникация должна быть пронизана этим: люди одеваются и играют, потому что видят себя такими — и мы поможем им такими стать.",
   growthTool: {
     title: "Контент как инструмент запуска бренда",
     description:
-      "Мы создаём контент и коммуникацию так, чтобы ещё до визита родитель или спортсмен понял: здесь — профессиональный подход. Через историю тренировок, успехи учеников, качество экипировки и атмосферу мы формируем ожидание и мотивируем к первому визиту.",
+      "Мы создаём контент и коммуникацию так, чтобы ещё до визита родитель или спортсмен понял: здесь — путь к мечте. Через историю тренировок, успехи учеников, качество экипировки и позиционирование через юмор и тренды мы формируем ожидание и мотивируем к первому визиту.",
   },
   audience: {
     primary: [
@@ -33,8 +33,12 @@ export const kicksBasketballAcademy: ProposalData = {
       "Организаторы спортивных мероприятий и турниров",
     ],
   },
-  audienceImageUrl: undefined,
-  rubricBlockImages: [],
+  audienceImageUrl: "/proposals/kicks-basketball-academy/audience/audience.png",
+  rubricBlockImages: [
+    "/proposals/kicks-basketball-academy/rubrics/block-1.jpg",
+    "/proposals/kicks-basketball-academy/rubrics/block-2.jpg",
+    "/proposals/kicks-basketball-academy/rubrics/block-3.jpg",
+  ],
   rubrics: [
     {
       title: "Тренировки и процесс",
@@ -62,8 +66,8 @@ export const kicksBasketballAcademy: ProposalData = {
       imageUrl: "",
     },
     {
-      title: "Утро в академии",
-      description: "Подготовка к тренировке, свежесть и ожидание первых учеников.",
+      title: "Позиционирование через юмор и тренды",
+      description: "Контент, который резонирует с аудиторией через актуальные тренды, мемы и лёгкий юмор — без потери профессионализма.",
       imageUrl: "",
     },
     {
@@ -86,9 +90,27 @@ export const kicksBasketballAcademy: ProposalData = {
     title: "KICKS — академия и магазин: спорт, развитие, качество",
     description:
       "Позиционируем KICKS как комплексное решение для баскетбола в Ташкенте: профессиональная академия с индивидуальным подходом к каждому игроку и магазин с самым большим выбором спортивной атрибутики в Узбекистане. Это место, куда приходят за результатом и остаются за атмосферой — где каждая деталь говорит о внимании к спортсмену.",
-    images: [],
+    images: [
+      "/proposals/kicks-basketball-academy/positioning/positioning-1.jpg",
+      "/proposals/kicks-basketball-academy/positioning/positioning-2.jpg",
+      "/proposals/kicks-basketball-academy/positioning/positioning-3.jpg",
+      "/proposals/kicks-basketball-academy/positioning/positioning-4.jpg",
+    ],
   },
-  visuals: [],
+  visuals: [
+    "/proposals/kicks-basketball-academy/visuals/визуал10.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал3.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал15.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал1.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал7.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал12.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал4.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал13.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал2.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал8.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал5.jpg",
+    "/proposals/kicks-basketball-academy/visuals/визуал10.jpg",
+  ],
   ads: [
     {
       title: "Таргетированная реклама",

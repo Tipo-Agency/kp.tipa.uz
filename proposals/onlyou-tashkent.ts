@@ -13,13 +13,13 @@ export const onlyouTashkent: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео, создающие эстетику премиального сегмента." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию." },
   ],
-  servicesImageUrl: undefined,
+  servicesImageUrl: "/proposals/onlyou-tashkent/services/services.png",
   servicesDescription:
-    "Для салона красоты важно с первого дня выстроить историю, узнаваемость и доверие. Мы запускаем систему контента и продвижения так, чтобы салон сразу воспринимался как место-символ: про красоту, уход и комфорт.",
+    "Девушки покупают не просто стрижку или маникюр — они покупают уверенность в себе, в том, что мастера не подведут перед важным мероприятием. Не зря же девушки постоянно спрашивают «красивые ли они» — нужно продавать через это: всегда красивая, не нужно ждать повод, чтобы стать красивой. Заходим через процесс, результат, комфорт и уверенность — что именно в этом месте всё будет чики-пуки, знакомство со специалистами и гарантия результата.",
   growthTool: {
     title: "Контент как инструмент запуска бренда",
     description:
-      "Мы создаём контент и коммуникацию так, чтобы ещё до визита гостья поняла: здесь — уникальный опыт. Через историю услуг, атмосферу салона, детали сервиса и результаты мы формируем ожидание и мотивируем к первому визиту.",
+      "Мы создаём контент и коммуникацию так, чтобы ещё до визита гостья поняла: здесь — гарантия результата. Через демонстрацию стилей, качества работы, используемых средств, интерьера и репутации мы формируем ожидание и мотивируем к первому визиту.",
   },
   audience: {
     primary: [
@@ -33,52 +33,56 @@ export const onlyouTashkent: ProposalData = {
       "Корпоративные клиенты (подарочные сертификаты)",
     ],
   },
-  audienceImageUrl: undefined,
-  rubricBlockImages: [],
+  audienceImageUrl: "/proposals/onlyou-tashkent/audience/audience.png",
+  rubricBlockImages: [
+    "/proposals/onlyou-tashkent/rubrics/block-1.jpg",
+    "/proposals/onlyou-tashkent/rubrics/block-2.jpg",
+    "/proposals/onlyou-tashkent/rubrics/block-3.jpg",
+  ],
   rubrics: [
     {
-      title: "Эстетика услуг",
-      description: "Фокус на деталях, результатах и искусстве преображения.",
+      title: "Стиль и качество работы",
+      description: "Демонстрация стилей, которые может повторить крутой специалист со вкусом — то, что другие не понимают.",
       imageUrl: "",
     },
     {
-      title: "Закулисье салона",
-      description: "Процессы, скрытые от глаз: работа мастеров и стандарты качества.",
+      title: "Используемые средства",
+      description: "Премиальная косметика, профессиональные инструменты и материалы — всё, что гарантирует результат.",
       imageUrl: "",
     },
     {
-      title: "История бренда",
-      description: "Философия Only You: где красота встречается с комфортом.",
+      title: "Интерьер и атмосфера",
+      description: "Пространство, где каждая деталь создаёт ощущение премиальности и комфорта.",
       imageUrl: "",
     },
     {
-      title: "Атмосфера пространства",
-      description: "Интерьер, свет, детали — всё, что создаёт ощущение премиальности.",
+      title: "Процесс и результат",
+      description: "До и после: трансформации, которые дарят уверенность в себе и готовность к важным событиям.",
       imageUrl: "",
     },
     {
-      title: "Лица команды",
-      description: "Мастера как главные носители ценностей и стандартов бренда.",
+      title: "Рейтинг и репутация",
+      description: "Отзывы клиенток, доверие и доказательства того, что здесь всё будет чики-пуки.",
       imageUrl: "",
     },
     {
-      title: "Утро в салоне",
-      description: "Подготовка к открытию, свежесть и ожидание первой гостьи.",
+      title: "Цены и пакеты",
+      description: "Прозрачное ценообразование, выгодные предложения и понятные пакеты услуг.",
       imageUrl: "",
     },
     {
-      title: "Философия красоты",
-      description: "Интервью с основателями о смыслах, заложенных в подход к красоте.",
+      title: "Знакомство со специалистами",
+      description: "Мастера, которые не подведут перед важным мероприятием — их опыт, стиль и подход.",
       imageUrl: "",
     },
     {
-      title: "События и гости",
-      description: "Репортажи с мероприятий, трансформаций и особых случаев.",
+      title: "Всегда красивая",
+      description: "Не нужно ждать повод, чтобы стать красивой — регулярный уход как образ жизни.",
       imageUrl: "",
     },
     {
-      title: "Гостеприимство и сервис",
-      description: "Как мы встречаем гостей: детали заботы, стандарты сервиса и атмосфера салона.",
+      title: "Комфорт и уверенность",
+      description: "Как мы встречаем гостей: детали заботы, стандарты сервиса и гарантия результата.",
       imageUrl: "",
     },
   ],
@@ -86,9 +90,27 @@ export const onlyouTashkent: ProposalData = {
     title: "Only You — пространство, где красота встречается с комфортом",
     description:
       "Позиционируем салон как место премиального ухода в Юнусабаде: красота, косметика и забота о себе. Это пространство, куда приходят за результатом и остаются за атмосферой — где каждая деталь говорит о внимании к гостье.",
-    images: [],
+    images: [
+      "/proposals/onlyou-tashkent/positioning/positioning-1.jpg",
+      "/proposals/onlyou-tashkent/positioning/positioning-2.jpg",
+      "/proposals/onlyou-tashkent/positioning/positioning-3.jpg",
+      "/proposals/onlyou-tashkent/positioning/positioning-4.jpg",
+    ],
   },
-  visuals: [],
+  visuals: [
+    "/proposals/onlyou-tashkent/visuals/037327096c9057e9db0d7654a2c877ce.jpg",
+    "/proposals/onlyou-tashkent/visuals/e6159371d013e42e4d2bf84cdad3f19e.jpg",
+    "/proposals/onlyou-tashkent/visuals/1342f5fbb86ee9c2b30b649e0da2056f.jpg",
+    "/proposals/onlyou-tashkent/visuals/24806643812626c4322fa5fc7872f487.jpg",
+    "/proposals/onlyou-tashkent/visuals/17b3fe1fa595de41b3949f40085968ce.jpg",
+    "/proposals/onlyou-tashkent/visuals/a152db39edba6290d2f1da89be06dcbe.jpg",
+    "/proposals/onlyou-tashkent/visuals/55b02a0dfe076feb6a643053196f200b.jpg",
+    "/proposals/onlyou-tashkent/visuals/65f44638220cd5473aa3b5c65f4ab40d.jpg",
+    "/proposals/onlyou-tashkent/visuals/6824297ed8d5bb22033e4cbba655349d.jpg",
+    "/proposals/onlyou-tashkent/visuals/9aa5e582f2beaa0e0bb442f3652c1a3a.jpg",
+    "/proposals/onlyou-tashkent/visuals/bd540a2f261cd77b6233e372f899124e.jpg",
+    "/proposals/onlyou-tashkent/visuals/037327096c9057e9db0d7654a2c877ce.jpg",
+  ],
   ads: [
     {
       title: "Таргетированная реклама",

@@ -13,13 +13,13 @@ export const svezhoFresh: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео продукции, процесса, точек, создающие эстетику здорового образа жизни." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию: приверженцы ЗОЖ, активные горожане, офисные работники." },
   ],
-  servicesImageUrl: undefined,
+  servicesImageUrl: "/proposals/svezho-fresh/services/services.png",
   servicesDescription:
-    "Сеть уже работает в 12 точках по Ташкенту — теперь важно усилить узнаваемость бренда и системно развивать коммуникацию. Мы выстраиваем контент и продвижение так, чтобы Свежо Фреш воспринимался как выбор для здорового образа жизни: свежесть, качество, доступность и забота о себе.",
+    "Сеть уже работает в 12 точках по Ташкенту — теперь важно усилить узнаваемость бренда и системно развивать коммуникацию. Мы продаём это как образ жизни: рекомендации (восполнить суточную дозу витаминов), советы (нужно не только взрослым, но и детям). Как люди не могут без кофе — так не могут без сока. Всегда в движении, яркие краски, энергия и здоровье.",
   growthTool: {
     title: "Контент как инструмент усиления бренда",
     description:
-      "Мы создаём контент и коммуникацию так, чтобы ещё до визита гость понял: здесь — свежесть и качество. Через историю продуктов, процесс приготовления, локации и детали сервиса мы формируем ожидание и мотивируем к визиту в ближайшую точку.",
+      "Мы создаём контент и коммуникацию так, чтобы ещё до визита гость понял: здесь — образ жизни. Через историю продуктов, процесс приготовления, локации, яркие краски и энергию мы формируем ожидание и мотивируем к визиту в ближайшую точку.",
   },
   audience: {
     primary: [
@@ -33,8 +33,12 @@ export const svezhoFresh: ProposalData = {
       "Туристы и гости города, которые хотят попробовать местные здоровые продукты",
     ],
   },
-  audienceImageUrl: undefined,
-  rubricBlockImages: [],
+  audienceImageUrl: "/proposals/svezho-fresh/audience/audience.png",
+  rubricBlockImages: [
+    "/proposals/svezho-fresh/rubrics/block-1.jpg",
+    "/proposals/svezho-fresh/rubrics/block-2.jpg",
+    "/proposals/svezho-fresh/rubrics/block-3.jpg",
+  ],
   rubrics: [
     {
       title: "Свежесть и процесс",
@@ -62,13 +66,13 @@ export const svezhoFresh: ProposalData = {
       imageUrl: "",
     },
     {
-      title: "Утро в точке",
-      description: "Подготовка к открытию, свежесть ингредиентов и ожидание первых гостей.",
+      title: "Образ жизни",
+      description: "Всегда в движении, яркие краски, энергия — как люди не могут без кофе, так не могут без сока.",
       imageUrl: "",
     },
     {
-      title: "Философия здоровья",
-      description: "Интервью с основателями о смыслах, заложенных в подход к здоровому питанию.",
+      title: "Рекомендации и советы",
+      description: "Восполнить суточную дозу витаминов, полезно не только взрослым, но и детям — образовательный контент.",
       imageUrl: "",
     },
     {
@@ -86,9 +90,27 @@ export const svezhoFresh: ProposalData = {
     title: "Свежо Фреш — сеть точек: свежесть, здоровье, доступность",
     description:
       "Позиционируем Свежо Фреш как сеть точек здорового питания в Ташкенте: свежевыжатые соки, смузи и детокс-напитки в 12 локациях по городу. Это место, куда заходят за энергией и остаются за качеством — где каждая деталь говорит о внимании к свежести и здоровью гостя.",
-    images: [],
+    images: [
+      "/proposals/svezho-fresh/positioning/positioning-1.jpg",
+      "/proposals/svezho-fresh/positioning/positioning-2.jpg",
+      "/proposals/svezho-fresh/positioning/positioning-3.jpg",
+      "/proposals/svezho-fresh/positioning/positioning-4.jpg",
+    ],
   },
-  visuals: [],
+  visuals: [
+    "/proposals/svezho-fresh/visuals/визуал02.jpg",
+    "/proposals/svezho-fresh/visuals/визуал100.jpg",
+    "/proposals/svezho-fresh/visuals/визуал05.jpg",
+    "/proposals/svezho-fresh/visuals/визуал101.jpg",
+    "/proposals/svezho-fresh/visuals/визуал01.jpg",
+    "/proposals/svezho-fresh/visuals/визуал-8.jpg",
+    "/proposals/svezho-fresh/visuals/визуал03.jpg",
+    "/proposals/svezho-fresh/visuals/визуал102.jpg",
+    "/proposals/svezho-fresh/visuals/визуал04.jpg",
+    "/proposals/svezho-fresh/visuals/визуал07.jpg",
+    "/proposals/svezho-fresh/visuals/визуал06.jpg",
+    "/proposals/svezho-fresh/visuals/визуал02.jpg",
+  ],
   ads: [
     {
       title: "Таргетированная реклама",
