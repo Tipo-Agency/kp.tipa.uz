@@ -11,6 +11,7 @@ import AdsPromotion from "../components/ProposalBlocks/AdsPromotion";
 import SalesStructure from "../components/ProposalBlocks/SalesStructure";
 import AdFunnels from "../components/ProposalBlocks/AdFunnels";
 import Cases from "../components/ProposalBlocks/Cases";
+import DivisionBreakdown from "../components/ProposalBlocks/DivisionBreakdown";
 import Pricing from "../components/ProposalBlocks/Pricing";
 import { getProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
@@ -76,6 +77,11 @@ export const ProposalPage: React.FC = () => {
       {proposal.cases && proposal.cases.length > 0 ? (
         <div className="reveal">
           <Cases cases={proposal.cases} />
+        </div>
+      ) : null}
+      {proposal.divisions && proposal.divisions.length > 0 ? (
+        <div className="reveal">
+          <DivisionBreakdown divisions={proposal.divisions} />
         </div>
       ) : null}
       <div className="reveal">

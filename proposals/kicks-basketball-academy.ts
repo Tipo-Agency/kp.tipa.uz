@@ -120,6 +120,24 @@ export const kicksBasketballAcademy: ProposalData = {
     { title: "Аналитика", description: "Еженедельный мониторинг воронки: от охвата до записи на тренировку / покупки в магазине." },
     { title: "Influence-маркетинг", description: "Работа с лидерами мнений, спортсменами и родителями, которые разделяют ценности вашего бренда." },
   ],
+  divisions: [
+    {
+      title: "Магазин KICKS UZ",
+      description: "Контент для розничного направления: продукция, новинки, стилизация.",
+      deliverables: [
+        { label: "Stories", value: "Ежедневно" },
+        { label: "Посты в ленту", value: "10–12 в месяц" },
+      ],
+    },
+    {
+      title: "Академия KICKS",
+      description: "Контент для образовательного направления: тренировки, успехи, развитие.",
+      deliverables: [
+        { label: "Stories", value: "Ежедневно" },
+        { label: "Посты в ленту", value: "5–8 в месяц" },
+      ],
+    },
+  ],
   pricing: {
     amount: "10 000 000",
     currency: "сум",
