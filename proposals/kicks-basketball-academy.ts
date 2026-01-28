@@ -135,7 +135,7 @@ export const kicksBasketballAcademy: ProposalData = {
     divisions: [
       {
         title: "Магазин KICKS UZ",
-        amount: "9 000 000",
+        amount: "8 000 000",
         deliverables: [
           { label: "Stories", value: "Ежедневно" },
           { label: "Посты в ленту", value: "10–12 в месяц" },
@@ -143,7 +143,7 @@ export const kicksBasketballAcademy: ProposalData = {
       },
       {
         title: "Академия KICKS",
-        amount: "8 000 000",
+        amount: "7 000 000",
         deliverables: [
           { label: "Stories", value: "Ежедневно" },
           { label: "Посты в ленту", value: "5–8 в месяц" },
