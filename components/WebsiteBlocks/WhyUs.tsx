@@ -12,8 +12,7 @@ export const WhyUs: React.FC<WhyUsProps> = ({ title, items }) => (
   <Section className="bg-slate-50 overflow-hidden">
     <Container>
       <div className="mb-8 sm:mb-10 md:mb-12 text-center max-w-3xl mx-auto px-2">
-        <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-3 sm:mb-4 text-[10px] sm:text-xs">Почему мы</p>
-        <Heading2 className="mb-0 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">{title}</Heading2>
+        <Heading2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">{title}</Heading2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 w-full">
         {items.map((item, i) => (

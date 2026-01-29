@@ -18,7 +18,6 @@ export const WebsitePricing: React.FC<WebsitePricingProps> = ({ main, options })
     <Container>
       <div className="max-w-4xl mx-auto w-full px-0 sm:px-2">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
-          <p className="text-[#3337AD] font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 sm:mb-6 text-[10px]">Финальное предложение</p>
           <Heading2 className="text-3xl sm:text-4xl md:text-5xl tracking-tighter">Стоимость и сроки</Heading2>
         </div>
 

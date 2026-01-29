@@ -36,6 +36,13 @@ export interface CaseItem {
   url?: string;
 }
 
+/** Один пункт из ТЗ клиента (номер, заголовок, подпункты) */
+export interface TZRequirementItem {
+  number: string;
+  title: string;
+  items: string[];
+}
+
 /** КП под разработку/редизайн сайта (отдельная структура от SMM-страниц) */
 export interface WebsiteProposalData {
   type: "website";
@@ -70,6 +77,8 @@ export interface WebsiteProposalData {
     title: string;
     items: string[];
   };
+  /** Учтённые требования по ТЗ клиента (опционально) */
+  tzRequirements?: TZRequirementItem[];
   cases: CaseItem[];
   websitePricing: {
     main: {

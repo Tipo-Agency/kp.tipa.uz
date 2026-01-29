@@ -19,6 +19,7 @@ import { ConceptPreview } from "../components/WebsiteBlocks/ConceptPreview";
 import { WhatIncluded } from "../components/WebsiteBlocks/WhatIncluded";
 import { WorkStages } from "../components/WebsiteBlocks/WorkStages";
 import { WhyUs } from "../components/WebsiteBlocks/WhyUs";
+import { TZRequirements } from "../components/WebsiteBlocks/TZRequirements";
 import { WebsitePricing } from "../components/WebsiteBlocks/WebsitePricing";
 import { getProposal, isWebsiteProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
@@ -90,6 +91,11 @@ export const ProposalPage: React.FC = () => {
         <div className="reveal">
           <WhyUs title={proposal.whyUs.title} items={proposal.whyUs.items} />
         </div>
+        {proposal.tzRequirements && proposal.tzRequirements.length > 0 ? (
+          <div className="reveal">
+            <TZRequirements items={proposal.tzRequirements} />
+          </div>
+        ) : null}
         <div className="reveal">
           <WebsitePricing main={proposal.websitePricing.main} options={proposal.websitePricing.options} />
         </div>
