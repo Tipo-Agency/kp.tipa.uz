@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "preview": "vite preview",
-    "push": "git push -u origin HEAD"
+    "push": "git add -A && (git diff --staged --quiet || git commit -m \"chore: auto\") && git push -u origin HEAD"
   },
   "dependencies": {
     "react-router-dom": "^7.13.0",
