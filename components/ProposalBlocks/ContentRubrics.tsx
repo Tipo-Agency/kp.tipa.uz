@@ -26,7 +26,7 @@ const ContentRubrics: React.FC<RubricsProps> = ({ rubrics, blockImages }) => {
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-xs">Разработка смыслов</p>
           <Heading2 className="mb-6">Матрица контента</Heading2>
           <BodyText>
-            Мы разработали 9 ключевых векторов, которые сделают ваш аккаунт полноценным медиа-ресурсом бренда.
+            Мы разработали 8 ключевых векторов, которые сделают ваш аккаунт полноценным медиа-ресурсом бренда.
           </BodyText>
         </div>
 
