@@ -36,6 +36,52 @@ export interface CaseItem {
   url?: string;
 }
 
+/** КП под разработку/редизайн сайта (отдельная структура от SMM-страниц) */
+export interface WebsiteProposalData {
+  type: "website";
+  clientName: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments: string[];
+  };
+  painPoints: string[];
+  solution: {
+    title: string;
+    description: string;
+    scheme: string[];
+  };
+  concept: {
+    title: string;
+    description?: string;
+    images?: string[];
+  };
+  whatIncluded: {
+    design: string[];
+    development: string[];
+    marketing: string[];
+    integrations: string[];
+  };
+  stages: {
+    title: string;
+    steps: { name: string; description?: string }[];
+  };
+  whyUs: {
+    title: string;
+    items: string[];
+  };
+  cases: CaseItem[];
+  websitePricing: {
+    main: {
+      amount: string;
+      currency: string;
+      period: string;
+      description: string;
+    };
+    options?: { label: string; amount: string; period: string }[];
+  };
+}
+
 export interface ProposalData {
   clientName: string;
   hero: {

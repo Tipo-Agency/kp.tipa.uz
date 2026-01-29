@@ -12,7 +12,15 @@ import SalesStructure from "../components/ProposalBlocks/SalesStructure";
 import AdFunnels from "../components/ProposalBlocks/AdFunnels";
 import Cases from "../components/ProposalBlocks/Cases";
 import Pricing from "../components/ProposalBlocks/Pricing";
-import { getProposal } from "../proposals";
+import { WebsiteHook } from "../components/WebsiteBlocks/WebsiteHook";
+import { PainPoints } from "../components/WebsiteBlocks/PainPoints";
+import { SolutionApproach } from "../components/WebsiteBlocks/SolutionApproach";
+import { ConceptPreview } from "../components/WebsiteBlocks/ConceptPreview";
+import { WhatIncluded } from "../components/WebsiteBlocks/WhatIncluded";
+import { WorkStages } from "../components/WebsiteBlocks/WorkStages";
+import { WhyUs } from "../components/WebsiteBlocks/WhyUs";
+import { WebsitePricing } from "../components/WebsiteBlocks/WebsitePricing";
+import { getProposal, isWebsiteProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
 
 export const ProposalPage: React.FC = () => {
@@ -36,6 +44,64 @@ export const ProposalPage: React.FC = () => {
   }, [slug]);
 
   if (!proposal) return <NotFoundPage />;
+
+  if (isWebsiteProposal(proposal)) {
+    return (
+      <div className="bg-white overflow-x-hidden w-full">
+        <div className="reveal">
+          <WebsiteHook
+            clientName={proposal.clientName}
+            title={proposal.hook.title}
+            subtitle={proposal.hook.subtitle}
+            arguments={proposal.hook.arguments}
+          />
+        </div>
+        <div className="reveal">
+          <PainPoints items={proposal.painPoints} />
+        </div>
+        <div className="reveal">
+          <SolutionApproach
+            title={proposal.solution.title}
+            description={proposal.solution.description}
+            scheme={proposal.solution.scheme}
+          />
+        </div>
+        <div className="reveal">
+          <ConceptPreview
+            title={proposal.concept.title}
+            description={proposal.concept.description}
+            images={proposal.concept.images}
+          />
+        </div>
+        <div className="reveal">
+          <WhatIncluded
+            design={proposal.whatIncluded.design}
+            development={proposal.whatIncluded.development}
+            marketing={proposal.whatIncluded.marketing}
+            integrations={proposal.whatIncluded.integrations}
+          />
+        </div>
+        <div className="reveal">
+          <WorkStages title={proposal.stages.title} steps={proposal.stages.steps} />
+        </div>
+        <div className="reveal">
+          <Cases cases={proposal.cases} />
+        </div>
+        <div className="reveal">
+          <WhyUs title={proposal.whyUs.title} items={proposal.whyUs.items} />
+        </div>
+        <div className="reveal">
+          <WebsitePricing main={proposal.websitePricing.main} options={proposal.websitePricing.options} />
+        </div>
+        <footer className="py-12 bg-white text-center border-t border-slate-100">
+          <img src="/лого типа агентства.svg" alt="Типа агентство" className="h-8 md:h-9 w-auto mx-auto mb-6" />
+          <p className="text-slate-400 text-xs font-semibold tracking-widest uppercase">
+            ТИПА АГЕНТСТВО © {new Date().getFullYear()}
+          </p>
+        </footer>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white overflow-x-hidden w-full">
