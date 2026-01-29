@@ -29,6 +29,7 @@ export const nettareUz: ProposalData = {
         "Таргет на целевую аудиторию, работа с инфлюенсерами и партнёрами. Прозрачная аналитика: охват, вовлечённость, переходы в заказ — без накрутки подписчиков, с фокусом на качестве контента и отклике.",
     },
   ],
+  servicesImageUrl: "/proposals/nettare-uz/services/services.png",
   servicesDescription:
     "Nettare уже представлен в каналах продаж (торговые агенты, Uzum, Makro) и в Instagram. Задача — чтобы SMM давал прирост к продажам: в первые месяцы — заметное улучшение, через полгода — устойчивый рост. Достигаем за счёт контента, который не только показывает продукт, но и учит использовать его дома и в заведениях, плюс партнёрские съёмки и живая вовлечённая аудитория.",
   growthTool: {
@@ -36,6 +37,7 @@ export const nettareUz: ProposalData = {
     description:
       "Делаем контент, который ведёт к покупке: рецепты в коллаборации с барами и кофейнями («возьми сироп Nettare — сделай коктейль дома»), разбор вкусов и форматов, юмор и лайфстайл. Так мы усиливаем узнаваемость, доверие и желание заказать — в Direct, по телефону или через маркетплейсы.",
   },
+  audienceImageUrl: "/proposals/nettare-uz/audience/audience.png",
   audience: {
     primary: [
       "Покупатели для дома: любители кофе, коктейлей и напитков, которые заказывают сиропы в Instagram, на Uzum или через доставку",
@@ -48,9 +50,9 @@ export const nettareUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/nettare-uz/rubrics/block-1.jpg",
-    "/proposals/nettare-uz/rubrics/block-2.jpg",
-    "/proposals/nettare-uz/rubrics/block-3.jpg",
+    "/proposals/nettare-uz/rubrics/рубрика1.jpg",
+    "/proposals/nettare-uz/rubrics/рубрика2.jpg",
+    "/proposals/nettare-uz/rubrics/рубрика3.jpg",
   ],
   rubrics: [
     {
@@ -107,22 +109,27 @@ export const nettareUz: ProposalData = {
     description:
       "Позиционируем Nettare как бренд сиропов для напитков и коктейлей: для профессионалов (кофеени, рестораны, бары) и для дома. Насыщенный вкус, широкий ассортимент, удобный заказ через сайт, Direct или маркетплейсы. Контент подчёркивает: легко заказать, легко использовать — и в заведении, и у себя на кухне.",
     images: [
-      "/proposals/nettare-uz/positioning/positioning-1.jpg",
-      "/proposals/nettare-uz/positioning/positioning-2.jpg",
-      "/proposals/nettare-uz/positioning/positioning-3.jpg",
-      "/proposals/nettare-uz/positioning/positioning-4.jpg",
+      "/proposals/nettare-uz/positioning/позиционирование1.jpg",
+      "/proposals/nettare-uz/positioning/позиционирование2.jpg",
+      "/proposals/nettare-uz/positioning/позиционирование4.jpg",
+      "/proposals/nettare-uz/positioning/пост12.jpg",
     ],
   },
   visuals: [
-    "/proposals/nettare-uz/visuals/visual-1.jpg",
-    "/proposals/nettare-uz/visuals/visual-2.jpg",
-    "/proposals/nettare-uz/visuals/visual-3.jpg",
-    "/proposals/nettare-uz/visuals/visual-4.jpg",
-    "/proposals/nettare-uz/visuals/visual-5.jpg",
-    "/proposals/nettare-uz/visuals/visual-6.jpg",
-    "/proposals/nettare-uz/visuals/visual-7.jpg",
-    "/proposals/nettare-uz/visuals/visual-8.jpg",
-    "/proposals/nettare-uz/visuals/visual-9.jpg",
+    "/proposals/nettare-uz/visuals/пост6.jpg",
+    "/proposals/nettare-uz/visuals/пост13.jpg",
+    "/proposals/nettare-uz/visuals/пост2.jpg",
+    "/proposals/nettare-uz/visuals/пост15.jpg",
+    "/proposals/nettare-uz/visuals/пост9.jpg",
+    "/proposals/nettare-uz/visuals/пост1.jpg",
+    "/proposals/nettare-uz/visuals/пост14.jpg",
+    "/proposals/nettare-uz/visuals/пост4.jpg",
+    "/proposals/nettare-uz/visuals/пост11.jpg",
+    "/proposals/nettare-uz/visuals/пост7.jpg",
+    "/proposals/nettare-uz/visuals/пост16.jpg",
+    "/proposals/nettare-uz/visuals/пост3.jpg",
+    "/proposals/nettare-uz/visuals/пост8.jpg",
+    "/proposals/nettare-uz/visuals/пост5.jpg",
   ],
   ads: [
     {
