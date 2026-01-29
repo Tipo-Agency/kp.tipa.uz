@@ -29,19 +29,19 @@ export const TZRequirements: React.FC<TZRequirementsProps> = ({
         {items.map((req, idx) => (
           <div
             key={idx}
-            className="p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:border-[#3337AD]/20 hover:shadow-md transition-all w-full"
+            className="p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:border-[#3337AD]/20 hover:shadow-md transition-all w-full min-w-0 overflow-hidden"
           >
-            <div className="flex items-center gap-3 mb-3 sm:mb-4">
+            <div className="flex items-center gap-3 mb-3 sm:mb-4 min-w-0">
               <span className="flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#3337AD] text-white font-bold text-sm sm:text-base flex items-center justify-center font-['Unbounded']">
                 {req.number}
               </span>
-              <h3 className="text-base sm:text-lg font-bold text-slate-900 font-['Unbounded']">{req.title}</h3>
+              <h3 className="min-w-0 flex-1 text-base sm:text-lg font-bold text-slate-900 font-['Unbounded'] break-words">{req.title}</h3>
             </div>
-            <ul className="space-y-2 sm:space-y-2.5">
+            <ul className="space-y-2 sm:space-y-2.5 min-w-0">
               {req.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-slate-700 text-sm sm:text-base">
+                <li key={i} className="flex items-start gap-2 text-slate-700 text-sm sm:text-base min-w-0">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#3337AD] flex-shrink-0 mt-1.5" />
-                  <span>{item}</span>
+                  <span className="min-w-0 break-words">{item}</span>
                 </li>
               ))}
             </ul>

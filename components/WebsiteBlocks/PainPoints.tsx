@@ -19,14 +19,14 @@ export const PainPoints: React.FC<PainPointsProps> = ({ items }) => (
         {items.map((item, i) => (
           <div
             key={i}
-            className="flex gap-4 sm:gap-5 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl border border-slate-200 bg-slate-50/50 hover:border-[#3337AD]/30 hover:bg-white transition-all w-full"
+            className="flex gap-4 sm:gap-5 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl border border-slate-200 bg-slate-50/50 hover:border-[#3337AD]/30 hover:bg-white transition-all w-full min-w-0 overflow-hidden"
           >
             <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-[#3337AD]/10 flex items-center justify-center">
               {getPainIcon(i)}
             </div>
             <div className="min-w-0 flex-1">
               <span className="text-[#3337AD] font-black text-lg sm:text-xl mb-1 block">0{i + 1}</span>
-              <p className="text-slate-800 font-semibold text-sm sm:text-base leading-snug">{item}</p>
+              <p className="text-slate-800 font-semibold text-sm sm:text-base leading-snug break-words">{item}</p>
             </div>
           </div>
         ))}

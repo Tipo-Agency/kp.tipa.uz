@@ -18,12 +18,12 @@ export const WhyUs: React.FC<WhyUsProps> = ({ title, items }) => (
         {items.map((item, i) => (
           <div
             key={i}
-            className="flex gap-4 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-white border border-slate-100 shadow-sm hover:border-[#3337AD]/20 hover:shadow-md transition-all w-full"
+            className="flex gap-4 p-4 sm:p-5 md:p-6 rounded-xl sm:rounded-2xl bg-white border border-slate-100 shadow-sm hover:border-[#3337AD]/20 hover:shadow-md transition-all w-full min-w-0 overflow-hidden"
           >
             <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#3337AD]/10 flex items-center justify-center">
               <IconCheck />
             </div>
-            <p className="text-slate-800 font-semibold text-sm sm:text-base leading-snug pt-1">{item}</p>
+            <p className="min-w-0 flex-1 text-slate-800 font-semibold text-sm sm:text-base leading-snug pt-1 break-words">{item}</p>
           </div>
         ))}
       </div>

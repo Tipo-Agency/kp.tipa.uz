@@ -29,10 +29,10 @@ export const WorkStages: React.FC<WorkStagesProps> = ({ title, steps }) => (
               <div className="relative z-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#3337AD] text-white font-black flex items-center justify-center flex-shrink-0 text-sm sm:text-base shadow-lg shadow-[#3337AD]/30">
                 {i + 1}
               </div>
-              <div className="flex-1 min-w-0 pt-0.5 sm:pt-1">
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900">{step.name}</h3>
+              <div className="flex-1 min-w-0 pt-0.5 sm:pt-1 overflow-hidden">
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 break-words">{step.name}</h3>
                 {step.description && (
-                  <p className="text-slate-600 mt-1 text-sm sm:text-base">{step.description}</p>
+                  <p className="text-slate-600 mt-1 text-sm sm:text-base break-words">{step.description}</p>
                 )}
               </div>
             </div>
