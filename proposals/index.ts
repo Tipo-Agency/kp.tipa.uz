@@ -5,6 +5,7 @@ import { onlyouTashkent } from "./onlyou-tashkent";
 import { kicksBasketballAcademy } from "./kicks-basketball-academy";
 import { svezhoFresh } from "./svezho-fresh";
 import { baholdingWebsite } from "./baholding-website";
+import { nettareUz } from "./nettare-uz";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -12,6 +13,7 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData> = {
   "onlyou-tashkent": onlyouTashkent,
   "kicks-basketball-academy": kicksBasketballAcademy,
   "svezho-fresh": svezhoFresh,
+  "nettare-uz": nettareUz,
   "baholding-website": baholdingWebsite,
 };
 
@@ -25,4 +27,3 @@ export function isWebsiteProposal(
 ): p is WebsiteProposalData {
   return p != null && "type" in p && p.type === "website";
 }
-
