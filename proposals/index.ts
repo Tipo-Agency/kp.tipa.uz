@@ -7,6 +7,7 @@ import { svezhoFresh } from "./svezho-fresh";
 import { baholdingWebsite } from "./baholding-website";
 import { nettareUz } from "./nettare-uz";
 import { luvioUz } from "./luvio-uz";
+import { carvilleAsia } from "./carville-asia";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -16,6 +17,7 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData> = {
   "svezho-fresh": svezhoFresh,
   "nettare-uz": nettareUz,
   "luvio-uz": luvioUz,
+  "carville-asia": carvilleAsia,
   "baholding-website": baholdingWebsite,
 };
 
