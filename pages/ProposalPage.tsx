@@ -21,7 +21,13 @@ import { WorkStages } from "../components/WebsiteBlocks/WorkStages";
 import { WhyUs } from "../components/WebsiteBlocks/WhyUs";
 import { TZRequirements } from "../components/WebsiteBlocks/TZRequirements";
 import { WebsitePricing } from "../components/WebsiteBlocks/WebsitePricing";
-import { getProposal, isWebsiteProposal } from "../proposals";
+import { TelegramBotHook } from "../components/TelegramBotBlocks/TelegramBotHook";
+import { BotFeatures } from "../components/TelegramBotBlocks/BotFeatures";
+import { AdminPanel } from "../components/TelegramBotBlocks/AdminPanel";
+import { UsageScenarios } from "../components/TelegramBotBlocks/UsageScenarios";
+import { BotStages } from "../components/TelegramBotBlocks/BotStages";
+import { BotPricing } from "../components/TelegramBotBlocks/BotPricing";
+import { getProposal, isWebsiteProposal, isTelegramBotProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
 
 export const ProposalPage: React.FC = () => {
@@ -45,6 +51,52 @@ export const ProposalPage: React.FC = () => {
   }, [slug]);
 
   if (!proposal) return <NotFoundPage />;
+
+  if (isTelegramBotProposal(proposal)) {
+    return (
+      <div className="bg-white overflow-x-hidden w-full">
+        <div className="reveal">
+          <TelegramBotHook
+            clientName={proposal.clientName}
+            title={proposal.hook.title}
+            subtitle={proposal.hook.subtitle}
+            arguments={proposal.hook.arguments}
+          />
+        </div>
+        <div className="reveal">
+          <BotFeatures title={proposal.features.title} items={proposal.features.items} />
+        </div>
+        <div className="reveal">
+          <AdminPanel
+            title={proposal.adminPanel.title}
+            description={proposal.adminPanel.description}
+            items={proposal.adminPanel.items}
+          />
+        </div>
+        <div className="reveal">
+          <UsageScenarios title={proposal.usageScenarios.title} scenarios={proposal.usageScenarios.scenarios} />
+        </div>
+        <div className="reveal">
+          <BotStages title={proposal.stages.title} steps={proposal.stages.steps} />
+        </div>
+        <div className="reveal">
+          <BotPricing
+            amount={proposal.pricing.amount}
+            currency={proposal.pricing.currency}
+            period={proposal.pricing.period}
+            description={proposal.pricing.description}
+            deliverables={proposal.pricing.deliverables}
+          />
+        </div>
+        <footer className="py-12 bg-white text-center border-t border-slate-100">
+          <img src="/лого типа агентства.svg" alt="Типа агентство" className="h-8 md:h-9 w-auto mx-auto mb-6" />
+          <p className="text-slate-400 text-xs font-semibold tracking-widest uppercase">
+            ТИПА АГЕНТСТВО © {new Date().getFullYear()}
+          </p>
+        </footer>
+      </div>
+    );
+  }
 
   if (isWebsiteProposal(proposal)) {
     return (

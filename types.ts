@@ -43,6 +43,45 @@ export interface TZRequirementItem {
   items: string[];
 }
 
+/** КП под разработку Telegram-бота */
+export interface TelegramBotProposalData {
+  type: "telegram-bot";
+  clientName: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments?: string[];
+  };
+  /** Функции бота для пользователя */
+  features: {
+    title: string;
+    items: string[];
+  };
+  /** Админ-панель: управление контентом, заказами, пользователями */
+  adminPanel: {
+    title: string;
+    description?: string;
+    items: string[];
+  };
+  /** Сценарии использования (пошагово) */
+  usageScenarios: {
+    title: string;
+    scenarios: { name: string; description: string }[];
+  };
+  /** Этапы разработки (инфографика) */
+  stages: {
+    title: string;
+    steps: { name: string; description?: string }[];
+  };
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    description: string;
+    deliverables?: { label: string; value: string }[];
+  };
+}
+
 /** КП под разработку/редизайн сайта (отдельная структура от SMM-страниц) */
 export interface WebsiteProposalData {
   type: "website";

@@ -1,4 +1,4 @@
-import type { ProposalData, WebsiteProposalData } from "../types";
+import type { ProposalData, WebsiteProposalData, TelegramBotProposalData } from "../types";
 import { yangiOzbekistonRestaurant } from "./yangi-ozbekiston-restaurant";
 import { jaquarUzbSantehnika } from "./jaquar-uzb-santehnika";
 import { onlyouTashkent } from "./onlyou-tashkent";
@@ -8,8 +8,10 @@ import { baholdingWebsite } from "./baholding-website";
 import { nettareUz } from "./nettare-uz";
 import { luvioUz } from "./luvio-uz";
 import { carvilleAsia } from "./carville-asia";
+import { telegramBotTemplate } from "./telegram-bot-template";
+import { arzonAptekaBot } from "./arzon-apteka-bot";
 
-export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData> = {
+export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
   "jaquar-uzb-santehnika": jaquarUzbSantehnika,
   "onlyou-tashkent": onlyouTashkent,
@@ -19,15 +21,21 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData> = {
   "luvio-uz": luvioUz,
   "carville-asia": carvilleAsia,
   "baholding-website": baholdingWebsite,
+  "telegram-bot": telegramBotTemplate,
+  "arzon-apteka-bot": arzonAptekaBot,
 };
 
-export function getProposal(slug: string | undefined): ProposalData | WebsiteProposalData | undefined {
+export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData;
+
+export function getProposal(slug: string | undefined): AnyProposal | undefined {
   if (!slug) return undefined;
-  return PROPOSALS[slug];
+  return PROPOSALS[slug] as AnyProposal | undefined;
 }
 
-export function isWebsiteProposal(
-  p: ProposalData | WebsiteProposalData | undefined
-): p is WebsiteProposalData {
+export function isWebsiteProposal(p: AnyProposal | undefined): p is WebsiteProposalData {
   return p != null && "type" in p && p.type === "website";
+}
+
+export function isTelegramBotProposal(p: AnyProposal | undefined): p is TelegramBotProposalData {
+  return p != null && "type" in p && p.type === "telegram-bot";
 }
