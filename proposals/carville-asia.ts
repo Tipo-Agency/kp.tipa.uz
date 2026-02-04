@@ -125,6 +125,9 @@ export const carvilleAsia: ProposalData = {
     "/proposals/carville-asia/visuals/пост5.jpg",
     "/proposals/carville-asia/visuals/пост8.jpg",
     "/proposals/carville-asia/visuals/Рилс%20для%20автосервиса%20и%20автомагазина.jpeg",
+    "/proposals/carville-asia/positioning/позици1.jpg",
+    "/proposals/carville-asia/rubrics/рубрик2.jpg",
+    "/proposals/carville-asia/positioning/позиц3.jpg",
   ],
   ads: [
     {
