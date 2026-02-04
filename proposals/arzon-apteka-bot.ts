@@ -5,7 +5,7 @@ export const arzonAptekaBot: TelegramBotProposalData = {
   type: "telegram-bot",
   clientName: "Arzon Apteka",
   hook: {
-    title: "Telegram-бот для интернет-аптеки",
+    title: "Telegram-бот для интернет-аптеки типа Arzon Apteka",
     subtitle:
       "Бот в Telegram: поиск лекарств в 2 клика, каталог по разделам, заказ с доставкой домой или в офис. Оплата картой или наличными при получении.",
     arguments: [
