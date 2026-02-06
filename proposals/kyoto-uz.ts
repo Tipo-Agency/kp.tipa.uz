@@ -50,29 +50,30 @@ export const kyotoUz: ProposalData = {
       "Любители азиатской кухни и роллов, следящие за новыми местами в городе",
     ],
   },
+  // Для Kyoto используем отдельные фото рубрик в своей папке
   rubricBlockImages: [
-    "/proposals/kyoto-uz/rubrics/rubrika1.jpg",
-    "/proposals/kyoto-uz/rubrics/rubrika2.jpg",
-    "/proposals/kyoto-uz/rubrics/rubrika3.jpg",
+    "/proposals/kyoto-uz/rubrics/рубрика1.jpg",
+    "/proposals/kyoto-uz/rubrics/рубрик1.jpg",
+    "/proposals/kyoto-uz/rubrics/рубрик2.jpg",
   ],
   rubrics: [
     {
       title: "Топ-сеты и роллы",
       description:
         "Презентация хитов меню: топ-роллы, теплые роллы, сеты для двоих и больших компаний. Объясняем, что в составе и для какого повода подходит.",
-      imageUrl: "",
+      imageUrl: "/proposals/kyoto-uz/rubrics/рубрика1.jpg",
     },
     {
       title: "Акции и спецпредложения",
       description:
         "Комбо, скидки, 1+1, вечерние и дневные предложения. Чёткое объяснение условий, сроков и как заказать без лишних вопросов.",
-      imageUrl: "",
+      imageUrl: "/proposals/kyoto-уз/rubrics/рубрик1.jpg",
     },
     {
       title: "Кухня изнутри",
       description:
         "Процесс приготовления: рис, рыба, начинка, сборка роллов, фритюр для чикена. Чистота, стандарты и скорость.",
-      imageUrl: "",
+      imageUrl: "/proposals/kyoto-uz/rubrics/рубрик2.jpg",
     },
     {
       title: "Доставка и упаковка",
@@ -116,25 +117,24 @@ export const kyotoUz: ProposalData = {
     description:
       "Позиционируем Kyoto как место, где всегда можно заказать понятные и стабильные по качеству суши, роллы и чикен. Визуально и по текстам показываем: здесь не просто красивые фото, а честные порции, аккуратная доставка и сервис, который не подводит, когда пригласил гостей.",
     images: [
-      "/proposals/kyoto-uz/positioning/poz1.jpg",
-      "/proposals/kyoto-uz/positioning/poz2.jpg",
-      "/proposals/kyoto-uz/positioning/poz3.jpg",
-      "/proposals/kyoto-uz/positioning/poz4.jpg",
+      "/proposals/kyoto-uz/positioning/позиц1.jpg",
+      "/proposals/kyoto-uz/positioning/позиц2.jpg",
+      "/proposals/kyoto-uz/positioning/позиц3.jpg",
+      "/proposals/kyoto-uz/positioning/позиц4.jpg",
     ],
   },
   visuals: [
-    "/proposals/kyoto-uz/visuals/post1.jpg",
-    "/proposals/kyoto-uz/visuals/post2.jpg",
-    "/proposals/kyoto-uz/visuals/post3.jpg",
-    "/proposals/kyoto-uz/visuals/post4.jpg",
-    "/proposals/kyoto-uz/visuals/post5.jpg",
-    "/proposals/kyoto-uz/visuals/post6.jpg",
-    "/proposals/kyoto-uz/visuals/post7.jpg",
-    "/proposals/kyoto-uz/visuals/post8.jpg",
-    "/proposals/kyoto-uz/visuals/post9.jpg",
-    "/proposals/kyoto-uz/visuals/post10.jpg",
-    "/proposals/kyoto-uz/visuals/post11.jpg",
-    "/proposals/kyoto-uz/visuals/post12.jpg",
+    "/proposals/kyoto-uz/visuals/пост1.jpg",
+    "/proposals/kyoto-uz/visuals/пост2.jpg",
+    "/proposals/kyoto-uz/visuals/пост3.jpg",
+    "/proposals/kyoto-uz/visuals/пост4.jpg",
+    "/proposals/kyoto-uz/visuals/пост5.jpg",
+    "/proposals/kyoto-uz/visuals/пост6.jpg",
+    "/proposals/kyoto-uz/visuals/пост7.jpg",
+    "/proposals/kyoto-uz/visuals/пост8.jpg",
+    "/proposals/kyoto-uz/visuals/пост9.jpg",
+    "/proposals/kyoto-uz/visuals/пост10.jpg",
+    "/proposals/kyoto-uz/visuals/пост11.jpg",
   ],
   ads: [
     {

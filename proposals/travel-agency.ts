@@ -51,28 +51,28 @@ export const travelAgency: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/travel-agency/rubrics/rubrika1.jpg",
-    "/proposals/travel-agency/rubrics/rubrika2.jpg",
-    "/proposals/travel-agency/rubrics/rubrika3.jpg",
+    "/proposals/travel-agency/rubrics/рубрика1.jpg",
+    "/proposals/travel-agency/rubrics/рубрик2.jpg",
+    "/proposals/travel-agency/rubrics/рубрик3.jpg",
   ],
   rubrics: [
     {
       title: "Направления и сезоны",
       description:
         "Море, горы, city break, экскурсионные туры. Подсветка популярных и новых направлений по сезонам, понятные карты и сроки.",
-      imageUrl: "",
+      imageUrl: "/proposals/travel-agency/rubrics/рубрика1.jpg",
     },
     {
       title: "Что входит в тур",
       description:
         "Перелёт, отель, питание, трансфер, экскурсии. Карусели «что вы получаете за эту цену» без мелкого шрифта и подвохов.",
-      imageUrl: "",
+      imageUrl: "/proposals/travel-agency/rubrics/рубрик2.jpg",
     },
     {
       title: "День из жизни в путешествии",
       description:
         "Сценарий дня: утро, экскурсии, пляж, вечер. Человек понимает, как реально будет проходить отдых, а не только видит бассейн на фото.",
-      imageUrl: "",
+      imageUrl: "/proposals/travel-agency/rubrics/рубрик3.jpg",
     },
     {
       title: "Отзывы и истории клиентов",
@@ -116,25 +116,24 @@ export const travelAgency: ProposalData = {
     description:
       "Позиционируем вас как агентство, которое берёт на себя ответственность за весь путь клиента: от первой консультации до возвращения домой. В Instagram это выражается через честный контент, реальные истории, понятные предложения и внимание к деталям сервиса.",
     images: [
-      "/proposals/travel-agency/positioning/poz1.jpg",
-      "/proposals/travel-agency/positioning/poz2.jpg",
-      "/proposals/travel-agency/positioning/poz3.jpg",
-      "/proposals/travel-agency/positioning/poz4.jpg",
+      "/proposals/travel-agency/positioning/позиц1.jpg",
+      "/proposals/travel-agency/positioning/позиц2.jpg",
+      "/proposals/travel-agency/positioning/позиц3.jpg",
+      "/proposals/travel-agency/positioning/позиц4.jpg",
     ],
   },
   visuals: [
-    "/proposals/travel-agency/visuals/post1.jpg",
-    "/proposals/travel-agency/visuals/post2.jpg",
-    "/proposals/travel-agency/visuals/post3.jpg",
-    "/proposals/travel-agency/visuals/post4.jpg",
-    "/proposals/travel-agency/visuals/post5.jpg",
-    "/proposals/travel-agency/visuals/post6.jpg",
-    "/proposals/travel-agency/visuals/post7.jpg",
-    "/proposals/travel-agency/visuals/post8.jpg",
-    "/proposals/travel-agency/visuals/post9.jpg",
-    "/proposals/travel-agency/visuals/post10.jpg",
-    "/proposals/travel-agency/visuals/post11.jpg",
-    "/proposals/travel-agency/visuals/post12.jpg",
+    "/proposals/travel-agency/visuals/пост1.jpg",
+    "/proposals/travel-agency/visuals/пост2.jpg",
+    "/proposals/travel-agency/visuals/пост3.jpg",
+    "/proposals/travel-agency/visuals/пост4.jpg",
+    "/proposals/travel-agency/visuals/пост5.jpg",
+    "/proposals/travel-agency/visuals/пост6.jpg",
+    "/proposals/travel-agency/visuals/пост7.jpg",
+    "/proposals/travel-agency/visuals/пост8.jpg",
+    "/proposals/travel-agency/visuals/пост9.jpg",
+    "/proposals/travel-agency/visuals/пост10.jpg",
+    "/proposals/travel-agency/visuals/пост11.jpg",
   ],
   ads: [
     {
