@@ -1,27 +1,25 @@
 import React from "react";
 import { Container, Section } from "../UI/Container";
 import { Heading2 } from "../UI/Typography";
-import { IconTelegram, IconCalendar } from "./BotIcons";
 
-interface BotPricingProps {
+interface PlatformPricingProps {
   amount: string;
   currency: string;
   period: string;
   description: string;
-  /** Подпись к блоку (например «Бот + интеграция 1С»), по умолчанию «Бот + админка» */
-  cardSubtitle?: string;
   deliverables?: { label: string; value: string }[];
 }
 
-export const BotPricing: React.FC<BotPricingProps> = ({
+const ACCENT = "#059669";
+
+export const PlatformPricing: React.FC<PlatformPricingProps> = ({
   amount,
   currency,
   period,
   description,
-  cardSubtitle,
   deliverables = [],
 }) => (
-  <Section className="bg-white overflow-hidden">
+  <Section className="bg-slate-50 overflow-hidden">
     <Container>
       <div className="max-w-4xl mx-auto w-full px-0 sm:px-2">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
@@ -32,18 +30,19 @@ export const BotPricing: React.FC<BotPricingProps> = ({
 
         <div className="bg-[#0A0C14] rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 text-white shadow-2xl relative overflow-hidden mb-6 sm:mb-8">
           <div className="relative z-10">
-            <h3 className="text-[10px] sm:text-xs font-bold text-[#0088CC] uppercase tracking-widest mb-4 sm:mb-6">
-              Telegram-бот под ключ
+            <h3
+              className="text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-4 sm:mb-6"
+              style={{ color: ACCENT }}
+            >
+              Сервис под ключ
             </h3>
             <p className="text-white/80 mb-4 sm:mb-6 text-sm sm:text-base">{description}</p>
             <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-5">
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 text-white/90 text-xs sm:text-sm [&_svg]:text-white/90">
-                <IconTelegram />
-                {cardSubtitle ?? "Бот + админка"}
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 text-white/90 text-xs sm:text-sm">
+                Веб + мобильное приложение + Telegram
               </span>
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 text-white/90 text-xs sm:text-sm [&_svg]:text-white/90">
-                <IconCalendar />
-                {period}
+              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 text-white/90 text-xs sm:text-sm">
+                Админки вендера и системы
               </span>
             </div>
             <div className="flex flex-wrap items-baseline gap-2 sm:gap-3 mb-5 sm:mb-6">
@@ -67,12 +66,16 @@ export const BotPricing: React.FC<BotPricingProps> = ({
               href="https://t.me/tipa_agency"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block w-full sm:w-auto text-center bg-[#0088CC] hover:bg-[#229ED9] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-sm sm:text-base transition-all shadow-xl shadow-[#0088CC]/20 active:scale-[0.98]"
+              className="inline-block w-full sm:w-auto text-center text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-sm sm:text-base transition-all shadow-xl active:scale-[0.98] hover:opacity-95"
+              style={{ backgroundColor: ACCENT }}
             >
               Обсудить проект
             </a>
           </div>
-          <div className="absolute top-0 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-[#0088CC] opacity-10 blur-[80px] sm:blur-[100px] pointer-events-none" />
+          <div
+            className="absolute top-0 right-0 w-48 sm:w-64 h-48 sm:h-64 opacity-10 blur-[80px] sm:blur-[100px] pointer-events-none rounded-full"
+            style={{ backgroundColor: ACCENT }}
+          />
         </div>
 
         <div className="mt-8 sm:mt-12 text-center px-2">

@@ -57,8 +57,14 @@ export interface TelegramBotProposalData {
     title: string;
     items: string[];
   };
-  /** Админ-панель: управление контентом, заказами, пользователями */
-  adminPanel: {
+  /** Админ-панель (если есть) или блок интеграции с системами учёта */
+  adminPanel?: {
+    title: string;
+    description?: string;
+    items: string[];
+  };
+  /** Блок «Подготовка интеграции» — показывается вместо админки, если админки нет */
+  integration?: {
     title: string;
     description?: string;
     items: string[];
@@ -69,6 +75,40 @@ export interface TelegramBotProposalData {
     scenarios: { name: string; description: string }[];
   };
   /** Этапы разработки (инфографика) */
+  stages: {
+    title: string;
+    steps: { name: string; description?: string }[];
+  };
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    description: string;
+    /** Подпись к блоку цены (например «Бот + подготовка интеграции с 1С») */
+    cardSubtitle?: string;
+    deliverables?: { label: string; value: string }[];
+  };
+}
+
+/** КП под разработку сервиса/платформы: админки, приложения, доставка, каталог */
+export interface PlatformProposalData {
+  type: "platform";
+  clientName: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments?: string[];
+  };
+  /** Модули сервиса: админ вендера, админ системы, мобильное приложение, веб, Telegram, ЛК клиента, доставка, каталог */
+  modules: {
+    title: string;
+    items: { name: string; description: string }[];
+  };
+  /** Направления (например: ювелирка, еда, косметика) */
+  directions: {
+    title: string;
+    items: string[];
+  };
   stages: {
     title: string;
     steps: { name: string; description?: string }[];

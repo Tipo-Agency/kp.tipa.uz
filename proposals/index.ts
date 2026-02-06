@@ -1,4 +1,4 @@
-import type { ProposalData, WebsiteProposalData, TelegramBotProposalData } from "../types";
+import type { ProposalData, WebsiteProposalData, TelegramBotProposalData, PlatformProposalData } from "../types";
 import { yangiOzbekistonRestaurant } from "./yangi-ozbekiston-restaurant";
 import { jaquarUzbSantehnika } from "./jaquar-uzb-santehnika";
 import { onlyouTashkent } from "./onlyou-tashkent";
@@ -10,8 +10,10 @@ import { luvioUz } from "./luvio-uz";
 import { carvilleAsia } from "./carville-asia";
 import { telegramBotTemplate } from "./telegram-bot-template";
 import { arzonAptekaBot } from "./arzon-apteka-bot";
+import { cavalierUz } from "./cavalier-uz";
+import { platform19m } from "./platform-19m";
 
-export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData> = {
+export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
   "jaquar-uzb-santehnika": jaquarUzbSantehnika,
   "onlyou-tashkent": onlyouTashkent,
@@ -23,9 +25,11 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "baholding-website": baholdingWebsite,
   "telegram-bot": telegramBotTemplate,
   "arzon-apteka-bot": arzonAptekaBot,
+  "cavalier-uz": cavalierUz,
+  "platform-19m": platform19m,
 };
 
-export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData;
+export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData;
 
 export function getProposal(slug: string | undefined): AnyProposal | undefined {
   if (!slug) return undefined;
@@ -38,4 +42,8 @@ export function isWebsiteProposal(p: AnyProposal | undefined): p is WebsitePropo
 
 export function isTelegramBotProposal(p: AnyProposal | undefined): p is TelegramBotProposalData {
   return p != null && "type" in p && p.type === "telegram-bot";
+}
+
+export function isPlatformProposal(p: AnyProposal | undefined): p is PlatformProposalData {
+  return p != null && "type" in p && p.type === "platform";
 }

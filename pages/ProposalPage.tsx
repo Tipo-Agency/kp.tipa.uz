@@ -27,7 +27,12 @@ import { AdminPanel } from "../components/TelegramBotBlocks/AdminPanel";
 import { UsageScenarios } from "../components/TelegramBotBlocks/UsageScenarios";
 import { BotStages } from "../components/TelegramBotBlocks/BotStages";
 import { BotPricing } from "../components/TelegramBotBlocks/BotPricing";
-import { getProposal, isWebsiteProposal, isTelegramBotProposal } from "../proposals";
+import { PlatformHook } from "../components/PlatformBlocks/PlatformHook";
+import { PlatformModules } from "../components/PlatformBlocks/PlatformModules";
+import { PlatformDirections } from "../components/PlatformBlocks/PlatformDirections";
+import { PlatformStages } from "../components/PlatformBlocks/PlatformStages";
+import { PlatformPricing } from "../components/PlatformBlocks/PlatformPricing";
+import { getProposal, isWebsiteProposal, isTelegramBotProposal, isPlatformProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
 
 export const ProposalPage: React.FC = () => {
@@ -52,6 +57,45 @@ export const ProposalPage: React.FC = () => {
 
   if (!proposal) return <NotFoundPage />;
 
+  if (isPlatformProposal(proposal)) {
+    return (
+      <div className="bg-white overflow-x-hidden w-full">
+        <div className="reveal">
+          <PlatformHook
+            clientName={proposal.clientName}
+            title={proposal.hook.title}
+            subtitle={proposal.hook.subtitle}
+            arguments={proposal.hook.arguments}
+          />
+        </div>
+        <div className="reveal">
+          <PlatformModules title={proposal.modules.title} items={proposal.modules.items} />
+        </div>
+        <div className="reveal">
+          <PlatformDirections title={proposal.directions.title} items={proposal.directions.items} />
+        </div>
+        <div className="reveal">
+          <PlatformStages title={proposal.stages.title} steps={proposal.stages.steps} />
+        </div>
+        <div className="reveal">
+          <PlatformPricing
+            amount={proposal.pricing.amount}
+            currency={proposal.pricing.currency}
+            period={proposal.pricing.period}
+            description={proposal.pricing.description}
+            deliverables={proposal.pricing.deliverables}
+          />
+        </div>
+        <footer className="py-12 bg-white text-center border-t border-slate-100">
+          <img src="/лого типа агентства.svg" alt="Типа агентство" className="h-8 md:h-9 w-auto mx-auto mb-6" />
+          <p className="text-slate-400 text-xs font-semibold tracking-widest uppercase">
+            ТИПА АГЕНТСТВО © {new Date().getFullYear()}
+          </p>
+        </footer>
+      </div>
+    );
+  }
+
   if (isTelegramBotProposal(proposal)) {
     return (
       <div className="bg-white overflow-x-hidden w-full">
@@ -66,13 +110,23 @@ export const ProposalPage: React.FC = () => {
         <div className="reveal">
           <BotFeatures title={proposal.features.title} items={proposal.features.items} />
         </div>
-        <div className="reveal">
-          <AdminPanel
-            title={proposal.adminPanel.title}
-            description={proposal.adminPanel.description}
-            items={proposal.adminPanel.items}
-          />
-        </div>
+        {proposal.integration ? (
+          <div className="reveal">
+            <AdminPanel
+              title={proposal.integration.title}
+              description={proposal.integration.description}
+              items={proposal.integration.items}
+            />
+          </div>
+        ) : proposal.adminPanel ? (
+          <div className="reveal">
+            <AdminPanel
+              title={proposal.adminPanel.title}
+              description={proposal.adminPanel.description}
+              items={proposal.adminPanel.items}
+            />
+          </div>
+        ) : null}
         <div className="reveal">
           <UsageScenarios title={proposal.usageScenarios.title} scenarios={proposal.usageScenarios.scenarios} />
         </div>
@@ -85,6 +139,7 @@ export const ProposalPage: React.FC = () => {
             currency={proposal.pricing.currency}
             period={proposal.pricing.period}
             description={proposal.pricing.description}
+            cardSubtitle={proposal.pricing.cardSubtitle}
             deliverables={proposal.pricing.deliverables}
           />
         </div>
