@@ -99,10 +99,10 @@ export interface PlatformProposalData {
     subtitle: string;
     arguments?: string[];
   };
-  /** Модули сервиса: админ вендера, админ системы, мобильное приложение, веб, Telegram, ЛК клиента, доставка, каталог */
+  /** Модули сервиса с функционалом для инфографики */
   modules: {
     title: string;
-    items: { name: string; description: string }[];
+    items: { name: string; description: string; features?: string[] }[];
   };
   /** Направления (например: ювелирка, еда, косметика) */
   directions: {

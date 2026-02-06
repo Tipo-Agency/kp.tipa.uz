@@ -32,6 +32,7 @@ import { PlatformModules } from "../components/PlatformBlocks/PlatformModules";
 import { PlatformDirections } from "../components/PlatformBlocks/PlatformDirections";
 import { PlatformStages } from "../components/PlatformBlocks/PlatformStages";
 import { PlatformPricing } from "../components/PlatformBlocks/PlatformPricing";
+import { PlatformEcosystemInfographic } from "../components/PlatformBlocks/PlatformEcosystemInfographic";
 import { getProposal, isWebsiteProposal, isTelegramBotProposal, isPlatformProposal } from "../proposals";
 import { NotFoundPage } from "./NotFoundPage";
 
@@ -70,6 +71,9 @@ export const ProposalPage: React.FC = () => {
         </div>
         <div className="reveal">
           <PlatformModules title={proposal.modules.title} items={proposal.modules.items} />
+        </div>
+        <div className="reveal">
+          <PlatformEcosystemInfographic title="Функционал каждой единицы экосистемы" items={proposal.modules.items} />
         </div>
         <div className="reveal">
           <PlatformDirections title={proposal.directions.title} items={proposal.directions.items} />
