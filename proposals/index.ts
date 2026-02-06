@@ -16,6 +16,7 @@ import { sirenPremium } from "./siren-premium";
 import { fableUz } from "./fable-uz";
 import { micheleCafeBoutique } from "./michele-cafe-boutique";
 import { dimAndDream } from "./dim-and-dream";
+import { travelAgency } from "./travel-agency";
 import { platform19m } from "./platform-19m";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
@@ -36,6 +37,7 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "fable-uz": fableUz,
   "michele-cafe-boutique": micheleCafeBoutique,
   "dim-and-dream": dimAndDream,
+  "travel-agency": travelAgency,
   "platform-19m": platform19m,
 };
 
