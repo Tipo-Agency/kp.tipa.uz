@@ -153,7 +153,7 @@ export const travelAgency: ProposalData = {
     },
   ],
   pricing: {
-    amount: "8 000 000",
+    amount: "9 000 000",
     currency: "сум",
     period: "месяц",
     team: [

@@ -154,7 +154,7 @@ export const kyotoUz: ProposalData = {
     },
   ],
   pricing: {
-    amount: "8 000 000",
+    amount: "6 000 000",
     currency: "сум",
     period: "месяц",
     team: [
