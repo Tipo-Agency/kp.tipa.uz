@@ -97,6 +97,8 @@ export interface PlatformProposalData {
   hook: {
     title: string;
     subtitle: string;
+    /** Выделенная часть заголовка (например «(для вашего проекта)») — показывается зелёным */
+    titleHighlight?: string;
     arguments?: string[];
   };
   /** Модули сервиса с функционалом для инфографики */
