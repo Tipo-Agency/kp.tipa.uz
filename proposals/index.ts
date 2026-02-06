@@ -11,6 +11,11 @@ import { carvilleAsia } from "./carville-asia";
 import { telegramBotTemplate } from "./telegram-bot-template";
 import { arzonAptekaBot } from "./arzon-apteka-bot";
 import { cavalierUz } from "./cavalier-uz";
+import { kyotoUz } from "./kyoto-uz";
+import { sirenPremium } from "./siren-premium";
+import { fableUz } from "./fable-uz";
+import { micheleCafeBoutique } from "./michele-cafe-boutique";
+import { dimAndDream } from "./dim-and-dream";
 import { platform19m } from "./platform-19m";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
@@ -26,6 +31,11 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "telegram-bot": telegramBotTemplate,
   "arzon-apteka-bot": arzonAptekaBot,
   "cavalier-uz": cavalierUz,
+  "kyoto-uz": kyotoUz,
+  "siren-premium": sirenPremium,
+  "fable-uz": fableUz,
+  "michele-cafe-boutique": micheleCafeBoutique,
+  "dim-and-dream": dimAndDream,
   "platform-19m": platform19m,
 };
 
