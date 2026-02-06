@@ -13,7 +13,7 @@ export const jaquarUzbSantehnika: ProposalData = {
     { title: "Продажи", description: "Поддержка лидогенерации: шоурум (B2C) и проекты/HoReCa/дизайнеры (B2B)." },
     { title: "Продвижение", description: "Таргет с отдельными воронками под B2C и B2B. Масштабирование по KPI." },
   ],
-  servicesImageUrl: "/proposals/jaquar-uzb-santehnika/services/services.png",
+  servicesImageUrl: "/shared/services.png",
   servicesDescription:
     "Бренд уже присутствует на рынке Узбекистана — теперь важно усилить позиции, расширить охват и системно развивать коммуникацию. Мы выстраиваем контент и продвижение так, чтобы бренд воспринимался как надёжный выбор в среднем и премиальном сегменте: для розницы — понятность и качество, для проектов — скорость и профессионализм.",
   growthTool: {
@@ -33,7 +33,7 @@ export const jaquarUzbSantehnika: ProposalData = {
       "Дизайн-студии и проектные бюро",
     ],
   },
-  audienceImageUrl: "/proposals/jaquar-uzb-santehnika/audience/audience.png",
+  audienceImageUrl: "/shared/audience.png",
   // 3 картинки для блоков рубрик добавишь позже в public/proposals/jaquar-uzb-santehnika/rubrics/
   rubricBlockImages: [
     "/proposals/jaquar-uzb-santehnika/rubrics/block-1.jpg",

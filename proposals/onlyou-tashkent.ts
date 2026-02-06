@@ -13,7 +13,7 @@ export const onlyouTashkent: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео, создающие эстетику премиального сегмента." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию." },
   ],
-  servicesImageUrl: "/proposals/onlyou-tashkent/services/services.png",
+  servicesImageUrl: "/shared/services.png",
   servicesDescription:
     "Девушки покупают не просто стрижку или маникюр — они покупают уверенность в себе, в том, что мастера не подведут перед важным мероприятием. Потребность в подтверждении своей привлекательности — это то, на чём строится коммуникация: мы продаём не просто услуги, а состояние «всегда красивая», без необходимости ждать особого повода. Заходим через процесс, результат, комфорт и уверенность — что именно в этом месте всё будет на высшем уровне, знакомство со специалистами и гарантия результата.",
   growthTool: {
@@ -33,7 +33,7 @@ export const onlyouTashkent: ProposalData = {
       "Корпоративные клиенты (подарочные сертификаты)",
     ],
   },
-  audienceImageUrl: "/proposals/onlyou-tashkent/audience/audience.png",
+  audienceImageUrl: "/shared/audience.png",
   rubricBlockImages: [
     "/proposals/onlyou-tashkent/rubrics/block-1.jpg",
     "/proposals/onlyou-tashkent/rubrics/block-2.jpg",

@@ -13,7 +13,7 @@ export const yangiOzbekistonRestaurant: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео, создающие эстетику премиального сегмента." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию." },
   ],
-  servicesImageUrl: "/proposals/yangi-ozbekiston-restaurant/services/services.png",
+  servicesImageUrl: "/shared/services.png",
   growthTool: {
     title: "Контент как инструмент запуска бренда",
     description:
@@ -31,7 +31,7 @@ export const yangiOzbekistonRestaurant: ProposalData = {
       "Фуд-блогеры и медиа про город/гастрономию",
     ],
   },
-  audienceImageUrl: "/proposals/yangi-ozbekiston-restaurant/audience/audience.png",
+  audienceImageUrl: "/shared/audience.png",
   rubricBlockImages: [
     "/proposals/yangi-ozbekiston-restaurant/rubrics/block-1.jpg",
     "/proposals/yangi-ozbekiston-restaurant/rubrics/block-2.jpg",

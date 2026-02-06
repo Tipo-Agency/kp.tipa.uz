@@ -13,7 +13,7 @@ export const svezhoFresh: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео продукции, процесса, точек, создающие эстетику здорового образа жизни." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию: приверженцы ЗОЖ, активные горожане, офисные работники." },
   ],
-  servicesImageUrl: "/proposals/svezho-fresh/services/services.png",
+  servicesImageUrl: "/shared/services.png",
   servicesDescription:
     "Сеть уже работает в 12 точках по Ташкенту — теперь важно усилить узнаваемость бренда и системно развивать коммуникацию. Мы продаём это как образ жизни: рекомендации (восполнить суточную дозу витаминов), советы (нужно не только взрослым, но и детям). Как люди не могут без кофе — так не могут без сока. Всегда в движении, яркие краски, энергия и здоровье.",
   growthTool: {
@@ -33,7 +33,7 @@ export const svezhoFresh: ProposalData = {
       "Туристы и гости города, которые хотят попробовать местные здоровые продукты",
     ],
   },
-  audienceImageUrl: "/proposals/svezho-fresh/audience/audience.png",
+  audienceImageUrl: "/shared/audience.png",
   rubricBlockImages: [
     "/proposals/svezho-fresh/rubrics/block-1.jpg",
     "/proposals/svezho-fresh/rubrics/block-2.jpg",

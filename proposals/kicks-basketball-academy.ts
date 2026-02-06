@@ -13,7 +13,7 @@ export const kicksBasketballAcademy: ProposalData = {
     { title: "Визуал", description: "Продакшн высокого уровня: фото и видео тренировок, команды, продукции, создающие эстетику премиального сегмента." },
     { title: "Продвижение", description: "Работа с лидерами мнений и точечный таргетинг на целевую аудиторию: родители, спортсмены, любители баскетбола." },
   ],
-  servicesImageUrl: "/proposals/kicks-basketball-academy/services/services.png",
+  servicesImageUrl: "/shared/services.png",
   servicesDescription:
     "У нас прекрасная база: не только магазин, но и академия. По итогу мы продаём мечту: мечту забросить свой первый трёхочковый, мечту сыграть где-нибудь в Америке. Коммуникация должна быть пронизана этим: люди одеваются и играют, потому что видят себя такими — и мы поможем им такими стать.",
   growthTool: {
@@ -33,7 +33,7 @@ export const kicksBasketballAcademy: ProposalData = {
       "Организаторы спортивных мероприятий и турниров",
     ],
   },
-  audienceImageUrl: "/proposals/kicks-basketball-academy/audience/audience.png",
+  audienceImageUrl: "/shared/audience.png",
   rubricBlockImages: [
     "/proposals/kicks-basketball-academy/rubrics/block-1.jpg",
     "/proposals/kicks-basketball-academy/rubrics/block-2.jpg",
