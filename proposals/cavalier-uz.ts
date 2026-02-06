@@ -52,8 +52,8 @@ export const cavalierUz: ProposalData = {
   },
   rubricBlockImages: [
     "/proposals/cavalier-uz/rubrics/рубрика1.jpg",
-    "/proposals/cavalier-uz/rubrics/рубрика2.jpg",
-    "/proposals/cavalier-uz/rubrics/рубрика3.jpg",
+    "/proposals/cavalier-uz/rubrics/рубрик2.jpg",
+    "/proposals/cavalier-uz/rubrics/рубрик3.jpg",
   ],
   rubrics: [
     {
@@ -66,13 +66,13 @@ export const cavalierUz: ProposalData = {
       title: "Новинки и коллекции",
       description:
         "New 2026, сезонные капсулы: презентация новинок в едином стиле. Не просто «привезли куртку» — история и контекст, почему это стоит внимания.",
-      imageUrl: "/proposals/cavalier-uz/rubrics/рубрика2.jpg",
+      imageUrl: "/proposals/cavalier-uz/rubrics/рубрик2.jpg",
     },
     {
       title: "Акции и скидки",
       description:
         "50%, сезонные распродажи: чёткие офферы, сроки и призыв к действию. В сторис — быстрые напоминания; в ленте — сильные визуалы, чтобы акция запомнилась.",
-      imageUrl: "/proposals/cavalier-uz/rubrics/рубрика3.jpg",
+      imageUrl: "/proposals/cavalier-uz/rubrics/рубрик3.jpg",
     },
     {
       title: "Доставка и магазины",
