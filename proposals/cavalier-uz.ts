@@ -51,28 +51,28 @@ export const cavalierUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/cavalier-uz/rubrics/rubrika1.jpg",
-    "/proposals/cavalier-uz/rubrics/rubrika2.jpg",
-    "/proposals/cavalier-uz/rubrics/rubrika3.jpg",
+    "/proposals/cavalier-uz/rubrics/рубрика1.jpg",
+    "/proposals/cavalier-uz/rubrics/рубрика2.jpg",
+    "/proposals/cavalier-uz/rubrics/рубрика3.jpg",
   ],
   rubrics: [
     {
       title: "Looks и готовые образы",
       description:
         "«Соберём элегантный образ» — в контенте: луки из коллекции, сочетания вещей, примеры под разные поводы. Так снижаем порог выбора и повышаем средний чек.",
-      imageUrl: "/proposals/cavalier-uz/rubrics/rubrika1.jpg",
+      imageUrl: "/proposals/cavalier-uz/rubrics/рубрика1.jpg",
     },
     {
       title: "Новинки и коллекции",
       description:
         "New 2026, сезонные капсулы: презентация новинок в едином стиле. Не просто «привезли куртку» — история и контекст, почему это стоит внимания.",
-      imageUrl: "/proposals/cavalier-uz/rubrics/rubrika2.jpg",
+      imageUrl: "/proposals/cavalier-uz/rubrics/рубрика2.jpg",
     },
     {
       title: "Акции и скидки",
       description:
         "50%, сезонные распродажи: чёткие офферы, сроки и призыв к действию. В сторис — быстрые напоминания; в ленте — сильные визуалы, чтобы акция запомнилась.",
-      imageUrl: "/proposals/cavalier-uz/rubrics/rubrika3.jpg",
+      imageUrl: "/proposals/cavalier-uz/rubrics/рубрика3.jpg",
     },
     {
       title: "Доставка и магазины",
@@ -98,27 +98,27 @@ export const cavalierUz: ProposalData = {
     description:
       "Мужская одежда премиум-сегмента в Ташкенте: два магазина, доставка, сайт и Telegram. В Instagram мы делаем так, чтобы каждый пост и сторис усиливали образ «стильно, понятно, можно заказать или приехать» — и вели к действию.",
     images: [
-      "/proposals/cavalier-uz/positioning/poz1.jpg",
-      "/proposals/cavalier-uz/positioning/poz2.jpg",
-      "/proposals/cavalier-uz/positioning/poz3.jpg",
-      "/proposals/cavalier-uz/positioning/poz4.jpg",
+      "/proposals/cavalier-uz/positioning/позиц1.jpg",
+      "/proposals/cavalier-uz/positioning/позиц2.jpg",
+      "/proposals/cavalier-uz/positioning/позиц3.jpg",
+      "/proposals/cavalier-uz/positioning/позиц4.jpg",
     ],
   },
   visuals: [
     // Фотографии в визуальной сетке специально расставлены не по порядку названий файлов,
     // чтобы лента выглядела живой и «в разброс», а не по прямой последовательности.
-    "/proposals/cavalier-uz/visuals/post7.jpg",
-    "/proposals/cavalier-uz/visuals/post2.jpg",
-    "/proposals/cavalier-uz/visuals/post10.jpg",
-    "/proposals/cavalier-uz/visuals/post4.jpg",
-    "/proposals/cavalier-uz/visuals/post1.jpg",
-    "/proposals/cavalier-uz/visuals/post9.jpg",
-    "/proposals/cavalier-uz/visuals/post3.jpg",
-    "/proposals/cavalier-uz/visuals/post12.jpg",
-    "/proposals/cavalier-uz/visuals/post5.jpg",
-    "/proposals/cavalier-uz/visuals/post8.jpg",
-    "/proposals/cavalier-uz/visuals/post11.jpg",
-    "/proposals/cavalier-uz/visuals/post6.jpg",
+    "/proposals/cavalier-uz/visuals/пост7.jpg",
+    "/proposals/cavalier-uz/visuals/пост2.jpg",
+    "/proposals/cavalier-uz/visuals/пост10.jpg",
+    "/proposals/cavalier-uz/visuals/пост4.jpg",
+    "/proposals/cavalier-uz/visuals/пост3.jpg",
+    "/proposals/cavalier-uz/visuals/пост9.jpg",
+    "/proposals/cavalier-uz/visuals/пост12.jpg",
+    "/proposals/cavalier-uz/visuals/пост5.jpg",
+    "/proposals/cavalier-uz/visuals/пост8.jpg",
+    "/proposals/cavalier-uz/visuals/пост11.jpg",
+    "/proposals/cavalier-uz/visuals/пост6.jpg",
+    "/proposals/cavalier-uz/visuals/пост13.jpg",
   ],
   ads: [
     {
@@ -138,7 +138,7 @@ export const cavalierUz: ProposalData = {
     },
   ],
   pricing: {
-    amount: "от 8 000 000",
+    amount: "6 000 000",
     currency: "сум",
     period: "месяц",
     team: [
@@ -149,7 +149,7 @@ export const cavalierUz: ProposalData = {
       "Комьюнити-менеджер",
     ],
     deliverables: [
-      { label: "Съёмки в месяц", value: "3–4 выезда" },
+      { label: "Съёмки в месяц", value: "2 выезда" },
       { label: "Reels / видео", value: "6–8 роликов" },
       { label: "Посты в ленту", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
