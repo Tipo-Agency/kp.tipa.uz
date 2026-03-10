@@ -51,28 +51,28 @@ export const shefII: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/shef-ii/rubrics/rubrika1.jpg",
-    "/proposals/shef-ii/rubrics/rubrika2.jpg",
-    "/proposals/shef-ii/rubrics/rubrika3.jpg",
+    "/proposals/shef-ii/rubrics/890f9c92ec596d4b9f96f1e62346ad90.jpg",
+    "/proposals/shef-ii/rubrics/b084f2580230ec6e5f46d708e8759e71.jpg",
+    "/proposals/shef-ii/rubrics/cd99da2428e9c6796023f94522fcfe3f.jpg",
   ],
   rubrics: [
     {
       title: "Демки Шеф ИИ",
       description:
         "Реальные сценарии: «что у меня в холодильнике» → «что Шеф ИИ предлагает приготовить». Коротко, динамично, с акцентом на результате.",
-      imageUrl: "",
+      imageUrl: "/proposals/shef-ii/rubrics/890f9c92ec596d4b9f96f1e62346ad90.jpg",
     },
     {
       title: "Рецепты по ситуациям",
       description:
         "Завтрак за 10 минут, ужин из остатков, ланч-бокс на работу, рецепты для детей. Форматы, которые закрывают конкретные поводы.",
-      imageUrl: "",
+      imageUrl: "/proposals/shef-ii/rubrics/b084f2580230ec6e5f46d708e8759e71.jpg",
     },
     {
       title: "Обучение и гайды",
       description:
         "Как правильно «показать» продукты ИИ, как уточнять запрос, как сохранять рецепты и делиться ими. Снижаем барьер входа.",
-      imageUrl: "",
+      imageUrl: "/proposals/shef-ii/rubrics/cd99da2428e9c6796023f94522fcfe3f.jpg",
     },
     {
       title: "Отзывы и истории пользователей",
@@ -116,25 +116,27 @@ export const shefII: ProposalData = {
     description:
       "Позиционируем Шеф ИИ как простого, понятного помощника, который решает головную боль «что приготовить» и не требует кулинарных навыков. Это не сложный ИИ-сервис, а инструмент, который говорит на языке кухни и бытовых задач.",
     images: [
-      "/proposals/shef-ii/positioning/poz1.jpg",
-      "/proposals/shef-ii/positioning/poz2.jpg",
-      "/proposals/shef-ii/positioning/poz3.jpg",
-      "/proposals/shef-ii/positioning/poz4.jpg",
+      "/proposals/shef-ii/positioning/37e12485210b7f0e39941292f09061d5.jpg",
+      "/proposals/shef-ii/positioning/563d0b34bc681b6a5e9c44db6efb275e.jpg",
+      "/proposals/shef-ii/positioning/bcc5d6640d04d2defab80754ce33585c.jpg",
+      "/proposals/shef-ii/positioning/c65b81032b4a94d684b8d175a0ed5443.jpg",
     ],
   },
   visuals: [
-    "/proposals/shef-ii/visuals/post1.jpg",
-    "/proposals/shef-ii/visuals/post2.jpg",
-    "/proposals/shef-ii/visuals/post3.jpg",
-    "/proposals/shef-ii/visuals/post4.jpg",
-    "/proposals/shef-ii/visuals/post5.jpg",
-    "/proposals/shef-ii/visuals/post6.jpg",
-    "/proposals/shef-ii/visuals/post7.jpg",
-    "/proposals/shef-ii/visuals/post8.jpg",
-    "/proposals/shef-ii/visuals/post9.jpg",
-    "/proposals/shef-ii/visuals/post10.jpg",
-    "/proposals/shef-ii/visuals/post11.jpg",
-    "/proposals/shef-ii/visuals/post12.jpg",
+    "/proposals/shef-ii/visuals/294ded7b25ea42a17292521f37934a0f.jpg",
+    "/proposals/shef-ii/visuals/375cd1fa78758172d72b94de4d1f0f88.jpg",
+    "/proposals/shef-ii/visuals/4f847586905e223be55ad147757fe259.jpg",
+    "/proposals/shef-ii/visuals/89b4c58b976fe0a4fbb2e2bbb04c0477.jpg",
+    "/proposals/shef-ii/visuals/8c7062dee5c5fe74edc1162559c63c98.jpg",
+    "/proposals/shef-ii/visuals/9cb8027aa10334ad69cb35c2dda4cf43.jpg",
+    "/proposals/shef-ii/visuals/9ce7998470fd895318536595f1d39728.jpg",
+    "/proposals/shef-ii/visuals/a2c42a45d266eebaea7a51f70c78182e.jpg",
+    "/proposals/shef-ii/visuals/a662a39af19f1a491a1909401abc2150.jpg",
+    "/proposals/shef-ii/visuals/a66343520ea8ecee9bd93c8c0d432f3e.jpg",
+    "/proposals/shef-ii/visuals/ade22f1fb85680036079680bc9aa2f5f.jpg",
+    "/proposals/shef-ii/visuals/dce29488f2927908ca48adbee649d54f.jpg",
+    // 13-я картинка — дублируем одну из существующих
+    "/proposals/shef-ii/visuals/efc5d72ff1157bb6b37b9b107e291c29.jpg",
   ],
   ads: [
     {

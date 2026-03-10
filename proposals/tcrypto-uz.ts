@@ -51,28 +51,28 @@ export const tcryptoUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/tcrypto-uz/rubrics/rubrika1.jpg",
-    "/proposals/tcrypto-uz/rubrics/rubrika2.jpg",
-    "/proposals/tcrypto-uz/rubrics/rubrika3.jpg",
+    "/proposals/tcrypto-uz/rubrics/6492be3f36e5d29421162deed79aba3a.jpg",
+    "/proposals/tcrypto-uz/rubrics/f0951dfd5fc3d92d067b6108ebe04d4c.jpg",
+    "/proposals/tcrypto-uz/rubrics/f93523de39f0ecaaa878254462c8d9c5.jpg",
   ],
   rubrics: [
     {
       title: "Как работает TCrypto",
       description:
         "Пошаговые объяснения процесса обмена: от заявки до получения средств. Скринкасты, схемы, короткие ролики.",
-      imageUrl: "",
+      imageUrl: "/proposals/tcrypto-uz/rubrics/6492be3f36e5d29421162deed79aba3a.jpg",
     },
     {
       title: "Курсы и комиссии",
       description:
         "Прозрачная информация о курсах, комиссиях и лимитах. Объясняем, откуда берётся курс и что влияет на итоговую сумму.",
-      imageUrl: "",
+      imageUrl: "/proposals/tcrypto-uz/rubrics/f0951dfd5fc3d92d067b6108ebe04d4c.jpg",
     },
     {
       title: "Безопасность и риски",
       description:
         "Какие меры безопасности вы используете, как защищены клиентские средства и данные. Контент, который отвечает на страхи напрямую.",
-      imageUrl: "",
+      imageUrl: "/proposals/tcrypto-uz/rubrics/f93523de39f0ecaaa878254462c8d9c5.jpg",
     },
     {
       title: "Отзывы и кейсы клиентов",
@@ -116,25 +116,25 @@ export const tcryptoUz: ProposalData = {
     description:
       "Позиционируем TCrypto как сервис, которому можно доверить обмен: понятный процесс, прозрачные условия, живая поддержка. В отличие от анонимных чатов и серых схем, вы показываете лицо и правила игры.",
     images: [
-      "/proposals/tcrypto-uz/positioning/poz1.jpg",
-      "/proposals/tcrypto-uz/positioning/poz2.jpg",
-      "/proposals/tcrypto-uz/positioning/poz3.jpg",
-      "/proposals/tcrypto-uz/positioning/poz4.jpg",
+      "/proposals/tcrypto-uz/positioning/09f93b5cc1a17cd5939c9c054d8e2875.jpg",
+      "/proposals/tcrypto-uz/positioning/163a5332c94964a29d39142153d6fd46.jpg",
+      "/proposals/tcrypto-uz/positioning/593b4863c491c24871308b064abd5900.jpg",
+      "/proposals/tcrypto-uz/positioning/ae4148df98fdaf63907f08a98882b8a3.jpg",
     ],
   },
   visuals: [
-    "/proposals/tcrypto-uz/visuals/post1.jpg",
-    "/proposals/tcrypto-uz/visuals/post2.jpg",
-    "/proposals/tcrypto-uz/visuals/post3.jpg",
-    "/proposals/tcrypto-uz/visuals/post4.jpg",
-    "/proposals/tcrypto-uz/visuals/post5.jpg",
-    "/proposals/tcrypto-uz/visuals/post6.jpg",
-    "/proposals/tcrypto-uz/visuals/post7.jpg",
-    "/proposals/tcrypto-uz/visuals/post8.jpg",
-    "/proposals/tcrypto-uz/visuals/post9.jpg",
-    "/proposals/tcrypto-uz/visuals/post10.jpg",
-    "/proposals/tcrypto-uz/visuals/post11.jpg",
-    "/proposals/tcrypto-uz/visuals/post12.jpg",
+    "/proposals/tcrypto-uz/visuals/3825dc3772e1a5f6e4396123864ffe05.jpg",
+    "/proposals/tcrypto-uz/visuals/3af80817209fee674aea94db3c81582a.jpg",
+    "/proposals/tcrypto-uz/visuals/3dbc5b87c6a5ec088b9531d932f00ecd.jpg",
+    "/proposals/tcrypto-uz/visuals/594d2a3a463323bfa1940926309c100a.jpg",
+    "/proposals/tcrypto-uz/visuals/73ca5dc26a33e52e85d99dedaf37b20d.jpg",
+    "/proposals/tcrypto-uz/visuals/800c0da79c5963e0855b4c6b4790babd.jpg",
+    "/proposals/tcrypto-uz/visuals/83d16cfd0086b3291e9d9ae8d1527b55.jpg",
+    "/proposals/tcrypto-uz/visuals/968177b6c6fcfffc724c5cc13b2e8ad8.jpg",
+    "/proposals/tcrypto-uz/visuals/a6e1b12b2691ac20aa5af20d14f505ca.jpg",
+    "/proposals/tcrypto-uz/visuals/b82231fe913c96ad2c360dc73cb528e4.jpg",
+    "/proposals/tcrypto-uz/visuals/d2f54ea95195bec20faeaf6217ec082a.jpg",
+    "/proposals/tcrypto-uz/visuals/e49699cec783407884f11d5602eeda1d.jpg",
   ],
   ads: [
     {

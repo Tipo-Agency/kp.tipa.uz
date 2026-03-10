@@ -51,28 +51,28 @@ export const liberandumAI: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/liberandum-ai/rubrics/rubrika1.jpg",
-    "/proposals/liberandum-ai/rubrics/rubrika2.jpg",
-    "/proposals/liberandum-ai/rubrics/rubrika3.jpg",
+    "/proposals/liberandum-ai/rubrics/40f6a47d1c5601b685842fbb6e2e6b0e.jpg",
+    "/proposals/liberandum-ai/rubrics/462d9ec4118b24a81a88fe16f78a09f1.jpg",
+    "/proposals/liberandum-ai/rubrics/e92b4490b478e95fff2375daeacbd8f6.jpg",
   ],
   rubrics: [
     {
       title: "Кейсы по отраслям",
       description:
         "Истории внедрения ИИ в разных нишах: e-commerce, финансы, логистика, образование и т.д. Что делали, какие метрики выросли.",
-      imageUrl: "",
+      imageUrl: "/proposals/liberandum-ai/rubrics/40f6a47d1c5601b685842fbb6e2e6b0e.jpg",
     },
     {
       title: "Продукты и фичи",
       description:
         "Обзоры ключевых продуктов Liberandum AI: что делают, для кого, какие задачи закрывают. Формат «один пост — одна фича/продукт».",
-      imageUrl: "",
+      imageUrl: "/proposals/liberandum-ai/rubrics/462d9ec4118b24a81a88fe16f78a09f1.jpg",
     },
     {
       title: "Разбор запросов бизнеса",
       description:
         "Берём типичные запросы («хочу чат-бота», «хочу автоматизировать поддержку»), объясняем, как это решать грамотно и где ИИ реально полезен.",
-      imageUrl: "",
+      imageUrl: "/proposals/liberandum-ai/rubrics/e92b4490b478e95fff2375daeacbd8f6.jpg",
     },
     {
       title: "Обучающий контент",
@@ -116,25 +116,26 @@ export const liberandumAI: ProposalData = {
     description:
       "Позиционируем Liberandum AI как команду, которая берёт на себя путь от идеи до результата: от формулировки задачи и пилота до масштабирования. В контенте — минимум хайпа, максимум реальных сценариев и понятных выгод.",
     images: [
-      "/proposals/liberandum-ai/positioning/poz1.jpg",
-      "/proposals/liberandum-ai/positioning/poz2.jpg",
-      "/proposals/liberandum-ai/positioning/poz3.jpg",
-      "/proposals/liberandum-ai/positioning/poz4.jpg",
+      "/proposals/liberandum-ai/positioning/bc38a3199e9443ab069d020599bcc4ee.jpg",
+      "/proposals/liberandum-ai/positioning/ee31e0569fcb26e66f7faa8fc2ab4c79.jpg",
+      "/proposals/liberandum-ai/positioning/ee31e0569fcb26e66f7faa8fc2ab4c79 (1).jpg",
+      "/proposals/liberandum-ai/positioning/Без названия (2).png",
     ],
   },
   visuals: [
-    "/proposals/liberandum-ai/visuals/post1.jpg",
-    "/proposals/liberandum-ai/visuals/post2.jpg",
-    "/proposals/liberandum-ai/visuals/post3.jpg",
-    "/proposals/liberandum-ai/visuals/post4.jpg",
-    "/proposals/liberandum-ai/visuals/post5.jpg",
-    "/proposals/liberandum-ai/visuals/post6.jpg",
-    "/proposals/liberandum-ai/visuals/post7.jpg",
-    "/proposals/liberandum-ai/visuals/post8.jpg",
-    "/proposals/liberandum-ai/visuals/post9.jpg",
-    "/proposals/liberandum-ai/visuals/post10.jpg",
-    "/proposals/liberandum-ai/visuals/post11.jpg",
-    "/proposals/liberandum-ai/visuals/post12.jpg",
+    "/proposals/liberandum-ai/visuals/19b1f0f36879423be35f20ac46461bc3.jpg",
+    "/proposals/liberandum-ai/visuals/2a858adf40f14f6ae8ef036c104ac235.jpg",
+    "/proposals/liberandum-ai/visuals/2e4d9ccda326225932491f3b89e35b9d.jpg",
+    "/proposals/liberandum-ai/visuals/3864649edaad6737621dc4d7ef538d7f.jpg",
+    "/proposals/liberandum-ai/visuals/49e57b391f6a17494038355103467994.jpg",
+    "/proposals/liberandum-ai/visuals/7e60da7ae59309adb716f1b8a29143c5.jpg",
+    "/proposals/liberandum-ai/visuals/8ea01dfd3675ef51c4b85e53bcf9f35a.jpg",
+    "/proposals/liberandum-ai/visuals/9fffdb487a19c87045e1104193676c36.jpg",
+    "/proposals/liberandum-ai/visuals/a739bee00ccd5c7ac859c48a772796e8.jpg",
+    "/proposals/liberandum-ai/visuals/f15e71b099330088cfd2902f56280782.jpg",
+    "/proposals/liberandum-ai/visuals/Без названия (2).png",
+    // 12-я картинка — дублируем одну из существующих, чтобы сетка была заполнена
+    "/proposals/liberandum-ai/positioning/bc38a3199e9443ab069d020599bcc4ee.jpg",
   ],
   ads: [
     {
