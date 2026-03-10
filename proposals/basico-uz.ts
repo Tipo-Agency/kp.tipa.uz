@@ -119,6 +119,8 @@ export const basicoUz: ProposalData = {
       "/proposals/basico-uz/positioning/05aae707da0730087b5f232ee172fc1d.jpg",
       "/proposals/basico-uz/positioning/20f0fee4d29cb3723a465c5b2adfeff6.jpg",
       "/proposals/basico-uz/positioning/f7083e03b6337f71cafe05419de2d657.jpg",
+      // Четвёртый кадр — дублируем первый, чтобы сетка была полной
+      "/proposals/basico-uz/positioning/05aae707da0730087b5f232ee172fc1d.jpg",
     ],
   },
   visuals: [
