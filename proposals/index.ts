@@ -19,6 +19,9 @@ import { dimAndDream } from "./dim-and-dream";
 import { travelAgency } from "./travel-agency";
 import { platform19m } from "./platform-19m";
 import { basicoUz } from "./basico-uz";
+import { shefII } from "./shef-ii";
+import { tcryptoUz } from "./tcrypto-uz";
+import { liberandumAI } from "./liberandum-ai";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -40,6 +43,9 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "dim-and-dream": dimAndDream,
   "travel-agency": travelAgency,
   "basico-uz": basicoUz,
+  "shef-ii": shefII,
+  "tcrypto-uz": tcryptoUz,
+  "liberandum-ai": liberandumAI,
   "platform-19m": platform19m,
 };
 
