@@ -51,28 +51,28 @@ export const basicoUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/basico-uz/rubrics/rubrika1.jpg",
-    "/proposals/basico-uz/rubrics/rubrika2.jpg",
-    "/proposals/basico-uz/rubrics/rubrika3.jpg",
+    "/proposals/basico-uz/rubrics/2af493f01f384f35438f671311653dd8.jpg",
+    "/proposals/basico-uz/rubrics/8b10f71adbc5a8687639a49b5b6c549d.jpg",
+    "/proposals/basico-uz/rubrics/8f1052f9cb1e0bf9a8efa777f1a9ec5a.jpg",
   ],
   rubrics: [
     {
       title: "Производство изнутри",
       description:
         "Цех, пошив, процессы: раскрой, пошив, сборка, упаковка. Коротко и динамично — чтобы было видно масштаб и порядок.",
-      imageUrl: "",
+      imageUrl: "/proposals/basico-uz/rubrics/2af493f01f384f35438f671311653dd8.jpg",
     },
     {
       title: "Брендирование (нанесение)",
       description:
         "Линии брендирования: принты, вышивка, шевроны, маркировка. Показываем варианты и качество вблизи.",
-      imageUrl: "",
+      imageUrl: "/proposals/basico-uz/rubrics/8b10f71adbc5a8687639a49b5b6c549d.jpg",
     },
     {
       title: "Проверка качества",
       description:
         "Контроль качества и тесты: швы, ткань, износ, стирка, стойкость нанесения. Формат «проверяем на камеру».",
-      imageUrl: "",
+      imageUrl: "/proposals/basico-uz/rubrics/8f1052f9cb1e0bf9a8efa777f1a9ec5a.jpg",
     },
     {
       title: "Обзоры изделий",
@@ -116,25 +116,25 @@ export const basicoUz: ProposalData = {
     description:
       "Позиционируем Basico как надёжного партнёра для брендов и компаний: собственный пошив + собственные линии брендирования. Это означает контроль качества, сроки и предсказуемый результат. Контент подчёркивает: вы не «заказываете где-то» — вы производите и отвечаете за каждый этап.",
     images: [
-      "/proposals/basico-uz/positioning/poz1.jpg",
-      "/proposals/basico-uz/positioning/poz2.jpg",
-      "/proposals/basico-uz/positioning/poz3.jpg",
-      "/proposals/basico-uz/positioning/poz4.jpg",
+      "/proposals/basico-uz/positioning/05aae707da0730087b5f232ee172fc1d.jpg",
+      "/proposals/basico-uz/positioning/20f0fee4d29cb3723a465c5b2adfeff6.jpg",
+      "/proposals/basico-uz/positioning/f7083e03b6337f71cafe05419de2d657.jpg",
     ],
   },
   visuals: [
-    "/proposals/basico-uz/visuals/post1.jpg",
-    "/proposals/basico-uz/visuals/post2.jpg",
-    "/proposals/basico-uz/visuals/post3.jpg",
-    "/proposals/basico-uz/visuals/post4.jpg",
-    "/proposals/basico-uz/visuals/post5.jpg",
-    "/proposals/basico-uz/visuals/post6.jpg",
-    "/proposals/basico-uz/visuals/post7.jpg",
-    "/proposals/basico-uz/visuals/post8.jpg",
-    "/proposals/basico-uz/visuals/post9.jpg",
-    "/proposals/basico-uz/visuals/post10.jpg",
-    "/proposals/basico-uz/visuals/post11.jpg",
-    "/proposals/basico-uz/visuals/post12.jpg",
+    "/proposals/basico-uz/visuals/00c3ec5a6fdf55ed9bb6ae85c362915c.jpg",
+    "/proposals/basico-uz/visuals/07f32faf29cdc0192992ca7cd86b98aa.jpg",
+    "/proposals/basico-uz/visuals/11cb0b50c262cff1bc1adcab4567bff2.jpg",
+    "/proposals/basico-uz/visuals/1464737fc9116e0ff305987937f70d37.jpg",
+    "/proposals/basico-uz/visuals/1bba69e96b187c444f544d72370a6652.jpg",
+    "/proposals/basico-uz/visuals/271452aa00419b423907dfde95b4003a.jpg",
+    "/proposals/basico-uz/visuals/2e6148de3a033c5e9f4fbad352b95f38.jpg",
+    "/proposals/basico-uz/visuals/70caa9d4ca48b4b7af3e811cd725f194.jpg",
+    "/proposals/basico-uz/visuals/9085016e0142d9af935b04ee53165716.jpg",
+    "/proposals/basico-uz/visuals/cc68933586497b201fb9f3d972fde75a.jpg",
+    "/proposals/basico-uz/visuals/db025413f8500706f8ffa421464dbf7e.jpg",
+    // 12-я картинка — дублируем одну из позиционирования, чтобы заполнить сетку
+    "/proposals/basico-uz/positioning/05aae707da0730087b5f232ee172fc1d.jpg",
   ],
   ads: [
     {
@@ -198,7 +198,7 @@ export const basicoUz: ProposalData = {
     },
   ],
   pricing: {
-    amount: "8 000 000",
+    amount: "12 000 000",
     currency: "сум",
     period: "месяц",
     team: [
