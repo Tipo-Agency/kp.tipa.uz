@@ -18,6 +18,7 @@ import { micheleCafeBoutique } from "./michele-cafe-boutique";
 import { dimAndDream } from "./dim-and-dream";
 import { travelAgency } from "./travel-agency";
 import { platform19m } from "./platform-19m";
+import { basicoUz } from "./basico-uz";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -38,6 +39,7 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "michele-cafe-boutique": micheleCafeBoutique,
   "dim-and-dream": dimAndDream,
   "travel-agency": travelAgency,
+  "basico-uz": basicoUz,
   "platform-19m": platform19m,
 };
 
