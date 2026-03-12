@@ -22,6 +22,9 @@ import { basicoUz } from "./basico-uz";
 import { shefII } from "./shef-ii";
 import { tcryptoUz } from "./tcrypto-uz";
 import { liberandumAI } from "./liberandum-ai";
+import { tomyumbar } from "./tomyumbar";
+import { galaksiEnergy } from "./galaksi-energy";
+import { laserEpilationStudio } from "./laser-epilation-studio";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -47,6 +50,9 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "tcrypto-uz": tcryptoUz,
   "liberandum-ai": liberandumAI,
   "platform-19m": platform19m,
+  "tomyumbar": tomyumbar,
+  "galaksi-energy": galaksiEnergy,
+  "laser-epilation-studio": laserEpilationStudio,
 };
 
 export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData;
