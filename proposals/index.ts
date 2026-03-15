@@ -25,6 +25,7 @@ import { liberandumAI } from "./liberandum-ai";
 import { tomyumbar } from "./tomyumbar";
 import { galaksiEnergy } from "./galaksi-energy";
 import { laserEpilationStudio } from "./laser-epilation-studio";
+import { yotaGameclub } from "./yota-gameclub";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -53,6 +54,7 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "tomyumbar": tomyumbar,
   "galaksi-energy": galaksiEnergy,
   "laser-epilation-studio": laserEpilationStudio,
+  "yota-gameclub": yotaGameclub,
 };
 
 export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData;
