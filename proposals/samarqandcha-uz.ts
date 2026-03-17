@@ -51,8 +51,8 @@ export const samarqandchaUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/samarqandcha-uz/rubrics/06b828b1f2b2d83fdcbceaa5c208be60.jpg",
     "/proposals/samarqandcha-uz/rubrics/27ea4a32dfdfa0f8cf6c3e02cb1d5687.jpg",
+    "/proposals/samarqandcha-uz/rubrics/06b828b1f2b2d83fdcbceaa5c208be60.jpg",
     "/proposals/samarqandcha-uz/rubrics/99851202916d32f3781cd35c809edbb3.jpg",
   ],
   rubrics: [
@@ -60,13 +60,13 @@ export const samarqandchaUz: ProposalData = {
       title: "Плов — главный герой",
       description:
         "Плов в разных ракурсах: крупные планы, порции, подача. Объясняем, почему он вкусный и чем отличается.",
-      imageUrl: "/proposals/samarqandcha-uz/rubrics/06b828b1f2b2d83fdcbceaa5c208be60.jpg",
+      imageUrl: "/proposals/samarqandcha-uz/rubrics/27ea4a32dfdfa0f8cf6c3e02cb1d5687.jpg",
     },
     {
       title: "Повар и процесс",
       description:
         "Казан, ингредиенты, этапы приготовления. Закулисье кухни, чистота и стандарты.",
-      imageUrl: "/proposals/samarqandcha-uz/rubrics/27ea4a32dfdfa0f8cf6c3e02cb1d5687.jpg",
+      imageUrl: "/proposals/samarqandcha-uz/rubrics/06b828b1f2b2d83fdcbceaa5c208be60.jpg",
     },
     {
       title: "Команда и сервис",
