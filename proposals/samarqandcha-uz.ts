@@ -51,28 +51,28 @@ export const samarqandchaUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/samarqandcha-uz/rubrics/rubrika1.jpg",
-    "/proposals/samarqandcha-uz/rubrics/rubrika2.jpg",
-    "/proposals/samarqandcha-uz/rubrics/rubrika3.jpg",
+    "/proposals/samarqandcha-uz/rubrics/06b828b1f2b2d83fdcbceaa5c208be60.jpg",
+    "/proposals/samarqandcha-uz/rubrics/27ea4a32dfdfa0f8cf6c3e02cb1d5687.jpg",
+    "/proposals/samarqandcha-uz/rubrics/99851202916d32f3781cd35c809edbb3.jpg",
   ],
   rubrics: [
     {
       title: "Плов — главный герой",
       description:
         "Плов в разных ракурсах: крупные планы, порции, подача. Объясняем, почему он вкусный и чем отличается.",
-      imageUrl: "/proposals/samarqandcha-uz/rubrics/rubrika1.jpg",
+      imageUrl: "/proposals/samarqandcha-uz/rubrics/06b828b1f2b2d83fdcbceaa5c208be60.jpg",
     },
     {
       title: "Повар и процесс",
       description:
         "Казан, ингредиенты, этапы приготовления. Закулисье кухни, чистота и стандарты.",
-      imageUrl: "/proposals/samarqandcha-uz/rubrics/rubrika2.jpg",
+      imageUrl: "/proposals/samarqandcha-uz/rubrics/27ea4a32dfdfa0f8cf6c3e02cb1d5687.jpg",
     },
     {
       title: "Команда и сервис",
       description:
         "Персонал, выдача, гостеприимство. Сторис с живыми людьми — доверие и лояльность.",
-      imageUrl: "/proposals/samarqandcha-uz/rubrics/rubrika3.jpg",
+      imageUrl: "/proposals/samarqandcha-uz/rubrics/99851202916d32f3781cd35c809edbb3.jpg",
     },
     {
       title: "Меню и новинки",
@@ -116,25 +116,24 @@ export const samarqandchaUz: ProposalData = {
     description:
       "Позиционируем Samarqandcha как место с настоящей национальной кухней и стабильным качеством. Ключевой акцент — плов, повар и команда: живой контент, чистый процесс и гостеприимство.",
     images: [
-      "/proposals/samarqandcha-uz/positioning/poz1.jpg",
-      "/proposals/samarqandcha-uz/positioning/poz2.jpg",
-      "/proposals/samarqandcha-uz/positioning/poz3.jpg",
-      "/proposals/samarqandcha-uz/positioning/poz4.jpg",
+      "/proposals/samarqandcha-uz/positioning/0181b85f0fe1e8357a8c8acc524e7568.jpg",
+      "/proposals/samarqandcha-uz/positioning/341482e8e49f76c81cd40c3f31a160cb.jpg",
+      "/proposals/samarqandcha-uz/positioning/d376e3a0bbd29e3ee7bffec5963bde7e.jpg",
+      "/proposals/samarqandcha-uz/positioning/e8f40586dbd5769f803f4748f116f5cc.jpg",
     ],
   },
   visuals: [
-    "/proposals/samarqandcha-uz/visuals/post1.jpg",
-    "/proposals/samarqandcha-uz/visuals/post2.jpg",
-    "/proposals/samarqandcha-uz/visuals/post3.jpg",
-    "/proposals/samarqandcha-uz/visuals/post4.jpg",
-    "/proposals/samarqandcha-uz/visuals/post5.jpg",
-    "/proposals/samarqandcha-uz/visuals/post6.jpg",
-    "/proposals/samarqandcha-uz/visuals/post7.jpg",
-    "/proposals/samarqandcha-uz/visuals/post8.jpg",
-    "/proposals/samarqandcha-uz/visuals/post9.jpg",
-    "/proposals/samarqandcha-uz/visuals/post10.jpg",
-    "/proposals/samarqandcha-uz/visuals/post11.jpg",
-    "/proposals/samarqandcha-uz/visuals/post12.jpg",
+    "/proposals/samarqandcha-uz/visuals/0d5bdddab8abda234c97914f425f7337.jpg",
+    "/proposals/samarqandcha-uz/visuals/3be9b03a06478bf0b2cffbda6ec7a8b7.jpg",
+    "/proposals/samarqandcha-uz/visuals/6820e1460ec724cb9656159d0343ed12.jpg",
+    "/proposals/samarqandcha-uz/visuals/87ef4d26b308ab2ff1a5a2af5b11f276.jpg",
+    "/proposals/samarqandcha-uz/visuals/a6d7c32fbf55397a9302b5bcf163732c.jpg",
+    "/proposals/samarqandcha-uz/visuals/af4af58f60027e961d59fc04f07cec0a.jpg",
+    "/proposals/samarqandcha-uz/visuals/b3e2a19f382871e0e54f4eeff7852ec1.jpg",
+    "/proposals/samarqandcha-uz/visuals/b4c6bec59e4364bb7e5559ac7a191042.jpg",
+    "/proposals/samarqandcha-uz/visuals/c5b6505ab21e758df8523dc7b61c63ce.jpg",
+    "/proposals/samarqandcha-uz/visuals/dcdfd45a83900774295dbf287a1edbf8.jpg",
+    "/proposals/samarqandcha-uz/visuals/f27d9a4ea35cb4dcc55869e04a56840b.jpg",
   ],
   ads: [
     {
@@ -166,11 +165,14 @@ export const samarqandchaUz: ProposalData = {
     ],
     deliverables: [
       { label: "Съёмки в месяц", value: "2–3 выезда" },
-      { label: "Reels / видео", value: "6–8 роликов" },
-      { label: "Посты в ленту", value: "4–6" },
-      { label: "Stories", value: "ежедневно" },
-      { label: "Контент-план и рубрики", value: "повар, команда, плов, меню" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Reels / видео", value: "8 роликов" },
+      { label: "Посты в ленту", value: "4 карусели" },
+      { label: "Stories", value: "2–3 в день" },
+      {
+        label: "Контент-план и рубрики",
+        value: "повар, команда, плов, меню, традиции и гостеприимство",
+      },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
   },
 };
