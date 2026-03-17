@@ -32,11 +32,11 @@ export const cherryFlowersUz: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Здесь главное — стиль. Мы превращаем Cherry Flowers в бренд эстетики: лента как Pinterest-доска, Reels с деталями и эмоцией, понятные офферы и быстрый путь до заказа. Так уникальный визуал становится конкурентным преимуществом и продажами.",
+    "Здесь главное — стиль и ценности. Мы превращаем Cherry Flowers в бренд эстетики, который аккуратно следует религиозным рамкам: без женских образов и «харам»-музыки — вместо этого природа, свет, детали букетов и красивые, уместные любовные строки. Лента как Pinterest-доска, но с уважением к аудитории и культуре.",
   growthTool: {
-    title: "Узнаваемый стиль = высокая конверсия",
+    title: "Узнаваемый халяль-стиль = высокая конверсия",
     description:
-      "Когда визуал отличается от рынка, он собирает сохранения и пересылки. Мы усиливаем это системностью: рубрики, подборки и реклама, которая ведёт в Direct с запросом «сделайте так же».",
+      "Когда стиль отличается от рынка и при этом остаётся деликатным к религиозным нормам, он собирает сохранения и пересылки. Мы усиливаем это системностью: визуалы с природой и деталями, тексты-стихи о любви и заботе без лишней откровенности и реклама, которая ведёт в Direct с запросом «сделайте так же».",
   },
   audienceImageUrl: "/shared/audience.png",
   audience: {
@@ -51,28 +51,28 @@ export const cherryFlowersUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/cherry-flowers-uz/rubrics/rubrika1.jpg",
-    "/proposals/cherry-flowers-uz/rubrics/rubrika2.jpg",
-    "/proposals/cherry-flowers-uz/rubrics/rubrika3.jpg",
+    "/proposals/cherry-flowers-uz/rubrics/412d6aca7435eea9073fad3e8c384d8b.jpg",
+    "/proposals/cherry-flowers-uz/rubrics/4c76cd336775ab9392676de0f1ab7ffc.jpg",
+    "/proposals/cherry-flowers-uz/rubrics/4d207a8320dec127ee7c7e368c2fa641.jpg",
   ],
   rubrics: [
     {
       title: "Pinterest-букеты",
       description:
-        "Главная витрина: нестандартные букеты, стильные сочетания, упаковка и детали.",
-      imageUrl: "/proposals/cherry-flowers-uz/rubrics/rubrika1.jpg",
+        "Главная витрина: нестандартные букеты, стильные сочетания, упаковка и детали — без человеческих образов в кадре.",
+      imageUrl: "/proposals/cherry-flowers-uz/rubrics/412d6aca7435eea9073fad3e8c384d8b.jpg",
     },
     {
       title: "Детали и фактуры",
       description:
-        "Крупные планы цветов, фактуры, ленты, бумага. Контент «дорого выглядит».",
-      imageUrl: "/proposals/cherry-flowers-uz/rubrics/rubrika2.jpg",
+        "Крупные планы цветов, фактуры, ленты, бумага, природные мотивы. Контент «дорого выглядит», оставаясь максимально этичным.",
+      imageUrl: "/proposals/cherry-flowers-uz/rubrics/4c76cd336775ab9392676de0f1ab7ffc.jpg",
     },
     {
       title: "Сборка и процесс",
       description:
-        "Reels: как собираем, что выбираем, как создаём стиль. Доверие через закулисье.",
-      imageUrl: "/proposals/cherry-flowers-uz/rubrics/rubrika3.jpg",
+        "Reels: как собираем, что выбираем, как создаём стиль — кадры рук флориста, цветов и упаковки, без лиц. В фоне — спокойная музыка и любовные стихи.",
+      imageUrl: "/proposals/cherry-flowers-uz/rubrics/4d207a8320dec127ee7c7e368c2fa641.jpg",
     },
     {
       title: "Подборки по бюджету",
@@ -112,29 +112,31 @@ export const cherryFlowersUz: ProposalData = {
     },
   ],
   positioning: {
-    title: "Cherry Flowers — букет как эстетичный объект",
+    title: "Cherry Flowers — стильные, но скромные букеты",
     description:
-      "Позиционируем как цветочный бренд с уникальным современным стилем оформления. В ленте — эстетика, детали и «wow», в сторис — сервис, доставка и быстрые заказы.",
+      "Позиционируем Cherry Flowers как бренд, который сочетает современную эстетику и уважение к религии: без женских образов и харам-музыки, с упором на природу, свет и тексты. Это букет как эстетичный объект и знак уважения, который можно дарить, не выходя за рамки ценностей.",
     images: [
-      "/proposals/cherry-flowers-uz/positioning/poz1.jpg",
-      "/proposals/cherry-flowers-uz/positioning/poz2.jpg",
-      "/proposals/cherry-flowers-uz/positioning/poz3.jpg",
-      "/proposals/cherry-flowers-uz/positioning/poz4.jpg",
+      "/proposals/cherry-flowers-uz/positioning/02650fcfb1399c0333fb2b0d0dd3d11b.jpg",
+      "/proposals/cherry-flowers-uz/positioning/0568bbda1037bcd037348a96ff9f2aa9.jpg",
+      "/proposals/cherry-flowers-uz/positioning/13ea3b3282eae4b95114770359d64149.jpg",
+      "/proposals/cherry-flowers-uz/positioning/3656b5a9b46e550ce1ed489c98da61dc.jpg",
     ],
   },
   visuals: [
-    "/proposals/cherry-flowers-uz/visuals/post1.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post2.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post3.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post4.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post5.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post6.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post7.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post8.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post9.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post10.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post11.jpg",
-    "/proposals/cherry-flowers-uz/visuals/post12.jpg",
+    "/proposals/cherry-flowers-uz/visuals/4dadfc40e3c63614a1c7411ac512c174.jpg",
+    "/proposals/cherry-flowers-uz/visuals/51593651e9804ae91cac4ddc4d5f56ff.jpg",
+    "/proposals/cherry-flowers-uz/visuals/60df79379178c09d39e419a58ad95bf4.jpg",
+    "/proposals/cherry-flowers-uz/visuals/629418deb17e6b59433d848a7ae81cc6.jpg",
+    "/proposals/cherry-flowers-uz/visuals/965df3a77da8eeb4487d26b24d829711.jpg",
+    "/proposals/cherry-flowers-uz/visuals/98bc95309a3ab0961e33af038955bad5.jpg",
+    "/proposals/cherry-flowers-uz/visuals/9c173c1b7de97471578f03ba7acb5a79.jpg",
+    "/proposals/cherry-flowers-uz/visuals/9e4daabda7e0f2bf3efafe44a759242a.jpg",
+    "/proposals/cherry-flowers-uz/visuals/bd80c82556f5cca01831e6a68e8a66e7.jpg",
+    "/proposals/cherry-flowers-uz/visuals/ce2c74e5affae610cb22382c0ca84e9e.jpg",
+    "/proposals/cherry-flowers-uz/visuals/cf4a4d8d003b68837cec183ceaaf0ffc.jpg",
+    "/proposals/cherry-flowers-uz/visuals/e1fdc89e5d2505d7b65741d3fc710bd5.jpg",
+    "/proposals/cherry-flowers-uz/visuals/f288429bb4c7c6ca0d18fee2d7979ea9.jpg",
+    "/proposals/cherry-flowers-uz/visuals/Без названия (3).png",
   ],
   ads: [
     {
@@ -166,11 +168,11 @@ export const cherryFlowersUz: ProposalData = {
     ],
     deliverables: [
       { label: "Съёмки в месяц", value: "2–3 выезда" },
-      { label: "Reels / видео", value: "6–8 роликов" },
-      { label: "Посты в ленту", value: "4–6" },
-      { label: "Stories", value: "ежедневно" },
-      { label: "Контент-план и рубрики", value: "Pinterest-визуал, стиль, подборки" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Reels / видео", value: "8 роликов" },
+      { label: "Посты в ленту", value: "4 карусели" },
+      { label: "Stories", value: "2–3 в день" },
+      { label: "Контент-план и рубрики", value: "эстетика, природа, стихи, халяль-подход" },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
   },
 };
