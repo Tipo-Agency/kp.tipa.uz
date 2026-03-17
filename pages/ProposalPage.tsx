@@ -112,7 +112,7 @@ export const ProposalPage: React.FC = () => {
 
   if (isContextAdsProposal(proposal)) {
     return (
-      <div className="bg-slate-950 overflow-x-hidden w-full">
+      <div className="bg-white overflow-x-hidden w-full">
         <div className="reveal">
           <ContextOverview
             clientName={proposal.clientName}
@@ -155,9 +155,9 @@ export const ProposalPage: React.FC = () => {
             />
           </div>
         ) : null}
-        <footer className="py-12 bg-slate-950 text-center border-t border-slate-900">
+        <footer className="py-12 bg-white text-center border-t border-slate-100">
           <img src="/лого типа агентства.svg" alt="Типа агентство" className="h-8 md:h-9 w-auto mx-auto mb-6" />
-          <p className="text-slate-500 text-xs font-semibold tracking-widest uppercase">
+          <p className="text-slate-400 text-xs font-semibold tracking-widest uppercase">
             ТИПА АГЕНТСТВО © {new Date().getFullYear()}
           </p>
         </footer>
