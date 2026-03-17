@@ -26,6 +26,12 @@ import { tomyumbar } from "./tomyumbar";
 import { galaksiEnergy } from "./galaksi-energy";
 import { laserEpilationStudio } from "./laser-epilation-studio";
 import { yotaGameclub } from "./yota-gameclub";
+import { samarqandchaUz } from "./samarqandcha-uz";
+import { buketSoho } from "./buket-soho";
+import { karnavalniyProkat } from "./karnavalniy-prokat";
+import { burgerAndLounge } from "./burger-and-lounge";
+import { cherryFlowersUz } from "./cherry-flowers-uz";
+import { optomPartnership } from "./optom-partnership";
 
 export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
@@ -55,6 +61,12 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "galaksi-energy": galaksiEnergy,
   "laser-epilation-studio": laserEpilationStudio,
   "yota-gameclub": yotaGameclub,
+  "samarqandcha-uz": samarqandchaUz,
+  "buket-soho": buketSoho,
+  "karnavalniy-prokat": karnavalniyProkat,
+  "burger-and-lounge": burgerAndLounge,
+  "cherry-flowers-uz": cherryFlowersUz,
+  "optom-partnership": optomPartnership,
 };
 
 export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData;
