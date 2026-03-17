@@ -172,6 +172,57 @@ export interface WebsiteProposalData {
   };
 }
 
+/** КП под контекстную рекламу (с доп. блоком по SMM) */
+export interface ContextAdsProposalData {
+  type: "context-ads";
+  clientName: string;
+  hero: {
+    title: string;
+    subtitle: string;
+  };
+  /** География и сегменты, куда ведём трафик */
+  markets: {
+    title: string;
+    regions: string[];
+  };
+  /** Описание продукта/проекта простыми словами */
+  productSummary: {
+    title: string;
+    items: string[];
+  };
+  /** Стратегия контекстной рекламы */
+  contextStrategy: {
+    title: string;
+    search: string[];
+    performance: string[];
+    remarketing: string[];
+  };
+  /** Работа с посадкой (сайтом) и предложениями */
+  landingWork: {
+    title: string;
+    items: string[];
+  };
+  /** Аналитика, отчётность, гипотезы */
+  analytics: {
+    title: string;
+    items: string[];
+  };
+  /** Небольшой блок доп. SMM-услуги с визуалом */
+  smmAddon?: {
+    title: string;
+    description: string;
+    visuals: string[];
+    deliverables: { label: string; value: string }[];
+  };
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    description: string;
+    deliverables: { label: string; value: string }[];
+  };
+}
+
 export interface ProposalData {
   clientName: string;
   hero: {

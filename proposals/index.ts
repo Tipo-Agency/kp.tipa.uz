@@ -1,4 +1,10 @@
-import type { ProposalData, WebsiteProposalData, TelegramBotProposalData, PlatformProposalData } from "../types";
+import type {
+  ProposalData,
+  WebsiteProposalData,
+  TelegramBotProposalData,
+  PlatformProposalData,
+  ContextAdsProposalData,
+} from "../types";
 import { yangiOzbekistonRestaurant } from "./yangi-ozbekiston-restaurant";
 import { jaquarUzbSantehnika } from "./jaquar-uzb-santehnika";
 import { onlyouTashkent } from "./onlyou-tashkent";
@@ -32,8 +38,12 @@ import { karnavalniyProkat } from "./karnavalniy-prokat";
 import { burgerAndLounge } from "./burger-and-lounge";
 import { cherryFlowersUz } from "./cherry-flowers-uz";
 import { optomPartnership } from "./optom-partnership";
+import { majesticorientContext } from "./majesticorient-context";
 
-export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData> = {
+export const PROPOSALS: Record<
+  string,
+  ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData | ContextAdsProposalData
+> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
   "jaquar-uzb-santehnika": jaquarUzbSantehnika,
   "onlyou-tashkent": onlyouTashkent,
@@ -67,9 +77,15 @@ export const PROPOSALS: Record<string, ProposalData | WebsiteProposalData | Tele
   "burger-and-lounge": burgerAndLounge,
   "cherry-flowers-uz": cherryFlowersUz,
   "optom-partnership": optomPartnership,
+  "majesticorient-context": majesticorientContext,
 };
 
-export type AnyProposal = ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData;
+export type AnyProposal =
+  | ProposalData
+  | WebsiteProposalData
+  | TelegramBotProposalData
+  | PlatformProposalData
+  | ContextAdsProposalData;
 
 export function getProposal(slug: string | undefined): AnyProposal | undefined {
   if (!slug) return undefined;
@@ -86,4 +102,8 @@ export function isTelegramBotProposal(p: AnyProposal | undefined): p is Telegram
 
 export function isPlatformProposal(p: AnyProposal | undefined): p is PlatformProposalData {
   return p != null && "type" in p && p.type === "platform";
+}
+
+export function isContextAdsProposal(p: AnyProposal | undefined): p is ContextAdsProposalData {
+  return p != null && "type" in p && p.type === "context-ads";
 }

@@ -33,7 +33,17 @@ import { PlatformDirections } from "../components/PlatformBlocks/PlatformDirecti
 import { PlatformStages } from "../components/PlatformBlocks/PlatformStages";
 import { PlatformPricing } from "../components/PlatformBlocks/PlatformPricing";
 import { PlatformEcosystemInfographic } from "../components/PlatformBlocks/PlatformEcosystemInfographic";
-import { getProposal, isWebsiteProposal, isTelegramBotProposal, isPlatformProposal } from "../proposals";
+import {
+  getProposal,
+  isWebsiteProposal,
+  isTelegramBotProposal,
+  isPlatformProposal,
+  isContextAdsProposal,
+} from "../proposals";
+import { ContextOverview } from "../components/ContextBlocks/ContextOverview";
+import { ContextStrategy } from "../components/ContextBlocks/ContextStrategy";
+import { ContextPricing } from "../components/ContextBlocks/ContextPricing";
+import { ContextSmmAddon } from "../components/ContextBlocks/ContextSmmAddon";
 import { NotFoundPage } from "./NotFoundPage";
 
 export const ProposalPage: React.FC = () => {
@@ -93,6 +103,61 @@ export const ProposalPage: React.FC = () => {
         <footer className="py-12 bg-white text-center border-t border-slate-100">
           <img src="/лого типа агентства.svg" alt="Типа агентство" className="h-8 md:h-9 w-auto mx-auto mb-6" />
           <p className="text-slate-400 text-xs font-semibold tracking-widest uppercase">
+            ТИПА АГЕНТСТВО © {new Date().getFullYear()}
+          </p>
+        </footer>
+      </div>
+    );
+  }
+
+  if (isContextAdsProposal(proposal)) {
+    return (
+      <div className="bg-slate-950 overflow-x-hidden w-full">
+        <div className="reveal">
+          <ContextOverview
+            clientName={proposal.clientName}
+            heroTitle={proposal.hero.title}
+            heroSubtitle={proposal.hero.subtitle}
+            marketsTitle={proposal.markets.title}
+            markets={proposal.markets.regions}
+            productTitle={proposal.productSummary.title}
+            productItems={proposal.productSummary.items}
+          />
+        </div>
+        <div className="reveal">
+          <ContextStrategy
+            title={proposal.contextStrategy.title}
+            search={proposal.contextStrategy.search}
+            performance={proposal.contextStrategy.performance}
+            remarketing={proposal.contextStrategy.remarketing}
+            landingTitle={proposal.landingWork.title}
+            landingItems={proposal.landingWork.items}
+            analyticsTitle={proposal.analytics.title}
+            analyticsItems={proposal.analytics.items}
+          />
+        </div>
+        <div className="reveal">
+          <ContextPricing
+            amount={proposal.pricing.amount}
+            currency={proposal.pricing.currency}
+            period={proposal.pricing.period}
+            description={proposal.pricing.description}
+            deliverables={proposal.pricing.deliverables}
+          />
+        </div>
+        {proposal.smmAddon ? (
+          <div className="reveal">
+            <ContextSmmAddon
+              title={proposal.smmAddon.title}
+              description={proposal.smmAddon.description}
+              visuals={proposal.smmAddon.visuals}
+              deliverables={proposal.smmAddon.deliverables}
+            />
+          </div>
+        ) : null}
+        <footer className="py-12 bg-slate-950 text-center border-t border-slate-900">
+          <img src="/лого типа агентства.svg" alt="Типа агентство" className="h-8 md:h-9 w-auto mx-auto mb-6" />
+          <p className="text-slate-500 text-xs font-semibold tracking-widest uppercase">
             ТИПА АГЕНТСТВО © {new Date().getFullYear()}
           </p>
         </footer>
