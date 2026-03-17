@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "../UI/Container";
+import { Heading1, Subheading } from "../UI/Typography";
 
 interface Props {
   clientName: string;
@@ -26,10 +27,10 @@ export const ContextOverview: React.FC<Props> = ({
         <p className="text-xs font-semibold tracking-[0.25em] text-[#3337AD] uppercase mb-3">
           Контекстная реклама · {clientName}
         </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight mb-5 text-slate-900">
+        <Heading1 className="mb-6 text-3xl md:text-5xl">
           {heroTitle}
-        </h1>
-        <p className="text-sm md:text-base text-slate-600 max-w-3xl mb-10">{heroSubtitle}</p>
+        </Heading1>
+        <Subheading className="max-w-3xl mb-10">{heroSubtitle}</Subheading>
 
         <div className="grid gap-8 md:grid-cols-2">
           <div className="bg-slate-50 border border-slate-100 rounded-2xl p-6">

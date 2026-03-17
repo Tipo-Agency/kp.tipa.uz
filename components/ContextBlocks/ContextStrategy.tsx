@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "../UI/Container";
+import { Heading2, BodyText } from "../UI/Typography";
 
 interface ColumnProps {
   title: string;
@@ -53,7 +54,11 @@ export const ContextStrategy: React.FC<Props> = ({
   return (
     <section className="py-16 md:py-20 bg-slate-50">
       <Container>
-        <h2 className="text-lg md:text-xl font-semibold text-slate-900 mb-6">{title}</h2>
+        <Heading2 className="mb-4 text-3xl md:text-4xl">{title}</Heading2>
+        <BodyText className="mb-8 max-w-3xl">
+          Мы собираем структуру кампаний по воронке: поиск с высокими намерениями, performance для масштабирования
+          и ремаркетинг для дожима тёплой аудитории.
+        </BodyText>
         <div className="grid gap-6 md:grid-cols-3 mb-8">
           <Column title="Поиск" items={search} accent="emerald" />
           <Column title="Performance / дисплей" items={performance} accent="sky" />
