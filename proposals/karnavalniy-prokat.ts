@@ -51,28 +51,28 @@ export const karnavalniyProkat: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/karnavalniy-prokat/rubrics/rubrika1.jpg",
-    "/proposals/karnavalniy-prokat/rubrics/rubrika2.jpg",
-    "/proposals/karnavalniy-prokat/rubrics/rubrika3.jpg",
+    "/proposals/karnavalniy-prokat/rubrics/20251672ddb9cd3c8c98a1e46dfcb4ff.jpg",
+    "/proposals/karnavalniy-prokat/rubrics/89a91c603350c1731a10b5ec3bd58136.jpg",
+    "/proposals/karnavalniy-prokat/rubrics/8ee60148a39d7308ecb1d55758cb25f7.jpg",
   ],
   rubrics: [
     {
       title: "Образы недели",
       description:
         "Подборки костюмов по тематике/персонажам: что сейчас актуально и под какие события.",
-      imageUrl: "/proposals/karnavalniy-prokat/rubrics/rubrika1.jpg",
+      imageUrl: "/proposals/karnavalniy-prokat/rubrics/20251672ddb9cd3c8c98a1e46dfcb4ff.jpg",
     },
     {
       title: "Как выглядит вживую",
       description:
         "Reels: примерка, детали, посадка. Формат «ожидание/реальность» — усиливает доверие.",
-      imageUrl: "/proposals/karnavalniy-prokat/rubrics/rubrika2.jpg",
+      imageUrl: "/proposals/karnavalniy-prokat/rubrics/89a91c603350c1731a10b5ec3bd58136.jpg",
     },
     {
       title: "Сервис аренды",
       description:
         "Как забронировать, примерка, выдача, возврат, уход. Быстро и понятно.",
-      imageUrl: "/proposals/karnavalniy-prokat/rubrics/rubrika3.jpg",
+      imageUrl: "/proposals/karnavalniy-prokat/rubrics/8ee60148a39d7308ecb1d55758cb25f7.jpg",
     },
     {
       title: "Календарь событий",
@@ -116,25 +116,25 @@ export const karnavalniyProkat: ProposalData = {
     description:
       "Позиционируем как сервис, где клиент получает образ: не только костюм, но и опыт. Премиальность — в деталях, состоянии, подборе и сервисе.",
     images: [
-      "/proposals/karnavalniy-prokat/positioning/poz1.jpg",
-      "/proposals/karnavalniy-prokat/positioning/poz2.jpg",
-      "/proposals/karnavalniy-prokat/positioning/poz3.jpg",
-      "/proposals/karnavalniy-prokat/positioning/poz4.jpg",
+      "/proposals/karnavalniy-prokat/positioning/081641844d70a2b957b40b4c3ca94790.jpg",
+      "/proposals/karnavalniy-prokat/positioning/6c6b6b7c3851083016b833596e898f47.jpg",
+      "/proposals/karnavalniy-prokat/positioning/7a9b333656100b43f43386cc6deb037d.jpg",
+      "/proposals/karnavalniy-prokat/positioning/cbe49afea825a5f99336c68cee1b8ff7.jpg",
     ],
   },
   visuals: [
-    "/proposals/karnavalniy-prokat/visuals/post1.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post2.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post3.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post4.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post5.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post6.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post7.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post8.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post9.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post10.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post11.jpg",
-    "/proposals/karnavalniy-prokat/visuals/post12.jpg",
+    "/proposals/karnavalniy-prokat/visuals/6622d4a45b0276a9708bbab02206803c.jpg",
+    "/proposals/karnavalniy-prokat/visuals/851be305893425b3f7220440d9fb234c.jpg",
+    "/proposals/karnavalniy-prokat/visuals/8528d95f9400db58bb7c2d228c974665.jpg",
+    "/proposals/karnavalniy-prokat/visuals/88740859f04684dafb1da9a8e32bd45f.jpg",
+    "/proposals/karnavalniy-prokat/visuals/8fb0a40f2aa884cfad5ef3e665e936c6.jpg",
+    "/proposals/karnavalniy-prokat/visuals/9aaf6c188dd0c78c109f4ed6e5263946.jpg",
+    "/proposals/karnavalniy-prokat/visuals/a16aea64fcbc4f76d1996da32bee7b7d.jpg",
+    "/proposals/karnavalniy-prokat/visuals/a859948624a79533302b808f24e15b5a.jpg",
+    "/proposals/karnavalniy-prokat/visuals/ab7325b38d3f466629c8606010e47022.jpg",
+    "/proposals/karnavalniy-prokat/visuals/e35314e30625a47d3849d716039218af.jpg",
+    "/proposals/karnavalniy-prokat/visuals/e4e97bf1129252cfb65fe1dbf2629cfc.jpg",
+    "/proposals/karnavalniy-prokat/visuals/fd02fe19b6a626469cf19b665585b8df.jpg",
   ],
   ads: [
     {
@@ -166,11 +166,17 @@ export const karnavalniyProkat: ProposalData = {
     ],
     deliverables: [
       { label: "Съёмки в месяц", value: "2–3 выезда" },
-      { label: "Reels / видео", value: "6–8 роликов" },
-      { label: "Посты в ленту", value: "4–6" },
-      { label: "Stories", value: "ежедневно" },
-      { label: "Контент-план и рубрики", value: "каталог, события, сервис, UGC" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Reels / видео", value: "8 роликов" },
+      {
+        label: "Посты в ленту",
+        value: "4 карусели (образы, события, сервис, UGC)",
+      },
+      { label: "Stories", value: "2–3 в день" },
+      {
+        label: "Контент-план и рубрики",
+        value: "каталог, события, сервис аренды, премиальные детали, UGC",
+      },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
   },
 };
