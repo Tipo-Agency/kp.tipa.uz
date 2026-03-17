@@ -51,28 +51,28 @@ export const optomPartnership: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/optom-partnership/rubrics/rubrika1.jpg",
-    "/proposals/optom-partnership/rubrics/rubrika2.jpg",
-    "/proposals/optom-partnership/rubrics/rubrika3.jpg",
+    "/proposals/optom-partnership/rubrics/1c8b8ad9a25ed03033c15535d5501cb5.jpg",
+    "/proposals/optom-partnership/rubrics/3fb10c34efbfb6e8af723a9126a844ae.jpg",
+    "/proposals/optom-partnership/rubrics/5d2c4a357adca630a02b7cf975a2d7c2.jpg",
   ],
   rubrics: [
     {
       title: "Что такое OPTOM (простыми словами)",
       description:
         "Короткие объяснения: экосистема, витрина, оплата, доставка, 0% комиссии. Понятная схема: продавец ↔ покупатель ↔ доставка.",
-      imageUrl: "/proposals/optom-partnership/rubrics/rubrika1.jpg",
+      imageUrl: "/proposals/optom-partnership/rubrics/1c8b8ad9a25ed03033c15535d5501cb5.jpg",
     },
     {
       title: "Выгоды для продавцов и покупателей",
       description:
         "Сравнения «как было/как стало»: масштабирование, новые клиенты, цены напрямую, безопасность расчётов.",
-      imageUrl: "/proposals/optom-partnership/rubrics/rubrika2.jpg",
+      imageUrl: "/proposals/optom-partnership/rubrics/3fb10c34efbfb6e8af723a9126a844ae.jpg",
     },
     {
       title: "Партнёрская программа",
       description:
         "Как зарабатывать партнёру: кому предлагать, что получает клиент, как считать доход. Понятный оффер и механика.",
-      imageUrl: "/proposals/optom-partnership/rubrics/rubrika3.jpg",
+      imageUrl: "/proposals/optom-partnership/rubrics/5d2c4a357adca630a02b7cf975a2d7c2.jpg",
     },
     {
       title: "Кейсы и цифры",
@@ -116,25 +116,28 @@ export const optomPartnership: ProposalData = {
     description:
       "Позиционируем OPTOM как прозрачную и безопасную экосистему для торговли: витрина, оплата, доставка, экспорт. Отдельно — партнёрская модель как источник регулярного дохода для компаний-партнёров.",
     images: [
-      "/proposals/optom-partnership/positioning/poz1.jpg",
-      "/proposals/optom-partnership/positioning/poz2.jpg",
-      "/proposals/optom-partnership/positioning/poz3.jpg",
-      "/proposals/optom-partnership/positioning/poz4.jpg",
+      "/proposals/optom-partnership/positioning/071d47e2ede157e3217d83b34a5c86a0.jpg",
+      "/proposals/optom-partnership/positioning/367fc35d10ee8535d314338e1f985faa.jpg",
+      "/proposals/optom-partnership/positioning/398b14606ccbfd5d307eeb0e18334698.jpg",
+      "/proposals/optom-partnership/positioning/5799e52260dff41e8abcb01d8e72c3a3.jpg",
     ],
   },
   visuals: [
-    "/proposals/optom-partnership/visuals/post1.jpg",
-    "/proposals/optom-partnership/visuals/post2.jpg",
-    "/proposals/optom-partnership/visuals/post3.jpg",
-    "/proposals/optom-partnership/visuals/post4.jpg",
-    "/proposals/optom-partnership/visuals/post5.jpg",
-    "/proposals/optom-partnership/visuals/post6.jpg",
-    "/proposals/optom-partnership/visuals/post7.jpg",
-    "/proposals/optom-partnership/visuals/post8.jpg",
-    "/proposals/optom-partnership/visuals/post9.jpg",
-    "/proposals/optom-partnership/visuals/post10.jpg",
-    "/proposals/optom-partnership/visuals/post11.jpg",
-    "/proposals/optom-partnership/visuals/post12.jpg",
+    "/proposals/optom-partnership/visuals/4df9807e9d3e419d1c0d0bd39c60a19f.jpg",
+    "/proposals/optom-partnership/visuals/54709cfe87ce5c44f6df03cfd87f646f.jpg",
+    "/proposals/optom-partnership/visuals/5ff1dfb1c5eed499c7a6c22aad5f0f6b.jpg",
+    "/proposals/optom-partnership/visuals/6bd5c0cdba006cd6831c6c1c282c853f.jpg",
+    "/proposals/optom-partnership/visuals/82295d62301fa30713187785c26b705a.jpg",
+    "/proposals/optom-partnership/visuals/9eafc1efb6d00dd4f06aaf48d55b16cc.jpg",
+    "/proposals/optom-partnership/visuals/a8eef798cc0385bf5d90f1681b081f45.jpg",
+    "/proposals/optom-partnership/visuals/be426777863349c62c953d66fa88e6ce.jpg",
+    "/proposals/optom-partnership/visuals/c7b65834434b04b0577a2c698e31bb38.jpg",
+    "/proposals/optom-partnership/visuals/caf38ce0bb1133a15b6740a959d045e3.jpg",
+    "/proposals/optom-partnership/visuals/cde5c7744460198965c27f696e6b055e.jpg",
+    "/proposals/optom-partnership/visuals/dc16b16dc73591adf93cbba43590e753.jpg",
+    "/proposals/optom-partnership/visuals/e4462355e58b9c9398e5ed650ec2bf4c.jpg",
+    "/proposals/optom-partnership/visuals/e7d76484ac0c0b0d6adf1aaa1a9dcdb4.jpg",
+    "/proposals/optom-partnership/visuals/f16193c408cb2fea69126599c8f1de24.jpg",
   ],
   ads: [
     {
@@ -166,11 +169,17 @@ export const optomPartnership: ProposalData = {
     ],
     deliverables: [
       { label: "Съёмки / продакшн", value: "2–3 сессии в месяц" },
-      { label: "Reels / экспертные видео", value: "6–8 роликов" },
-      { label: "Посты в ленту", value: "4–6" },
-      { label: "Stories", value: "ежедневно" },
-      { label: "Контент-план и рубрики", value: "продукт, кейсы, партнёрка" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Reels / экспертные видео", value: "8 роликов" },
+      {
+        label: "Посты в ленту",
+        value: "4 карусели (продукт, кейсы, партнёрка, выгоды)",
+      },
+      { label: "Stories", value: "2–3 в день" },
+      {
+        label: "Контент-план и рубрики",
+        value: "продукт, кейсы, партнёрка, FAQ, безопасность и выгоды для партнёров",
+      },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
     notes: [
       "Рекламный бюджет и KPI по лидам согласуются отдельно (продавцы/покупатели/партнёры).",
