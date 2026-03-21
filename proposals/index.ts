@@ -39,6 +39,7 @@ import { burgerAndLounge } from "./burger-and-lounge";
 import { cherryFlowersUz } from "./cherry-flowers-uz";
 import { optomPartnership } from "./optom-partnership";
 import { majesticorientContext } from "./majesticorient-context";
+import { detskiySadTashkent } from "./detskiy-sad-tashkent";
 
 export const PROPOSALS: Record<
   string,
@@ -78,6 +79,7 @@ export const PROPOSALS: Record<
   "cherry-flowers-uz": cherryFlowersUz,
   "optom-partnership": optomPartnership,
   "majesticorient-context": majesticorientContext,
+  "detskiy-sad-tashkent": detskiySadTashkent,
 };
 
 export type AnyProposal =
