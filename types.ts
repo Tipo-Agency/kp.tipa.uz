@@ -254,6 +254,8 @@ export interface ProposalData {
     description: string;
   }[];
   salesTracks?: SalesTrack[];
+  /** Подзаголовок блока «Структура продаж» (если не задан — дефолтный текст) */
+  salesStructureIntro?: string;
   funnels?: FunnelBlock[];
   cases?: CaseItem[];
   pricing: {

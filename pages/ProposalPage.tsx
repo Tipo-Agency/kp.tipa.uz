@@ -313,7 +313,7 @@ export const ProposalPage: React.FC = () => {
       </div>
       {proposal.salesTracks && proposal.salesTracks.length > 0 ? (
         <div className="reveal">
-          <SalesStructure tracks={proposal.salesTracks} />
+          <SalesStructure tracks={proposal.salesTracks} intro={proposal.salesStructureIntro} />
         </div>
       ) : null}
       {proposal.funnels && proposal.funnels.length > 0 ? (

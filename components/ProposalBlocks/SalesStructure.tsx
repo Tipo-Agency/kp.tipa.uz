@@ -5,18 +5,20 @@ import type { SalesTrack } from "../../types";
 
 interface SalesStructureProps {
   tracks: SalesTrack[];
+  intro?: string;
 }
 
-const SalesStructure: React.FC<SalesStructureProps> = ({ tracks }) => {
+const DEFAULT_INTRO =
+  "Разделяем коммуникацию и воронки под разные сценарии: розница, проекты, HoReCa и профессиональное сообщество.";
+
+const SalesStructure: React.FC<SalesStructureProps> = ({ tracks, intro }) => {
   return (
     <Section className="bg-slate-50">
       <Container>
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <p className="text-[#3337AD] font-bold tracking-widest uppercase mb-4 text-xs">Структура продаж</p>
           <Heading2 className="mb-4">Как устроены направления</Heading2>
-          <BodyText>
-            Разделяем коммуникацию и воронки под разные сценарии: розница, проекты, HoReCa и профессиональное сообщество.
-          </BodyText>
+          <BodyText>{intro ?? DEFAULT_INTRO}</BodyText>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
