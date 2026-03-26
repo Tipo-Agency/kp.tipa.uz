@@ -41,6 +41,7 @@ import { optomPartnership } from "./optom-partnership";
 import { majesticorientContext } from "./majesticorient-context";
 import { detskiySadTashkent } from "./detskiy-sad-tashkent";
 import { chernikaBeauty } from "./chernika-beauty";
+import { fishMarket } from "./fish-market";
 
 export const PROPOSALS: Record<
   string,
@@ -82,6 +83,7 @@ export const PROPOSALS: Record<
   "majesticorient-context": majesticorientContext,
   "detskiy-sad-tashkent": detskiySadTashkent,
   "chernika-beauty": chernikaBeauty,
+  "fish-market": fishMarket,
 };
 
 export type AnyProposal =
