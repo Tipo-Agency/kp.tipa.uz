@@ -1,4 +1,4 @@
-КП «Рыбный магазин» (SMM / Instagram)
+КП «Для рыбного магазина» (SMM / Instagram)
 
 Сюда кладём свои фото и правим пути в proposals/fish-market.ts.
 
