@@ -32,7 +32,7 @@ export const kattaTanaffusSchool: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Мы делаем не просто красивую ленту, а медиа-формат школы: родители получают ответы на все ключевые вопросы через контент, а дети хотят стать частью этой среды.",
+    "Мы делаем не просто красивую ленту, а медиа-формат школы: родители получают ответы на все ключевые вопросы через контент, а дети хотят стать частью этой среды.\n\nРеференсы формата (Shorts):\nhttps://www.youtube.com/shorts/SiR0UYEPxuk\nhttps://www.youtube.com/shorts/33pv9SUOZV4",
   growthTool: {
     title: "Сериал + доверие родителей = стабильный набор",
     description:
