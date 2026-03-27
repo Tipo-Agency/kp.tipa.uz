@@ -51,21 +51,26 @@ export const haierIndustrialSystems: ProposalData = {
       "Девелоперы и строительные компании",
     ],
   },
+  rubricBlockImages: [
+    "/proposals/haier-industrial-systems/rubrics/223dc0c20b35e34a54f2b1e15eda41ea.jpg",
+    "/proposals/haier-industrial-systems/rubrics/25ec1aa9f75d0d30ab9ae73e032d84fd.jpg",
+    "/proposals/haier-industrial-systems/rubrics/27c0cfaff0fd615b035c125048769062.jpg",
+  ],
   rubrics: [
     {
       title: "Обзорные ролики",
       description: "Понятно объясняем линейки систем и различия между ними.",
-      imageUrl: "",
+      imageUrl: "/proposals/haier-industrial-systems/rubrics/223dc0c20b35e34a54f2b1e15eda41ea.jpg",
     },
     {
       title: "Склад и наличие",
       description: "Показываем реальные единицы товара, партии и готовность к отгрузке.",
-      imageUrl: "",
+      imageUrl: "/proposals/haier-industrial-systems/rubrics/25ec1aa9f75d0d30ab9ae73e032d84fd.jpg",
     },
     {
       title: "Технические разборы",
       description: "Мощность, энергоэффективность, конфигурации, условия эксплуатации.",
-      imageUrl: "",
+      imageUrl: "/proposals/haier-industrial-systems/rubrics/27c0cfaff0fd615b035c125048769062.jpg",
     },
     {
       title: "Кейсы объектов",
@@ -102,9 +107,33 @@ export const haierIndustrialSystems: ProposalData = {
     title: "Haier Industrial — надёжный партнёр по климатическим системам",
     description:
       "Позиционируем бренд как технологичного и предсказуемого поставщика: товар в наличии, экспертный подход, понятные условия для бизнеса и партнёров.",
-    images: [],
+    images: [
+      "/proposals/haier-industrial-systems/positioning/051543f205b54ba9044dee99254797f9.jpg",
+      "/proposals/haier-industrial-systems/positioning/119a80d5fb31ddadf7733684ad563b41.jpg",
+      "/proposals/haier-industrial-systems/positioning/11efaa00968d398ebf0ef8496ff8e08a.jpg",
+      "/proposals/haier-industrial-systems/positioning/1c791433ca528cb3242fe78d70f1c875.jpg",
+    ],
   },
-  visuals: [],
+  visuals: [
+    "/proposals/haier-industrial-systems/visuals/29c10ac0a51105ab29061aeae4c8ef31.jpg",
+    "/proposals/haier-industrial-systems/visuals/34dd1742131b5510e1da3627b29270f6.jpg",
+    "/proposals/haier-industrial-systems/visuals/3cf4eab9e839f5ace54a80183aff398c.jpg",
+    "/proposals/haier-industrial-systems/visuals/40d180edbc491fc062192e290913554c.jpg",
+    "/proposals/haier-industrial-systems/visuals/4b1f791606884fb63ac0d1205815a359.jpg",
+    "/proposals/haier-industrial-systems/visuals/4f7f5726327155b9fe20eeec8bcb6360.jpg",
+    "/proposals/haier-industrial-systems/visuals/54c10289749ebe2495ea21788c227f5a.jpg",
+    "/proposals/haier-industrial-systems/visuals/5b51af33306d4eb1c2fee0ec58c308d2.jpg",
+    "/proposals/haier-industrial-systems/visuals/5c0d78fe1fb51487748cd96f5035c9f1.jpg",
+    "/proposals/haier-industrial-systems/visuals/73b489bd5bb214c8fe6b0ea5ea658339.jpg",
+    "/proposals/haier-industrial-systems/visuals/762c3f503fd1743b91189b1aaf2f39af.jpg",
+    "/proposals/haier-industrial-systems/visuals/8c6449fbab374077a8f2a55daa6071b5.jpg",
+    "/proposals/haier-industrial-systems/visuals/98175248e36f0d643d07c5dca3be22fa.jpg",
+    "/proposals/haier-industrial-systems/visuals/b27e827ebf4bd396a4b977175220fb96.jpg",
+    "/proposals/haier-industrial-systems/visuals/bca992b0f5891b0365f71af69d5bcc39.jpg",
+    "/proposals/haier-industrial-systems/visuals/c72a1a137e5e9ab7372a5ae35c2b2b96.jpg",
+    "/proposals/haier-industrial-systems/visuals/cd5d2f3ac335a3b11b1f84bbe77c8ba1.jpg",
+    "/proposals/haier-industrial-systems/visuals/f6d816f6f245362b16124296de821f16.jpg",
+  ],
   ads: [
     {
       title: "Охват и узнаваемость",
