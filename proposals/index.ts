@@ -42,6 +42,9 @@ import { majesticorientContext } from "./majesticorient-context";
 import { detskiySadTashkent } from "./detskiy-sad-tashkent";
 import { chernikaBeauty } from "./chernika-beauty";
 import { fishMarket } from "./fish-market";
+import { haierIndustrialSystems } from "./haier-industrial-systems";
+import { kattaTanaffusSchool } from "./katta-tanaffus-school";
+import { chigatoyMall } from "./chigatoy-mall";
 
 export const PROPOSALS: Record<
   string,
@@ -84,6 +87,9 @@ export const PROPOSALS: Record<
   "detskiy-sad-tashkent": detskiySadTashkent,
   "chernika-beauty": chernikaBeauty,
   "fish-market": fishMarket,
+  "haier-industrial-systems": haierIndustrialSystems,
+  "katta-tanaffus-school": kattaTanaffusSchool,
+  "chigatoy-mall": chigatoyMall,
 };
 
 export type AnyProposal =
