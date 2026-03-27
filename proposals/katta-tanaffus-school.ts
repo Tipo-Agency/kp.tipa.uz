@@ -52,7 +52,7 @@ export const kattaTanaffusSchool: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    "/proposals/katta-tanaffus-school/rubrics/2e831b664a83d4a8daee6b82775838a7.jpg",
+    "/proposals/katta-tanaffus-school/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg",
     "/proposals/katta-tanaffus-school/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg",
     "/proposals/katta-tanaffus-school/rubrics/6301a9f7a17510a3dd71d363dcf4c047.jpg",
   ],
@@ -60,7 +60,7 @@ export const kattaTanaffusSchool: ProposalData = {
     {
       title: "Школьный сериал",
       description: "Сюжетные короткие эпизоды для охватов и узнаваемости.",
-      imageUrl: "/proposals/katta-tanaffus-school/rubrics/2e831b664a83d4a8daee6b82775838a7.jpg",
+      imageUrl: "/proposals/katta-tanaffus-school/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg",
     },
     {
       title: "Учителя и методики",
@@ -163,6 +163,28 @@ export const kattaTanaffusSchool: ProposalData = {
       { label: "Посты / карусели", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
       { label: "Реклама набора", value: "кампании на заявки и экскурсии" },
+      { label: "Бюджет на таргет (1-й месяц)", value: "$400" },
+      { label: "Бюджет на таргет (далее)", value: "$500–600 / мес (по результатам)" },
+    ],
+    divisions: [
+      {
+        title: "Разработка / доработка сайта (опционально)",
+        amount: "≈ 12 000 000",
+        deliverables: [
+          { label: "Оценка", value: "по ТЗ от клиента" },
+          { label: "Формат", value: "полноценный сайт школы" },
+          { label: "Цель", value: "посадочная для трафика и заявок" },
+        ],
+      },
+      {
+        title: "Контекстная реклама (Google) — управление (опционально)",
+        amount: "6 000 000 / мес",
+        deliverables: [
+          { label: "Бюджет", value: "$400 / мес" },
+          { label: "Суть", value: "ловим горячие запросы из поисковиков" },
+          { label: "Куда ведём", value: "на сайт (заявка / экскурсия)" },
+        ],
+      },
     ],
   },
 };

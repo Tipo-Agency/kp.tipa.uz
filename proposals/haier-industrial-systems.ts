@@ -183,11 +183,22 @@ export const haierIndustrialSystems: ProposalData = {
     ],
     deliverables: [
       { label: "Съёмки в месяц", value: "2–3 выезда (склад / объект / офис)" },
-      { label: "Reels / видео", value: "8–10" },
-      { label: "Посты / карусели", value: "4–6" },
-      { label: "Stories", value: "ежедневно" },
+      { label: "Reels / видео", value: "8" },
+      { label: "Посты / карусели", value: "4" },
+      { label: "Stories", value: "2–3 в день" },
       { label: "Партнёрский контент", value: "отдельный трек для монтажников и проектировщиков" },
       { label: "Аналитика", value: "еженедельный отчёт" },
+    ],
+    divisions: [
+      {
+        title: "Разработка сайта-каталога с админкой (опционально)",
+        amount: "12 000 000",
+        deliverables: [
+          { label: "Функционал", value: "каталог, фильтры, карточки товара" },
+          { label: "Админка", value: "управление товарами и контентом" },
+          { label: "Цель", value: "удобная презентация и заявки" },
+        ],
+      },
     ],
   },
 };
