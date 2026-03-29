@@ -45,6 +45,16 @@ import { fishMarket } from "./fish-market";
 import { haierIndustrialSystems } from "./haier-industrial-systems";
 import { kattaTanaffusSchool } from "./katta-tanaffus-school";
 import { chigatoyMall } from "./chigatoy-mall";
+import { maccaldoUz } from "./maccaldo-uz";
+import { everUz } from "./ever-uz";
+import { milliTomLyar } from "./milli-tom-lyar";
+import { konditsionerRemontMontazh } from "./konditsioner-remont-montazh";
+import { kvizTashkent } from "./kviz-tashkent";
+import { badProizvoditel } from "./bad-proizvoditel";
+import { obuvSamarkandUzum } from "./obuv-samarkand-uzum";
+import { laminatPremiumPol } from "./laminat-premium-pol";
+import { leapmotorMahtumquli } from "./leapmotor-mahtumquli";
+import { polygonalUz } from "./polygonal-uz";
 
 export const PROPOSALS: Record<
   string,
@@ -90,6 +100,16 @@ export const PROPOSALS: Record<
   "haier-industrial-systems": haierIndustrialSystems,
   "katta-tanaffus-school": kattaTanaffusSchool,
   "chigatoy-mall": chigatoyMall,
+  "maccaldo-uz": maccaldoUz,
+  "ever-uz": everUz,
+  "milli-tom-lyar": milliTomLyar,
+  "konditsioner-remont-montazh": konditsionerRemontMontazh,
+  "kviz-tashkent": kvizTashkent,
+  "bad-proizvoditel": badProizvoditel,
+  "obuv-samarkand-uzum": obuvSamarkandUzum,
+  "laminat-premium-pol": laminatPremiumPol,
+  "leapmotor-mahtumquli": leapmotorMahtumquli,
+  "polygonal-uz": polygonalUz,
 };
 
 export type AnyProposal =
