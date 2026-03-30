@@ -1,6 +1,8 @@
 import type { ProposalData } from "../types";
 
-/** КП: Virtopay — сервис онлайн-оплат (Telegram Stars и др.) */
+const V = "/proposals/virtopay";
+
+/** КП: Virtopay — сервис онлайн-оплат (Telegram Stars и др.). Визуалы — референсный сток (Unsplash) в духе финтеха и мобильных оплат. */
 export const virtopay: ProposalData = {
   clientName: "Virtopay — оплата цифровых товаров и сервисов в интернете",
   hero: {
@@ -32,7 +34,7 @@ export const virtopay: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Платёжный сервис в Instagram выигрывает не «красивой кнопкой», а ясностью: что покупаю, как плачу, что если что-то пойдёт не так. Мы выстраиваем контент вокруг сценариев использования и доверия — от первого касания до повторной оплаты.",
+    "Платёжный сервис в Instagram выигрывает не «красивой кнопкой», а ясностью: что покупаю, как плачу, что если что-то пойдёт не так. Мы выстраиваем контент вокруг сценариев использования и доверия — от первого касания до повторной оплаты. Ниже в КП — пример визуального ряда (сток в духе финтеха и мобильных платежей); в работе заменим на ваши скриншоты, UI и бренд.",
   growthTool: {
     title: "От вопроса в Direct к оплате",
     description:
@@ -50,31 +52,36 @@ export const virtopay: ProposalData = {
       "Те, кто ищет альтернативу банковским картам в конкретных сервисах",
     ],
   },
+  rubricBlockImages: [
+    `${V}/a3_analytics.jpg`,
+    `${V}/a10_card.jpg`,
+    `${V}/a17_phone.jpg`,
+  ],
   rubrics: [
     {
       title: "Как оплатить",
       description: "Пошаговые гайды под популярные сценарии.",
-      imageUrl: "",
+      imageUrl: `${V}/a3_analytics.jpg`,
     },
     {
       title: "Telegram и Stars",
       description: "Звёзды, подписки, типичные вопросы — отдельная ветка.",
-      imageUrl: "",
+      imageUrl: `${V}/a10_card.jpg`,
     },
     {
       title: "Новости сервиса",
       description: "Обновления, новые способы оплаты, акции.",
-      imageUrl: "",
+      imageUrl: `${V}/a17_phone.jpg`,
     },
     {
       title: "Безопасность",
       description: "Честно про риски, верификацию и поддержку.",
-      imageUrl: "",
+      imageUrl: `${V}/a16_wallet.jpg`,
     },
     {
       title: "Отзывы",
       description: "Скриншоты, цитаты, UGC с согласия клиентов.",
-      imageUrl: "",
+      imageUrl: `${V}/a19_handshake.jpg`,
     },
     {
       title: "Сравнения",
@@ -89,21 +96,39 @@ export const virtopay: ProposalData = {
     {
       title: "FAQ",
       description: "Серия сторис: лимиты, время зачисления, валюты.",
-      imageUrl: "",
+      imageUrl: `${V}/a20_office.jpg`,
     },
     {
       title: "Поддержка",
       description: "Как с вами связаться, часы ответа, что подготовить перед обращением.",
-      imageUrl: "",
+      imageUrl: `${V}/a11_support.jpg`,
     },
   ],
   positioning: {
     title: "Virtopay — оплата в интернете без лишней возни",
     description:
       "Позиционируем сервис как понятный и отзывчивый способ оплатить цифровые товары и подписки там, где это неудобно сделать напрямую. Акцент на скорости, прозрачных условиях и человеческой поддержке — не «очередной агрегатор», а инструмент под реальные сценарии пользователя.",
-    images: [],
+    images: [
+      `${V}/a1_mobile_payment.jpg`,
+      `${V}/a2_online_shopping.jpg`,
+      `${V}/a4_phone_hand.jpg`,
+      `${V}/a13_crypto.jpg`,
+    ],
   },
-  visuals: [],
+  visuals: [
+    `${V}/a5_smartphones.jpg`,
+    `${V}/a6_money.jpg`,
+    `${V}/a7_laptop.jpg`,
+    `${V}/a8_team.jpg`,
+    `${V}/a9_developer_laptop.jpg`,
+    `${V}/a12_meeting.jpg`,
+    `${V}/a14_chart.jpg`,
+    `${V}/a15_contactless.jpg`,
+    `${V}/a18_invoice.jpg`,
+    `${V}/a3_analytics.jpg`,
+    `${V}/a10_card.jpg`,
+    `${V}/a17_phone.jpg`,
+  ],
   ads: [
     {
       title: "Конверсия в первую оплату",
