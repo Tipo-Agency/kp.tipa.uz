@@ -55,6 +55,7 @@ import { obuvSamarkandUzum } from "./obuv-samarkand-uzum";
 import { laminatPremiumPol } from "./laminat-premium-pol";
 import { leapmotorMahtumquli } from "./leapmotor-mahtumquli";
 import { polygonalUz } from "./polygonal-uz";
+import { terrasaUz } from "./terrasa-uz";
 
 export const PROPOSALS: Record<
   string,
@@ -110,6 +111,7 @@ export const PROPOSALS: Record<
   "laminat-premium-pol": laminatPremiumPol,
   "leapmotor-mahtumquli": leapmotorMahtumquli,
   "polygonal-uz": polygonalUz,
+  "terrasa-uz": terrasaUz,
 };
 
 export type AnyProposal =
