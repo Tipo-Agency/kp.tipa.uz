@@ -1,5 +1,7 @@
 import type { ProposalData } from "../types";
 
+const T = "/proposals/terrasa-uz";
+
 /** КП: Terrasa.uz — производитель террасной доски, Узбекистан и ближнее зарубежье */
 export const terrasaUz: ProposalData = {
   clientName: "Terrasa.uz — производитель террасной доски",
@@ -50,31 +52,36 @@ export const terrasaUz: ProposalData = {
       "HoReCa: кафе, отели, зоны отдыха с открытыми террасами",
     ],
   },
+  rubricBlockImages: [
+    `${T}/2ab08a7429d5df06701eeb1f4d2d3228.jpg`,
+    `${T}/3277d25c061c124dd2287647763e38ce.jpg`,
+    `${T}/4297a1a7e3af75666047ee292f9a53ea.jpg`,
+  ],
   rubrics: [
     {
       title: "Коллекции и цвета",
       description: "Линейки доски, фактура, палитра под интерьер и фасад.",
-      imageUrl: "",
+      imageUrl: `${T}/2ab08a7429d5df06701eeb1f4d2d3228.jpg`,
     },
     {
       title: "Производство",
       description: "Как делают доску: этапы, контроль, упаковка и отгрузка.",
-      imageUrl: "",
+      imageUrl: `${T}/3277d25c061c124dd2287647763e38ce.jpg`,
     },
     {
       title: "Объекты",
       description: "Реализованные террасы в РУз и за рубежом — социальное доказательство.",
-      imageUrl: "",
+      imageUrl: `${T}/4297a1a7e3af75666047ee292f9a53ea.jpg`,
     },
     {
       title: "Монтаж и эксплуатация",
       description: "Лаги, крепёж, уход; типичные ошибки и как их избежать.",
-      imageUrl: "",
+      imageUrl: `${T}/c557b8085d9680e266b5a0ff54e47b10.jpg`,
     },
     {
       title: "Дерево vs композит",
       description: "Честное сравнение срока службы, ухода и стоимости владения.",
-      imageUrl: "",
+      imageUrl: `${T}/eebdac05b456cb1754237d17bdc10157.jpg`,
     },
     {
       title: "Дилерам",
@@ -101,9 +108,27 @@ export const terrasaUz: ProposalData = {
     title: "Terrasa — своя фабрика, понятное качество, география поставок",
     description:
       "Позиционируем бренд как производителя террасной доски с прозрачным производством и сетью партнёров в Узбекистане и соседних странах. Акцент: долговечность материала, эстетика террасы и сопровождение от подбора до монтажа — не «разовая продажа», а надёжный партнёр для объекта.",
-    images: [],
+    images: [
+      `${T}/03f33a5d8e7a01487b418d4edd3e11ad.jpg`,
+      `${T}/08485e3b95fdd08bee25c2530f92b9c5.jpg`,
+      `${T}/121eae6cc4560e67e297a67ee3d9d6be.jpg`,
+      `${T}/1bf2c87daf5be8db13923cb274b9af91.jpg`,
+    ],
   },
-  visuals: [],
+  visuals: [
+    `${T}/588af839e79baefe9fd4090de8c57bc4.jpg`,
+    `${T}/623ad26e8a83fce4ace1a2677ae6be26.jpg`,
+    `${T}/8611c17ce78c7d7b8cbe2e48c3095274.jpg`,
+    `${T}/87d37b1bfebb3ca60a775ee883d73a03.jpg`,
+    `${T}/922a5a15912568c029f789f62e9e5ad4.jpg`,
+    `${T}/9503dff99dfc7de6f8219158e71cc799.jpg`,
+    `${T}/a5ad7ad1dda9c820f9e41f11ff0a1db3.jpg`,
+    `${T}/a5dc3ca311ef215504d5a490d1fb74a3.jpg`,
+    `${T}/a7626ee21059cbb5abff37865c085c04.jpg`,
+    `${T}/b3468a3fbb980927fdeed4ed14a24672.jpg`,
+    `${T}/bbcfc6529e1f5951d1c64a221175f24c.jpg`,
+    `${T}/c0d92237fed867796fcecc89e66537fb.jpg`,
+  ],
   ads: [
     {
       title: "Лиды B2C и B2B",

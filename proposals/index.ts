@@ -56,6 +56,7 @@ import { laminatPremiumPol } from "./laminat-premium-pol";
 import { leapmotorMahtumquli } from "./leapmotor-mahtumquli";
 import { polygonalUz } from "./polygonal-uz";
 import { terrasaUz } from "./terrasa-uz";
+import { virtopay } from "./virtopay";
 
 export const PROPOSALS: Record<
   string,
@@ -112,6 +113,7 @@ export const PROPOSALS: Record<
   "leapmotor-mahtumquli": leapmotorMahtumquli,
   "polygonal-uz": polygonalUz,
   "terrasa-uz": terrasaUz,
+  "virtopay": virtopay,
 };
 
 export type AnyProposal =

@@ -145,7 +145,7 @@ export const milliTomLyar: ProposalData = {
     },
   ],
   pricing: {
-    amount: "12 000 000",
+    amount: "12 500 000",
     currency: "сум",
     period: "месяц",
     team: ["SMM-стратег", "Фуд-видеограф", "Дизайнер", "Таргетолог", "Комьюнити"],

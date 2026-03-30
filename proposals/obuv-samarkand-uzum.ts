@@ -156,7 +156,7 @@ export const obuvSamarkandUzum: ProposalData = {
     },
   ],
   pricing: {
-    amount: "12 000 000",
+    amount: "12 500 000",
     currency: "сум",
     period: "месяц",
     team: ["SMM-стратег", "Видеограф", "Дизайнер", "Таргетолог", "Комьюнити"],
