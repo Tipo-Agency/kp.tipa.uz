@@ -10,6 +10,7 @@ import VisualGrid from "../components/ProposalBlocks/VisualGrid";
 import AdsPromotion from "../components/ProposalBlocks/AdsPromotion";
 import SalesStructure from "../components/ProposalBlocks/SalesStructure";
 import AdFunnels from "../components/ProposalBlocks/AdFunnels";
+import StrategyGrowth from "../components/ProposalBlocks/StrategyGrowth";
 import Cases from "../components/ProposalBlocks/Cases";
 import Pricing from "../components/ProposalBlocks/Pricing";
 import { WebsiteHook } from "../components/WebsiteBlocks/WebsiteHook";
@@ -299,6 +300,11 @@ export const ProposalPage: React.FC = () => {
       <div className="reveal">
         <Audience primary={proposal.audience.primary} secondary={proposal.audience.secondary} imageUrl={proposal.audienceImageUrl} />
       </div>
+      {"strategyGrowth" in proposal && proposal.strategyGrowth ? (
+        <div className="reveal">
+          <StrategyGrowth data={proposal.strategyGrowth} />
+        </div>
+      ) : null}
       <div className="reveal">
         <ContentRubrics rubrics={proposal.rubrics} blockImages={proposal.rubricBlockImages} />
       </div>
@@ -334,6 +340,7 @@ export const ProposalPage: React.FC = () => {
           team={proposal.pricing.team}
           deliverables={proposal.pricing.deliverables}
           divisions={proposal.pricing.divisions}
+          notes={"notes" in proposal.pricing ? proposal.pricing.notes : undefined}
         />
       </div>
 

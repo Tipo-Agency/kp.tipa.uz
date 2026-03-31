@@ -16,9 +16,11 @@ interface PricingProps {
   team: string[];
   deliverables: { label: string, value: string }[];
   divisions?: PricingDivision[];
+  /** Примечания под блоком цены (бюджеты в валюте, условия) */
+  notes?: string[];
 }
 
-const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliverables, divisions }) => {
+const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliverables, divisions, notes }) => {
   return (
     <Section className="bg-white text-slate-900">
       <Container>
@@ -123,7 +125,21 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
             {/* Фоновый декор */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#3337AD] opacity-10 blur-[100px] pointer-events-none"></div>
           </div>
-          
+
+          {notes && notes.length > 0 ? (
+            <div className="mt-12 max-w-4xl mx-auto rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8 text-left">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Примечания по бюджетам и условиям</p>
+              <ul className="space-y-2 text-sm text-slate-600 leading-relaxed">
+                {notes.map((n, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-[#3337AD] font-bold">—</span>
+                    <span>{n}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
           <div className="mt-16 text-center">
             <p className="text-slate-300 text-[10px] uppercase tracking-[0.4em]">
               ТИПА АГЕНТСТВО • ПРЕДЛОЖЕНИЕ ДЕЙСТВИТЕЛЬНО В ТЕЧЕНИЕ 14 ДНЕЙ

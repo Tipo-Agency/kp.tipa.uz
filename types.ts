@@ -28,6 +28,22 @@ export interface FunnelBlock {
   };
 }
 
+/** Схемы стратегии и воронок (опционально, для расширенных КП) */
+export interface StrategyGrowthData {
+  eyebrow: string;
+  title: string;
+  marketParagraphs: string[];
+  roiTitle: string;
+  roiSteps: { label: string; text: string }[];
+  smmTitle: string;
+  smmLevels: {
+    level: number;
+    title: string;
+    description: string;
+    bullets: string[];
+  }[];
+}
+
 export interface CaseItem {
   title: string;
   category?: string;
@@ -257,6 +273,8 @@ export interface ProposalData {
   /** Подзаголовок блока «Структура продаж» (если не задан — дефолтный текст) */
   salesStructureIntro?: string;
   funnels?: FunnelBlock[];
+  /** Стратегия рынков + схемы воронок (каналы/ROI и SMM) */
+  strategyGrowth?: StrategyGrowthData;
   cases?: CaseItem[];
   pricing: {
     amount: string;
