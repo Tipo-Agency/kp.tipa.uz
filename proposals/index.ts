@@ -57,6 +57,7 @@ import { leapmotorMahtumquli } from "./leapmotor-mahtumquli";
 import { polygonalUz } from "./polygonal-uz";
 import { terrasaUz } from "./terrasa-uz";
 import { virtopay } from "./virtopay";
+import { milkvillUz } from "./milkvill-uz";
 
 export const PROPOSALS: Record<
   string,
@@ -114,6 +115,7 @@ export const PROPOSALS: Record<
   "polygonal-uz": polygonalUz,
   "terrasa-uz": terrasaUz,
   "virtopay": virtopay,
+  "milkvill-uz": milkvillUz,
 };
 
 export type AnyProposal =
