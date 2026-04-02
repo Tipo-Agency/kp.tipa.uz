@@ -58,26 +58,26 @@ export const milkvillUz: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    `${BASE}/f950cd1700c7241f368a60bce0c4d25a.jpg`,
-    `${BASE}/ca88eafc683e8163729674369b01e2a4.jpg`,
-    `${BASE}/69733fc361c9f9b53f574c8e43938d8c.jpg`,
+    `${BASE}/14d35aec6885f0277abda8c033fe9f19.jpg`,
+    `${BASE}/7b67a3c8fac1e3fa52cefb0229913cff.jpg`,
+    `${BASE}/7cdc0e0c22bad8e13cc6fed0e5f0b021.jpg`,
   ],
   rubrics: [
     {
       title: "Рецепты и «дом vs бренд»",
       description:
         "Блюда с маслом, сгущёнкой, сухим молоком; форматы «сделай масло дома» + слепой тест с MilkVill; пряное масло из нашего масла и специй.",
-      imageUrl: `${BASE}/f950cd1700c7241f368a60bce0c4d25a.jpg`,
+      imageUrl: `${BASE}/14d35aec6885f0277abda8c033fe9f19.jpg`,
     },
     {
       title: "Производство",
       description: "Цех, процессы, стандарты — короткие честные эпизоды.",
-      imageUrl: `${BASE}/ca88eafc683e8163729674369b01e2a4.jpg`,
+      imageUrl: `${BASE}/7b67a3c8fac1e3fa52cefb0229913cff.jpg`,
     },
     {
       title: "Люди MilkVill",
       description: "Команда, закулисье, «кто делает ваш продукт».",
-      imageUrl: `${BASE}/69733fc361c9f9b53f574c8e43938d8c.jpg`,
+      imageUrl: `${BASE}/7cdc0e0c22bad8e13cc6fed0e5f0b021.jpg`,
     },
     {
       title: "Скетчи и юмор",
@@ -102,12 +102,12 @@ export const milkvillUz: ProposalData = {
     {
       title: "Сезон и праздники",
       description: "Пасха, Новый год, школа — рецепты и промо под даты.",
-      imageUrl: `${BASE}/092311393b251e4ca91b07454310381a.jpg`,
+      imageUrl: `${BASE}/f950cd1700c7241f368a60bce0c4d25a.jpg`,
     },
     {
       title: "Stories и FAQ",
       description: "Хранение, сроки, ответы из Direct.",
-      imageUrl: `${BASE}/14d35aec6885f0277abda8c033fe9f19.jpg`,
+      imageUrl: `${BASE}/ca88eafc683e8163729674369b01e2a4.jpg`,
     },
   ],
   positioning: {
@@ -115,25 +115,25 @@ export const milkvillUz: ProposalData = {
     description:
       "Позиционируем бренд как производителя с понятной линейкой: сливочное масло, сгущённое молоко, сухое молоко. В ленте рецепты тянут охват, а производство и люди переводят интерес в доверие к продукту.",
     images: [
-      `${BASE}/71abd4ffc95c88e3e76a28b7809750ef.jpg`,
-      `${BASE}/38362163b12de550cf7a8c54d4e4b420.jpg`,
-      `${BASE}/2ba7fb5baf61cb517b0d317f3b8d7dfe.jpg`,
-      `${BASE}/8c13f2c382c752317e6c61da932010b6.jpg`,
+      `${BASE}/092311393b251e4ca91b07454310381a.jpg`,
+      `${BASE}/92fb5922b4d0cb670b06a308d70c7665.jpg`,
+      `${BASE}/d1e5e62eca1e5f0f8164481df7ddfbb5.jpg`,
+      `${BASE}/fadd066bf7417d37189802ca8ab50a1a.jpg`,
     ],
   },
   visuals: [
-    `${BASE}/092311393b251e4ca91b07454310381a.jpg`,
-    `${BASE}/14d35aec6885f0277abda8c033fe9f19.jpg`,
-    `${BASE}/7b67a3c8fac1e3fa52cefb0229913cff.jpg`,
-    `${BASE}/7cdc0e0c22bad8e13cc6fed0e5f0b021.jpg`,
+    `${BASE}/71abd4ffc95c88e3e76a28b7809750ef.jpg`,
+    `${BASE}/38362163b12de550cf7a8c54d4e4b420.jpg`,
+    `${BASE}/2ba7fb5baf61cb517b0d317f3b8d7dfe.jpg`,
+    `${BASE}/8c13f2c382c752317e6c61da932010b6.jpg`,
+    `${BASE}/69733fc361c9f9b53f574c8e43938d8c.jpg`,
     `${BASE}/92a9e1f3a19dc583c852bbf1733a8691.jpg`,
-    `${BASE}/92fb5922b4d0cb670b06a308d70c7665.jpg`,
     `${BASE}/96a287d500248f3d8a6e897c3a3cc6f4.jpg`,
     `${BASE}/97f8dd9e473b6bf7ddb96213ef5fc9e0.jpg`,
-    `${BASE}/d1e5e62eca1e5f0f8164481df7ddfbb5.jpg`,
     `${BASE}/e4a4b3546e7ee48e124f8389f2793c22.jpg`,
     `${BASE}/f9f6962b7d9c9c237082a25727e57875.jpg`,
-    `${BASE}/fadd066bf7417d37189802ca8ab50a1a.jpg`,
+    `${BASE}/f950cd1700c7241f368a60bce0c4d25a.jpg`,
+    `${BASE}/92fb5922b4d0cb670b06a308d70c7665.jpg`,
   ],
   ads: [
     {
