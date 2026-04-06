@@ -58,6 +58,9 @@ import { polygonalUz } from "./polygonal-uz";
 import { terrasaUz } from "./terrasa-uz";
 import { virtopay } from "./virtopay";
 import { milkvillUz } from "./milkvill-uz";
+import { firuzaBarakaGold } from "./firuza-baraka-gold";
+import { royalCareUzb } from "./royal-care-uzb";
+import { koreaAutoApostille } from "./korea-auto-apostille";
 
 export const PROPOSALS: Record<
   string,
@@ -116,6 +119,9 @@ export const PROPOSALS: Record<
   "terrasa-uz": terrasaUz,
   "virtopay": virtopay,
   "milkvill-uz": milkvillUz,
+  "firuza-baraka-gold": firuzaBarakaGold,
+  "royal-care-uzb": royalCareUzb,
+  "korea-auto-apostille": koreaAutoApostille,
 };
 
 export type AnyProposal =
