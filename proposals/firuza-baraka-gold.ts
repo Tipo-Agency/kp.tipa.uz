@@ -17,7 +17,7 @@ export const firuzaBarakaGold: ProposalData = {
   hero: {
     title: "Instagram, который продаёт доверие к золоту и украшениям",
     subtitle:
-      "Аккаунт: https://www.instagram.com/firuza_baraka_gold/ · страница КП: https://kp.tipa.uz/firuza-baraka-gold. Задача — премиальная подача ассортимента, прозрачность по пробе и весу, эмоция покупки и удобный путь в Direct: консультация, подбор, доставка.",
+      "Задача — премиальная подача ассортимента, прозрачность по пробе и весу, эмоция покупки и удобный путь в Direct: консультация, подбор, доставка.",
   },
   services: [
     {
@@ -43,7 +43,7 @@ export const firuzaBarakaGold: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Ювелирка в соцсетях выигрывает от сочетания красоты кадра и честных деталей: что за изделие, для кого, как получить. Ниже — ваши загруженные кадры в блоках матрицы, позиционирования и сетке визуала. Instagram: https://www.instagram.com/firuza_baraka_gold/",
+    "Ювелирка в соцсетях выигрывает от сочетания красоты кадра и честных деталей: что за изделие, для кого, как получить. Ниже — ваши загруженные кадры в блоках матрицы, позиционирования и сетке визуала.",
   growthTool: {
     title: "От лайка к сообщению в Direct",
     description:
@@ -113,7 +113,7 @@ export const firuzaBarakaGold: ProposalData = {
   positioning: {
     title: "Firuza Baraka Gold — честная подача и эстетика",
     description:
-      "Позиционируем аккаунт как место, где красиво показывают золото и спокойно отвечают на вопросы: без давления, с уважением к покупателю. Канал: https://www.instagram.com/firuza_baraka_gold/ · КП: https://kp.tipa.uz/firuza-baraka-gold",
+      "Позиционируем аккаунт как место, где красиво показывают золото и спокойно отвечают на вопросы: без давления, с уважением к покупателю.",
     images: posI.map((i) => u(FIRUZA_IMAGES[i])),
   },
   visuals,

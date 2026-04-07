@@ -17,7 +17,7 @@ export const royalCareUzb: ProposalData = {
   hero: {
     title: "Два Instagram — одна экосистема доверия родителей",
     subtitle:
-      "Аккаунты: https://www.instagram.com/royalcare.uzb и https://www.instagram.com/bubchen.uz · КП: https://kp.tipa.uz/royal-care-uzb. Задача: разделить смыслы бренда и линейки (уход, доверие, экспертиза) и при этом держать узнаваемый визуальный ДНК; охваты, вовлечение и заявки в Direct/магазин.",
+      "Два аккаунта — магазин Royal Care и профиль линейки Bübchen. Задача: разделить смыслы бренда и линейки (уход, доверие, экспертиза) и при этом держать узнаваемый визуальный ДНК; охваты, вовлечение и заявки в Direct/магазин.",
   },
   services: [
     {
@@ -113,7 +113,7 @@ export const royalCareUzb: ProposalData = {
   positioning: {
     title: "Royal Care — забота, которой можно доверять",
     description:
-      "Позиционируем экосистему как честный источник детской косметики: @royalcare.uzb — широкий угол магазина и сервиса; @bubchen.uz — глубина по бренду Bübchen. Ссылки: https://www.instagram.com/royalcare.uzb · https://www.instagram.com/bubchen.uz",
+      "Позиционируем экосистему как честный источник детской косметики: @royalcare.uzb — широкий угол магазина и сервиса; @bubchen.uz — глубина по бренду Bübchen.",
     images: posI.map((i) => u(ROYAL_CARE_IMAGES[i])),
   },
   visuals,

@@ -8,7 +8,7 @@ export const laminatPremiumPol: ProposalData = {
   hero: {
     title: "Instagram для магазина полов: визуал, экспертиза и заявки",
     subtitle:
-      "Продвижение Laminat Premium Pol — https://www.instagram.com/laminat_premium_pol/ · ламинат, паркет, сопутствующие товары. Контент: интерьеры, сравнения, монтаж, склад и доставка; таргет на ремонт и дизайн. Страница КП: https://kp.tipa.uz/laminat-premium-pol · дубль: https://kp.tipa.uz/laminat-premium-pol",
+      "Ламинат, паркет, сопутствующие товары. Контент: интерьеры, сравнения, монтаж, склад и доставка; таргет на ремонт и дизайн.",
   },
   services: [
     {
@@ -34,11 +34,11 @@ export const laminatPremiumPol: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Пол — решение на годы: в ленте важно показать и красоту, и параметры, и сервис. Собираем это в рубрики с единой эстетикой кадра. Instagram: https://www.instagram.com/laminat_premium_pol/ · КП: https://kp.tipa.uz/laminat-premium-pol",
+    "Пол — решение на годы: в ленте важно показать и красоту, и параметры, и сервис. Собираем это в рубрики с единой эстетикой кадра.",
   growthTool: {
     title: "От лайка к замеру",
     description:
-      "Чёткие офферы в stories, быстрые ответы в Direct, кнопки на WhatsApp/Telegram — конверсия в заявку. Профиль: https://www.instagram.com/laminat_premium_pol/ · презентация: https://kp.tipa.uz/laminat-premium-pol",
+      "Чёткие офферы в stories, быстрые ответы в Direct, кнопки на WhatsApp/Telegram — конверсия в заявку.",
   },
   audienceImageUrl: "/shared/audience.png",
   audience: {
@@ -104,7 +104,7 @@ export const laminatPremiumPol: ProposalData = {
   positioning: {
     title: "Премиум-пол без лишней накрутки",
     description:
-      "Позиционируем магазин как место, где помогут выбрать и не ошибиться с покрытием: и по внешнему виду, и по характеристикам, и по монтажу. Канал: https://www.instagram.com/laminat_premium_pol/ · коммерческое предложение: https://kp.tipa.uz/laminat-premium-pol",
+      "Позиционируем магазин как место, где помогут выбрать и не ошибиться с покрытием: и по внешнему виду, и по характеристикам, и по монтажу.",
     images: [
       `${L}/049aae88329750a367ca01b40657ec94.jpg`,
       `${L}/09a6546be17a7e70ff03d4465a6b8bf1.jpg`,

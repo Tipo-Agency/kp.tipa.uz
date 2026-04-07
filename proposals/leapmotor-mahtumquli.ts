@@ -6,7 +6,7 @@ export const leapmotorMahtumquli: ProposalData = {
   hero: {
     title: "Instagram для автосалона электромобилей Leapmotor",
     subtitle:
-      "Продвижение https://www.instagram.com/leapmotor_mahtumquli — тест-драйвы, модельный ряд, комплектации, сервис и кредит/лизинг. Контент на доверие к бренду и запись на визит в салон.",
+      "Тест-драйвы, модельный ряд, комплектации, сервис и кредит/лизинг. Контент на доверие к бренду и запись на визит в салон.",
   },
   services: [
     {

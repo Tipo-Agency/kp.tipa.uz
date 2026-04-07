@@ -8,7 +8,7 @@ export const konditsionerRemontMontazh: ProposalData = {
   hero: {
     title: "Instagram, который приносит заявки на выезд",
     subtitle:
-      "Продвижение сервиса кондиционеров: монтаж, демонтаж, чистка, заправка, ремонт. Контент строим на доверии: мастера, процесс, гарантии, до/после — и таргет на горячих клиентов в сезон. Страница КП: https://kp.tipa.uz/konditsioner-remont-montazh · дубль ссылки: https://kp.tipa.uz/konditsioner-remont-montazh",
+      "Продвижение сервиса кондиционеров: монтаж, демонтаж, чистка, заправка, ремонт. Контент строим на доверии: мастера, процесс, гарантии, до/после — и таргет на горячих клиентов в сезон.",
   },
   services: [
     {
@@ -34,11 +34,11 @@ export const konditsionerRemontMontazh: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "В нише сервиса решает прозрачность: кто приедет, сколько стоит, что гарантируем. Показываем это в контенте системно. Презентация: https://kp.tipa.uz/konditsioner-remont-montazh",
+    "В нише сервиса решает прозрачность: кто приедет, сколько стоит, что гарантируем. Показываем это в контенте системно.",
   growthTool: {
     title: "Доверие → заявка",
     description:
-      "Мастер в кадре, понятные цены в сторис, быстрый ответ в Direct — конверсия выше, чем у «сухого» каталога. Ссылка на КП: https://kp.tipa.uz/konditsioner-remont-montazh",
+      "Мастер в кадре, понятные цены в сторис, быстрый ответ в Direct — конверсия выше, чем у «сухого» каталога.",
   },
   audienceImageUrl: "/shared/audience.png",
   audience: {
@@ -104,7 +104,7 @@ export const konditsionerRemontMontazh: ProposalData = {
   positioning: {
     title: "Надёжный сервис кондиционеров",
     description:
-      "Позиционируем вас как команду, которой можно доверить монтаж и ремонт без лишних рисков. Коммерческое предложение: https://kp.tipa.uz/konditsioner-remont-montazh",
+      "Позиционируем вас как команду, которой можно доверить монтаж и ремонт без лишних рисков.",
     images: [
       `${K}/234c5f2dc5a30be55d1f74204eefcacd.jpg`,
       `${K}/2896b3960eebfc8bd682b045dcc41e6f.jpg`,
