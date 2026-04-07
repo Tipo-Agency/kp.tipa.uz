@@ -61,6 +61,7 @@ import { milkvillUz } from "./milkvill-uz";
 import { firuzaBarakaGold } from "./firuza-baraka-gold";
 import { royalCareUzb } from "./royal-care-uzb";
 import { koreaAutoApostille } from "./korea-auto-apostille";
+import { herbalifeUz } from "./herbalife-uz";
 
 export const PROPOSALS: Record<
   string,
@@ -122,6 +123,7 @@ export const PROPOSALS: Record<
   "firuza-baraka-gold": firuzaBarakaGold,
   "royal-care-uzb": royalCareUzb,
   "korea-auto-apostille": koreaAutoApostille,
+  "herbalife-uz": herbalifeUz,
 };
 
 export type AnyProposal =

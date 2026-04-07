@@ -1,10 +1,19 @@
 import type { ProposalData } from "../types";
+import { smmTripleFunnel } from "./smm-triple-funnel";
+import { KOREA_AUTO_IMAGES, mediaUrl } from "./proposalUploadedMedia";
 
-const V = "/proposals/virtopay";
+const B = "/proposals/korea-auto-apostille";
+const u = (file: string) => mediaUrl(B, file);
+
+const posI = [0, 7, 14, 21] as const;
+const blockI = [3, 10, 17] as const;
+const rubI = [1, 2, 4, 5, 6, 8, 9, 11, 12] as const;
+const used = new Set<number>([...posI, ...blockI, ...rubI]);
+const visuals = KOREA_AUTO_IMAGES.filter((_, i) => !used.has(i)).map((f) => u(f));
 
 /**
  * КП: два направления бизнеса — корейские авторасходники и апостиль Узбекистан–Корея.
- * Два аккаунта / два проекта, цена за направление 12,5 млн.
+ * Пакет ниже — на один аккаунт; второе направление — второй аккаунт по той же ставке.
  */
 export const koreaAutoApostille: ProposalData = {
   clientName: "Корея: авторасходники и апостиль (два направления)",
@@ -37,12 +46,13 @@ export const koreaAutoApostille: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Два направления нельзя смешивать в одной ленте без стратегии: для автозапчастей — товар, логистика, совместимость; для апостиля — юридическая ясность и эмпатия. Мы выстраиваем два отдельных смысловых потока с согласованным визуальным минимализмом бренда «Корея/надёжность».",
+    "Два направления нельзя смешивать в одной ленте без стратегии: для автозапчастей — товар, логистика, совместимость; для апостиля — юридическая ясность и эмпатия. Ниже — ваши кадры в блоках КП. Таргет и блогеры — с отдельным бюджетом.",
   growthTool: {
     title: "Из охвата в заявку: разные скрипты для авто и документов",
     description:
       "Для запчастей — быстрый подбор по запросу (модель, год, VIN). Для апостиля — квалификация лида: тип документа, срок, страна назначения. Меньше общих фраз в Direct — выше конверсия.",
   },
+  growthFunnel: smmTripleFunnel,
   audienceImageUrl: "/shared/audience.png",
   audience: {
     primary: [
@@ -55,89 +65,80 @@ export const koreaAutoApostille: ProposalData = {
       "Те, кто уже в Корее и нуждается в дистанционной подготовке бумаг по сканам",
     ],
   },
-  rubricBlockImages: [`${V}/a3_analytics.jpg`, `${V}/a10_card.jpg`, `${V}/a17_phone.jpg`],
+  rubricBlockImages: blockI.map((i) => u(KOREA_AUTO_IMAGES[i])),
   rubrics: [
     {
       title: "Авто: совместимость и качество",
       description: "Подбор по модели, отличия оригинала, что везём под заказ.",
-      imageUrl: `${V}/a3_analytics.jpg`,
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[0]]),
     },
     {
       title: "Авто: логистика и наличие",
       description: "Сроки из Кореи, резерв, как отследить заказ.",
-      imageUrl: `${V}/a10_card.jpg`,
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[1]]),
     },
     {
       title: "Авто: Uzum и опт",
       description: "Как купить на маркетплейсе; условия для партнёров.",
-      imageUrl: `${V}/a17_phone.jpg`,
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[2]]),
     },
     {
       title: "Апостиль: пошагово",
       description: "Этапы легализации, что отдаём на выходе.",
-      imageUrl: `${V}/a16_wallet.jpg`,
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[3]]),
     },
     {
       title: "Апостиль: документы",
       description: "Типовые пакеты: дипломы, справки, свидетельства.",
-      imageUrl: "",
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[4]]),
     },
     {
       title: "Апостиль: дистанционно",
       description: "Работа по сканам, когда нужен оригинал, сроки.",
-      imageUrl: "",
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[5]]),
     },
     {
       title: "Кейсы и отзывы",
       description: "Анонимизированные истории (с согласия).",
-      imageUrl: `${V}/a20_office.jpg`,
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[6]]),
     },
     {
       title: "FAQ",
       description: "Частые вопросы по обоим направлениям — в разных хайлайтах.",
-      imageUrl: `${V}/a11_support.jpg`,
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[7]]),
     },
     {
       title: "Команда и процесс",
       description: "Кто ведёт заказ, как с вами связаться.",
-      imageUrl: "",
+      imageUrl: u(KOREA_AUTO_IMAGES[rubI[8]]),
     },
   ],
   positioning: {
     title: "Корея близко: запчасти и документы без лишнего шума",
     description:
       "Позиционируем импорт авторасходников как предсказуемый канал с понятными сроками и честным товаром. Апостиль — как спокойное сопровождение: не обещаем невозможного, выстраиваем доверие через процесс. КП: https://kp.tipa.uz/korea-auto-apostille",
-    images: [`${V}/a1_mobile_payment.jpg`, `${V}/a2_online_shopping.jpg`, `${V}/a4_phone_hand.jpg`, `${V}/a13_crypto.jpg`],
+    images: posI.map((i) => u(KOREA_AUTO_IMAGES[i])),
   },
-  visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-  ],
+  visuals,
   ads: [
     {
-      title: "Авто: интересы и гео",
-      description: "Владельцы корейских авто, СТО, запчасти; тест креативов под Retail и B2B.",
+      title: "Таргет Meta",
+      description:
+        "Для авто — интересы, гео, владельцы корейских марок; для апостиля — релокация, образование, диаспора. Бюджет на рекламу — отдельно, не входит в абонентскую плату.",
     },
     {
-      title: "Апостиль: холодный и тёплый трафик",
-      description: "Образование, релокация, Корея; ретаргет на FAQ и лид-формы.",
+      title: "Блогеры и эксперты",
+      description:
+        "Авто: обзоры, гаражный контент, СТО. Апостиль: личные истории, эмиграция, учёба. Подбор и оплата интеграций — отдельная статья расходов.",
     },
     {
-      title: "Раздельные кабинеты / пиксели",
-      description: "Чтобы не смешивать аудитории двух направлений — корректная аналитика.",
+      title: "Раздельные кабинеты",
+      description:
+        "Чтобы не смешивать аудитории двух направлений и корректно считать эффективность по каждому аккаунту.",
     },
   ],
   salesStructureIntro:
-    "Это два разных продукта: один продаёт вещь со сроком и артикулом, второй — спокойие и ясность по бумагам. Ниже — как делим контент и воронки, чтобы не путать аудитории.",
+    "Это два разных продукта: один продаёт вещь со сроком и артикулом, второй — спокойствие и ясность по бумагам. Ниже — как делим контент и воронки, чтобы не путать аудитории.",
   salesTracks: [
     {
       title: "Направление 1 — Авторасходники (корейские авто)",
@@ -161,46 +162,49 @@ export const koreaAutoApostille: ProposalData = {
     },
   ],
   pricing: {
-    amount: "25 000 000",
+    amount: "9 000 000",
     currency: "сум",
     period: "месяц",
     team: ["SMM-стратег", "Моушн / Reels", "Дизайнер", "Таргетолог", "Комьюнити"],
     deliverables: [
-      { label: "Reels / видео", value: "8–10 (на два направления)" },
-      { label: "Посты / карусели", value: "4–6 на каждое направление" },
-      { label: "Stories", value: "ежедневно по графику" },
-      { label: "Контент-план", value: "2 проекта (2 аккаунта)" },
-      { label: "Отчёт", value: "еженедельно, разбивка по направлениям" },
+      { label: "Reels", value: "6" },
+      { label: "Посты-карусели", value: "6" },
+      { label: "Stories", value: "60 / мес по графику" },
+      { label: "Аккаунт", value: "1 Instagram" },
+      { label: "Отчёт", value: "еженедельно" },
     ],
     divisions: [
       {
-        title: "Проект 1 — Авторасходники",
-        amount: "12 500 000",
+        title: "Один аккаунт (одно направление)",
+        amount: "9 000 000",
         deliverables: [
-          { label: "Фокус", value: "импорт, совместимость, Instagram + Uzum + опт" },
-          { label: "Формат", value: "отдельная стратегия ленты" },
-          { label: "Стоимость", value: "за 1 проект / месяц" },
+          { label: "Пакет", value: "как в блоке выше" },
+          { label: "Подходит", value: "только авто или только апостиль" },
+          { label: "Стоимость", value: "в месяц" },
         ],
       },
       {
-        title: "Проект 2 — Апостиль",
-        amount: "12 500 000",
+        title: "Второй аккаунт (второе направление)",
+        amount: "9 000 000",
         deliverables: [
-          { label: "Фокус", value: "легализация документов, дистанционные кейсы" },
-          { label: "Формат", value: "отдельная стратегия ленты" },
-          { label: "Стоимость", value: "за 1 проект / месяц" },
+          { label: "Пакет", value: "тот же объём контента" },
+          { label: "Логика", value: "отдельная лента и гипотезы" },
+          { label: "Стоимость", value: "в месяц" },
         ],
       },
       {
-        title: "Оба направления (комплекс)",
-        amount: "25 000 000",
+        title: "Оба направления (два аккаунта)",
+        amount: "18 000 000",
         deliverables: [
-          { label: "Выгода", value: "единая команда, согласованный график" },
-          { label: "Объём", value: "полный пакет на два аккаунта" },
-          { label: "Сумма", value: "12,5 млн + 12,5 млн" },
+          { label: "Сумма", value: "9 + 9 млн / мес" },
+          { label: "Команда", value: "единая, синхронный график" },
+          { label: "Выгода", value: "не смешиваем смыслы в одной ленте" },
         ],
       },
     ],
-    notes: ["Цена 12 500 000 сум — за одно направление (один аккаунт) в месяц. Рекламный бюджет Meta — отдельно."],
+    notes: [
+      "Таргет Meta и работа с блогерами не включены в 9 000 000 — бюджет согласуем отдельно под каждое направление.",
+      "Если ведём один аккаунт с двумя темами в ленте — это отдельная договорённость по стратегии (обычно всё же два профиля).",
+    ],
   },
 };

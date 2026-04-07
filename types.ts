@@ -28,6 +28,21 @@ export interface FunnelBlock {
   };
 }
 
+/** Воронка SMM: охваты → вовлечённость → действие (инфографика на странице КП) */
+export interface GrowthFunnelStage {
+  title: string;
+  subtitle: string;
+  bullets: string[];
+}
+
+export interface GrowthFunnelData {
+  eyebrow?: string;
+  title: string;
+  intro: string;
+  stages: GrowthFunnelStage[];
+  conclusion: string;
+}
+
 /** Схемы стратегии и воронок (опционально, для расширенных КП) */
 export interface StrategyGrowthData {
   eyebrow: string;
@@ -273,6 +288,8 @@ export interface ProposalData {
   /** Подзаголовок блока «Структура продаж» (если не задан — дефолтный текст) */
   salesStructureIntro?: string;
   funnels?: FunnelBlock[];
+  /** Воронка охват → вовлечённость → целевое действие */
+  growthFunnel?: GrowthFunnelData;
   /** Стратегия рынков + схемы воронок (каналы/ROI и SMM) */
   strategyGrowth?: StrategyGrowthData;
   cases?: CaseItem[];

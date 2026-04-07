@@ -1,6 +1,15 @@
 import type { ProposalData } from "../types";
+import { smmTripleFunnel } from "./smm-triple-funnel";
+import { FIRUZA_IMAGES, mediaUrl } from "./proposalUploadedMedia";
 
-const V = "/proposals/virtopay";
+const B = "/proposals/firuza-baraka-gold";
+const u = (file: string) => mediaUrl(B, file);
+
+const posI = [0, 7, 14, 21] as const;
+const blockI = [3, 10, 17] as const;
+const rubI = [1, 2, 4, 5, 6, 8, 9, 11, 12] as const;
+const used = new Set<number>([...posI, ...blockI, ...rubI]);
+const visuals = FIRUZA_IMAGES.filter((_, i) => !used.has(i)).map((f) => u(f));
 
 /** КП: SMM для @firuza_baraka_gold — ювелирная тематика / золото. */
 export const firuzaBarakaGold: ProposalData = {
@@ -29,17 +38,18 @@ export const firuzaBarakaGold: ProposalData = {
     {
       title: "Продвижение и заявки",
       description:
-        "Таргет на интересы fashion, jewelry, luxury, gift; ретаргет на взаимодействия с Reels и каруселями. CTA: Direct, консультация, резерв.",
+        "Таргет на интересы fashion, jewelry, luxury, gift; ретаргет на взаимодействия. CTA: Direct, консультация, резерв. Интеграции с блогерами — отдельный бюджет и подбор площадок.",
     },
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Ювелирка в соцсетях выигрывает от сочетания красоты кадра и честных деталей: что за изделие, для кого, как получить. Ниже в КП — референсный визуальный ряд; в работе заменим на ваши съёмки и бренд. Instagram: https://www.instagram.com/firuza_baraka_gold/",
+    "Ювелирка в соцсетях выигрывает от сочетания красоты кадра и честных деталей: что за изделие, для кого, как получить. Ниже — ваши загруженные кадры в блоках матрицы, позиционирования и сетке визуала. Instagram: https://www.instagram.com/firuza_baraka_gold/",
   growthTool: {
     title: "От лайка к сообщению в Direct",
     description:
       "Скрипты ответов, шаблоны на типовые вопросы (размер, проба, доставка), быстрые голосовые при необходимости. Меньше трения на этапе «хочу уточнить» — выше конверсия из охватов.",
   },
+  growthFunnel: smmTripleFunnel,
   audienceImageUrl: "/shared/audience.png",
   audience: {
     primary: [
@@ -52,85 +62,76 @@ export const firuzaBarakaGold: ProposalData = {
       "Повторные клиенты и рекомендации «сарафаном»",
     ],
   },
-  rubricBlockImages: [`${V}/a3_analytics.jpg`, `${V}/a10_card.jpg`, `${V}/a17_phone.jpg`],
+  rubricBlockImages: blockI.map((i) => u(FIRUZA_IMAGES[i])),
   rubrics: [
     {
       title: "Коллекции и новинки",
       description: "Презентация линеек, акцент на деталях и стиле носки.",
-      imageUrl: `${V}/a3_analytics.jpg`,
+      imageUrl: u(FIRUZA_IMAGES[rubI[0]]),
     },
     {
       title: "Проба и качество",
       description: "Что гарантируем, как читать клейма, документы при необходимости.",
-      imageUrl: `${V}/a10_card.jpg`,
+      imageUrl: u(FIRUZA_IMAGES[rubI[1]]),
     },
     {
       title: "Подарки и поводы",
       description: "Подборки под бюджет и событие; упаковка и открытка — если есть в сервисе.",
-      imageUrl: `${V}/a17_phone.jpg`,
+      imageUrl: u(FIRUZA_IMAGES[rubI[2]]),
     },
     {
       title: "Примерка и размеры",
       description: "Как подобрать размер кольца, длину цепи — гайды в каруселях и Reels.",
-      imageUrl: `${V}/a16_wallet.jpg`,
+      imageUrl: u(FIRUZA_IMAGES[rubI[3]]),
     },
     {
       title: "Уход",
       description: "Как хранить и чистить изделия, чтобы дольше сохраняли вид.",
-      imageUrl: "",
+      imageUrl: u(FIRUZA_IMAGES[rubI[4]]),
     },
     {
       title: "Отзывы и реальные фото",
       description: "UGC с согласия клиентов, истории покупок.",
-      imageUrl: "",
+      imageUrl: u(FIRUZA_IMAGES[rubI[5]]),
     },
     {
       title: "Доставка и оплата",
       description: "Понятные условия по городу и регионам, безопасная сделка.",
-      imageUrl: `${V}/a20_office.jpg`,
+      imageUrl: u(FIRUZA_IMAGES[rubI[6]]),
     },
     {
       title: "Закулисье",
       description: "Команда, витрина, процесс приёмки — человеческое лицо бренда.",
-      imageUrl: "",
+      imageUrl: u(FIRUZA_IMAGES[rubI[7]]),
     },
     {
       title: "FAQ",
       description: "Ответы в сторис: обмен, сроки, индивидуальный заказ.",
-      imageUrl: `${V}/a11_support.jpg`,
+      imageUrl: u(FIRUZA_IMAGES[rubI[8]]),
     },
   ],
   positioning: {
     title: "Firuza Baraka Gold — честная подача и эстетика",
     description:
       "Позиционируем аккаунт как место, где красиво показывают золото и спокойно отвечают на вопросы: без давления, с уважением к покупателю. Канал: https://www.instagram.com/firuza_baraka_gold/ · КП: https://kp.tipa.uz/firuza-baraka-gold",
-    images: [`${V}/a1_mobile_payment.jpg`, `${V}/a2_online_shopping.jpg`, `${V}/a4_phone_hand.jpg`, `${V}/a13_crypto.jpg`],
+    images: posI.map((i) => u(FIRUZA_IMAGES[i])),
   },
-  visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-  ],
+  visuals,
   ads: [
     {
-      title: "Охват и узнаваемость",
-      description: "Креативы с сильными кадрами изделий и мягким CTA в профиль.",
+      title: "Таргет Meta",
+      description:
+        "Охват, узнаваемость, интересы и lookalike; ретаргет на Reels и карусели. Бюджет на рекламу — отдельно, планируем и согласуем под цели месяца.",
     },
     {
-      title: "Интересы и lookalike",
-      description: "Тест гипотез по сегментам: подарки, свадьба, повседневные украшения.",
+      title: "Блогеры и лидеры мнений",
+      description:
+        "Подбор форматов (интеграция, бартер, посевы), бриф под бренд, контроль креатива. Гонорары и закупы — отдельной строкой в бюджете.",
     },
     {
-      title: "Ретаргет",
-      description: "Догрев смотревших Reels и открывавших карусели: отзывы, детали, оффер на консультацию.",
+      title: "Связка платного и органики",
+      description:
+        "Органика кормит доверием, таргет и коллаборации подключают новую аудиторию; воронка ниже — как это стыкуем в одной системе.",
     },
   ],
   pricing: {
@@ -139,12 +140,15 @@ export const firuzaBarakaGold: ProposalData = {
     period: "месяц",
     team: ["SMM-стратег", "Моушн / Reels", "Дизайнер", "Таргетолог", "Комьюнити"],
     deliverables: [
-      { label: "Reels / видео", value: "8–10" },
-      { label: "Посты / карусели", value: "4–6" },
-      { label: "Stories", value: "ежедневно (по графику)" },
-      { label: "Контент-план и рубрики", value: "1 аккаунт" },
+      { label: "Посты (статика)", value: "8" },
+      { label: "Карусели", value: "4" },
+      { label: "Stories", value: "60 / мес по графику" },
+      { label: "Аккаунт", value: "1 Instagram" },
       { label: "Отчёт", value: "еженедельно" },
     ],
-    notes: ["Стоимость указана за один аккаунт Instagram в месяц. Рекламный бюджет Meta — отдельно, по согласованию."],
+    notes: [
+      "Стоимость — за один аккаунт в месяц. Бюджет таргета Meta и интеграции с блогерами оплачиваются отдельно.",
+      "Количество единиц контента может сдвигаться в пределах месяца по согласованию, если приоритет — съёмка, запуск или акция.",
+    ],
   },
 };

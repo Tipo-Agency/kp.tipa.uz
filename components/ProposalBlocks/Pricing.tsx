@@ -16,11 +16,13 @@ interface PricingProps {
   team: string[];
   deliverables: { label: string, value: string }[];
   divisions?: PricingDivision[];
+  /** Доп. строки к оферту (акции, предоплата, опции) */
+  secondary?: { label: string; value: string }[];
   /** Примечания под блоком цены (бюджеты в валюте, условия) */
   notes?: string[];
 }
 
-const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliverables, divisions, notes }) => {
+const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliverables, divisions, secondary, notes }) => {
   return (
     <Section className="bg-white text-slate-900">
       <Container>
@@ -58,6 +60,17 @@ const Pricing: React.FC<PricingProps> = ({ amount, currency, period, team, deliv
                   </div>
                 ))}
               </div>
+
+              {secondary && secondary.length > 0 ? (
+                <div className="mb-10 grid gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-6 sm:grid-cols-2">
+                  {secondary.map((row, i) => (
+                    <div key={i} className="border-b border-white/5 pb-4 last:border-0 last:pb-0 sm:border-0 sm:pb-0">
+                      <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-[#8B8FF0]">{row.label}</p>
+                      <p className="text-lg font-bold text-white">{row.value}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
 
               <p className="text-white/35 text-xs md:text-sm leading-relaxed max-w-3xl">
                 Количество контента может меняться по мере работы — по согласованию сторон и исходя из задач проекта.
