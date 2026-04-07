@@ -7,6 +7,26 @@ interface VisualGridProps {
   images: string[];
 }
 
+/** Делит массив на 3 колонки почти поровну (8 картинок → 3+3+2), чтобы третья колонка не оставалась пустой. */
+function splitIntoThreeColumns(urls: string[]): [string[], string[], string[]] {
+  const n = urls.length;
+  const base = Math.floor(n / 3);
+  const rem = n % 3;
+  const sizes = [
+    base + (rem > 0 ? 1 : 0),
+    base + (rem > 1 ? 1 : 0),
+    base,
+  ] as const;
+  let i = 0;
+  const cols: [string[], string[], string[]] = [[], [], []];
+  for (let c = 0; c < 3; c++) {
+    for (let k = 0; k < sizes[c]; k++) {
+      cols[c].push(urls[i++]);
+    }
+  }
+  return cols;
+}
+
 const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
   if (!images || images.length < 6) {
     return (
@@ -21,10 +41,11 @@ const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
     );
   }
 
-  // Распределяем картинки на 3 колонки для бесконечного скролла
-  const col1 = [...images.slice(0, 4), ...images.slice(0, 4)];
-  const col2 = [...images.slice(4, 8), ...images.slice(4, 8)];
-  const col3 = [...images.slice(8, 12), ...images.slice(8, 12)];
+  const [a, b, c] = splitIntoThreeColumns(images);
+  // Дублируем содержимое колонок для бесшовной анимации скролла
+  const col1 = [...a, ...a];
+  const col2 = [...b, ...b];
+  const col3 = [...c, ...c];
 
   return (
     <Section className="bg-slate-50 overflow-hidden">
