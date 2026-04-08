@@ -4,9 +4,6 @@ import { smmTripleFunnel } from "./smm-triple-funnel";
 const B = "/proposals/masterswood-uz";
 const m = (p: string) => `${B}/${p}`;
 
-/** Референсная сетка визуалов, как у остальных коммерческих КП (Virtopay). */
-const V = "/proposals/virtopay";
-
 /** КП: SMM для Masters Wood — столярка, мебель и изделия из дерева (Узбекистан). */
 export const masterswoodUz: ProposalData = {
   clientName: "Masters Wood — мебель и столярка из дерева",
@@ -121,19 +118,20 @@ export const masterswoodUz: ProposalData = {
       m("visuals/fc3e4550ec85d4a999b3223c6466b492.jpg"),
     ],
   },
+  /** Нижняя сетка (VisualGrid): только `visuals/`, без пересечения с рубриками/позиционированием. Минимум 6 кадров. */
   visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-    `${V}/a17_phone.jpg`,
+    m("visuals/4cd1edddb4b560bc9cd7b2d0d2be91a1.jpg"),
+    m("visuals/85a3a99cb642353554215619f61ed6a0.jpg"),
+    m("visuals/f16894b0c134543adcf2e45041092a7f.jpg"),
+    m("visuals/249606daa69ea29b045d2fd7319d3fdb.jpg"),
+    m("visuals/20b9189d2993870393396989388c466e.jpg"),
+    m("visuals/5543e73f1ee66d10f456ea8c75f820b3.jpg"),
+    m("visuals/17772d69004e735d4c4d240cd5f41e57.jpg"),
+    m("visuals/83a4232e1ba5d00dc10dd098494cf11a.jpg"),
+    m("visuals/11a653e63604d2b23e88a38b6deb6844.jpg"),
+    m("visuals/3052ada3dd98d22000801df81d95f4b9.webp"),
+    m("visuals/78086fa389280788e9d704cac5213e50.jpg"),
+    m("visuals/6017e8a01d49be2c6277b45c4a639fc3.webp"),
   ],
   ads: [
     {
