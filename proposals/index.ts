@@ -63,6 +63,7 @@ import { royalCareUzb } from "./royal-care-uzb";
 import { koreaAutoApostille } from "./korea-auto-apostille";
 import { herbalifeUz } from "./herbalife-uz";
 import { medIvlService } from "./med-ivl-service";
+import { masterswoodUz } from "./masterswood-uz";
 
 export const PROPOSALS: Record<
   string,
@@ -126,6 +127,7 @@ export const PROPOSALS: Record<
   "korea-auto-apostille": koreaAutoApostille,
   "herbalife-uz": herbalifeUz,
   "med-ivl-service": medIvlService,
+  "masterswood-uz": masterswoodUz,
 };
 
 export type AnyProposal =
