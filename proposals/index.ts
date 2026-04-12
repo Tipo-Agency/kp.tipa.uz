@@ -64,6 +64,12 @@ import { koreaAutoApostille } from "./korea-auto-apostille";
 import { herbalifeUz } from "./herbalife-uz";
 import { medIvlService } from "./med-ivl-service";
 import { masterswoodUz } from "./masterswood-uz";
+import { theBurgeruz } from "./the-burgeruz";
+import { havakand } from "./havakand";
+import { ecomebelss } from "./ecomebelss";
+import { rineraUz } from "./rinera-uz";
+import { chinaSupplyUz } from "./china-supply-uz";
+import { glassFacadesMebel } from "./glass-facades-mebel";
 
 export const PROPOSALS: Record<
   string,
@@ -128,6 +134,12 @@ export const PROPOSALS: Record<
   "herbalife-uz": herbalifeUz,
   "med-ivl-service": medIvlService,
   "masterswood-uz": masterswoodUz,
+  "the-burgeruz": theBurgeruz,
+  havakand,
+  ecomebelss,
+  "rinera-uz": rineraUz,
+  "china-supply-uz": chinaSupplyUz,
+  "glass-facades-mebel": glassFacadesMebel,
 };
 
 export type AnyProposal =
