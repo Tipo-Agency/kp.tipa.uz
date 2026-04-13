@@ -1,9 +1,10 @@
 import type { ProposalData } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-const V = "/proposals/virtopay";
+const B = "/proposals/ecomebelss";
+const m = (f: string) => `${B}/${f}`;
 
-/** КП: SMM для Ecomebelss — мебель / экологичные решения (@ecomebelss). Референсные кадры — Virtopay. */
+/** КП: SMM для Ecomebelss — мебель и интерьерные решения (@ecomebelss). */
 export const ecomebelss: ProposalData = {
   clientName: "Ecomebelss — мебель и интерьерные решения (@ecomebelss)",
   hero: {
@@ -35,7 +36,7 @@ export const ecomebelss: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Ниже — пример матрицы рубрик и референсный визуальный ряд; после съёмок шоурума и объектов заменим кадры на ваш контент.",
+    "Ниже — матрица рубрик и кадры с объектов и продуктов: интерьеры, детали и атмосфера бренда.",
   growthTool: {
     title: "От лайка к консультации в Direct",
     description:
@@ -54,52 +55,56 @@ export const ecomebelss: ProposalData = {
       "Малый бизнес: офисы, студии, гостеприимство",
     ],
   },
-  rubricBlockImages: [`${V}/a3_analytics.jpg`, `${V}/a10_card.jpg`, `${V}/a17_phone.jpg`],
+  rubricBlockImages: [
+    m("fe5c514c4394d4e143dbc405dd613142.jpg"),
+    m("56c22f5e0ddccb7681e5eb664bd064ad.jpg"),
+    m("c81afb0ab41ef48fb761a0801ed9ddb6.jpg"),
+  ],
   rubrics: [
     {
       title: "Коллекции и хиты",
       description: "Флагманские решения и бестселлеры в понятных подборках.",
-      imageUrl: `${V}/a3_analytics.jpg`,
+      imageUrl: m("15f891c172c2fe99d3888e224cd75d5f.jpg"),
     },
     {
       title: "Материалы и качество",
       description: "Фактуры, фурнитура, сравнения — без перегруза терминами.",
-      imageUrl: `${V}/a10_card.jpg`,
+      imageUrl: m("4deeec6d008ec646385a24eb5f6e4b96.jpg"),
     },
     {
       title: "Интерьеры и вдохновение",
       description: "Готовые сценарии: сканди, минимализм, тёплый модерн.",
-      imageUrl: `${V}/a17_phone.jpg`,
+      imageUrl: m("9d5864d2033f805f84a49e681f327d79.jpg"),
     },
     {
       title: "Процесс: от заявки до доставки",
       description: "Замер, производство, сроки, монтаж — прозрачно.",
-      imageUrl: `${V}/a16_wallet.jpg`,
+      imageUrl: m("f5872820bd034d0daff1411eba55fbdd.jpg"),
     },
     {
       title: "Отзывы и объекты",
       description: "Реальные фото клиентов с согласия, истории заказов.",
-      imageUrl: `${V}/a19_handshake.jpg`,
+      imageUrl: m("d119641ab2c0194bcd0dc89665480e97.jpg"),
     },
     {
       title: "Уход и эксплуатация",
       description: "Короткие гайды: как продлить жизнь мебели.",
-      imageUrl: "",
+      imageUrl: m("6824c374ee19da917f4dd01d4722f3d5.jpg"),
     },
     {
       title: "Reels и обзоры",
       description: "Динамичные ролики под охват и сохранения.",
-      imageUrl: "",
+      imageUrl: m("3b374e66106fa6db69ea9480f1d45317.jpg"),
     },
     {
       title: "FAQ",
       description: "Оплата, гарантия, доставка по городу и регионам.",
-      imageUrl: `${V}/a20_office.jpg`,
+      imageUrl: m("c0fc76a5e42990d28690c676532da089.jpg"),
     },
     {
       title: "Шоурум и контакты",
       description: "Как найти, часы работы, запись на визит.",
-      imageUrl: `${V}/a11_support.jpg`,
+      imageUrl: m("fe8f47cf2813e82c62bf0444d4b07510.jpg"),
     },
   ],
   positioning: {
@@ -107,25 +112,21 @@ export const ecomebelss: ProposalData = {
     description:
       "Позиционируем бренд как выбор для тех, кто ценит материалы, посадку и честный сервис: не «картинка из каталога», а понятный продукт и сопровождение.",
     images: [
-      `${V}/a1_mobile_payment.jpg`,
-      `${V}/a2_online_shopping.jpg`,
-      `${V}/a4_phone_hand.jpg`,
-      `${V}/a13_crypto.jpg`,
+      m("061a03e2a3366cda3a519d5643c58261.jpg"),
+      m("f6f7857326707920fefbdaeeeec65b05.jpg"),
+      m("844dc74ca4915b57015507fb2a0f71d8.jpg"),
+      m("1b4a35dfb96f7f08b01b92b198568901.jpg"),
     ],
   },
   visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-    `${V}/a17_phone.jpg`,
+    m("4ffb04734dfc973327cf3ae362e37ac8.jpg"),
+    m("4323f5763310d8ed68dbc2211033b3bc.jpg"),
+    m("d0d0690e00b240173447db82ee7af804.jpg"),
+    m("c4ec071c97f309a77f6a1cdfae2c936e.jpg"),
+    m("6e85d9725a5911abf22debbfe081e5e6.jpg"),
+    m("f4f691be3088c363f960350128a6b2c8.jpg"),
+    m("5dde6cac084b4a5ba0c7ebe541cfbb43.jpg"),
+    m("6c9095668a9421d0e4a9a706d943385a.jpg"),
   ],
   ads: [
     {
@@ -142,13 +143,13 @@ export const ecomebelss: ProposalData = {
     },
   ],
   pricing: {
-    amount: "15 000 000",
+    amount: "12 500 000",
     currency: "сум",
     period: "месяц",
     team: ["SMM-стратег", "Моушн / Reels", "Дизайнер", "Таргетолог", "Комьюнити"],
     deliverables: [
-      { label: "Reels", value: "10–12" },
-      { label: "Карусели", value: "6–8" },
+      { label: "Reels", value: "8–10" },
+      { label: "Карусели", value: "4–6" },
       { label: "Stories", value: "60–90 / мес по графику" },
       { label: "Аккаунт", value: "1 Instagram" },
       { label: "Отчёт", value: "еженедельно" },
