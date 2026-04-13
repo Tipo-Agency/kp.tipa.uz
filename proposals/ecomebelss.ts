@@ -127,6 +127,7 @@ export const ecomebelss: ProposalData = {
     m("f4f691be3088c363f960350128a6b2c8.jpg"),
     m("5dde6cac084b4a5ba0c7ebe541cfbb43.jpg"),
     m("6c9095668a9421d0e4a9a706d943385a.jpg"),
+    m("061a03e2a3366cda3a519d5643c58261.jpg"),
   ],
   ads: [
     {
