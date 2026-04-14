@@ -168,7 +168,7 @@ export const royalCareUzb: ProposalData = {
       { label: "Карусели", value: "4–6 на каждый аккаунт" },
       { label: "Stories", value: "60–90 / мес на профиль по графику" },
       { label: "Аккаунты", value: "2 Instagram" },
-      { label: "Отчёт", value: "еженедельно, по профилям" },
+      { label: "Отчёт", value: "ежемесячно, по профилям" },
     ],
     secondary: [
       {

@@ -160,7 +160,7 @@ export const milkvillUz: ProposalData = {
       { label: "Посты / карусели", value: "4–6" },
       { label: "Stories", value: "2–3 в день" },
       { label: "Гайд по визуалу", value: "цвет, шрифты, обложки рецептов" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
     divisions: [
       {

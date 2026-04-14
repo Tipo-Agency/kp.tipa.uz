@@ -170,7 +170,7 @@ export const tomyumbar: ProposalData = {
       { label: "Посты в ленту", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
       { label: "Контент-план и рубрики", value: "под меню и аудиторию 30+" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
   },
 };

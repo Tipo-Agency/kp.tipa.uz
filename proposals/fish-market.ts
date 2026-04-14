@@ -211,7 +211,7 @@ export const fishMarket: ProposalData = {
         deliverables: [
           { label: "Фокус", value: "рецепты → наборы → заказы" },
           { label: "Таргет", value: "охват + ретаргет" },
-          { label: "Аналитика", value: "еженедельные гипотезы" },
+          { label: "Аналитика", value: "ежемесячные гипотезы" },
         ],
       },
       {

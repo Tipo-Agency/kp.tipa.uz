@@ -187,7 +187,7 @@ export const haierIndustrialSystems: ProposalData = {
       { label: "Посты / карусели", value: "4" },
       { label: "Stories", value: "2–3 в день" },
       { label: "Партнёрский контент", value: "отдельный трек для монтажников и проектировщиков" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
     divisions: [
       {

@@ -133,7 +133,7 @@ export const everUz: ProposalData = {
       { label: "Карусели", value: "4–6" },
       { label: "Stories", value: "2–3 в день" },
       { label: "Амбассадор / посев", value: "4–8 интеграций/публикаций (по согласованному плану)" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
   },
 };

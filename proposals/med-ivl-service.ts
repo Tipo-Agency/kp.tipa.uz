@@ -120,7 +120,7 @@ export const medIvlService: ProposalData = {
       { label: "Карусели", value: "4–6" },
       { label: "Stories", value: "60–90 / мес по графику" },
       { label: "Контент-фокус", value: "1 аккаунт (ИВЛ / медсервис)" },
-      { label: "Отчет", value: "еженедельно" },
+      { label: "Отчет", value: "ежемесячно" },
     ],
     notes: [
       "Стоимость указана за один аккаунт в месяц.",

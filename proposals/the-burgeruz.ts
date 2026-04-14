@@ -74,7 +74,7 @@ export const theBurgeruz: ProposalData = {
     {
       title: "Атмосфера точки",
       description: "Интерьер, команда, вайб вечера и дневного формата.",
-      imageUrl: m("36c6d42186e1f56e0c8efbabeb86ad65.jpg"),
+      imageUrl: m("125bec489a3b747dc53f8820b67f8323.jpg"),
     },
     {
       title: "Доставка и самовывоз",
@@ -119,7 +119,7 @@ export const theBurgeruz: ProposalData = {
     ],
   },
   visuals: [
-    m("125bec489a3b747dc53f8820b67f8323.jpg"),
+    m("36c6d42186e1f56e0c8efbabeb86ad65.jpg"),
     m("1aadbdca5eb59adabb8f23b6a54eadd5.jpg"),
     m("6d96d8ff342cb60010cf546be8d0ac21.jpg"),
     m("9a2122922e533c03089b5fea03c3395b.jpg"),
@@ -154,7 +154,7 @@ export const theBurgeruz: ProposalData = {
       { label: "Карусели", value: "6–8" },
       { label: "Stories", value: "60–90 / мес по графику" },
       { label: "Аккаунт", value: "1 Instagram" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
     notes: [
       "Стоимость — за один аккаунт в месяц. Бюджет таргета и интеграции с блогерами оплачиваются отдельно.",

@@ -170,7 +170,7 @@ export const laserEpilationStudio: ProposalData = {
       { label: "Посты в ленту", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
       { label: "Матрица рубрик", value: "9 рубрик (3 блока)" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
   },
 };

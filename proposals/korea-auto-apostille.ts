@@ -171,7 +171,7 @@ export const koreaAutoApostille: ProposalData = {
       { label: "Посты-карусели", value: "6" },
       { label: "Stories", value: "60 / мес по графику" },
       { label: "Аккаунт", value: "1 Instagram" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
     divisions: [
       {

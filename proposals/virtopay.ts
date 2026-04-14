@@ -153,7 +153,7 @@ export const virtopay: ProposalData = {
       { label: "Посты / карусели", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
       { label: "FAQ и скрипты Direct", value: "обновление по запросу" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
   },
 };

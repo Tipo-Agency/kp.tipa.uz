@@ -144,7 +144,7 @@ export const firuzaBarakaGold: ProposalData = {
       { label: "Карусели", value: "4" },
       { label: "Stories", value: "60 / мес по графику" },
       { label: "Аккаунт", value: "1 Instagram" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
     notes: [
       "Стоимость — за один аккаунт в месяц. Бюджет таргета Meta и интеграции с блогерами оплачиваются отдельно.",

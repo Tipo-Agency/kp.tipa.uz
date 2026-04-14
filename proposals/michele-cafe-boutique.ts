@@ -170,7 +170,7 @@ export const micheleCafeBoutique: ProposalData = {
       { label: "Посты в ленту", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
       { label: "Контент-план и рубрики", value: "под меню и формат Michele Cafe Boutique" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
     notes: [
       "Медиабюджет и объём можно масштабировать под задачи: запуск сезонных меню, продвижение завтраков, праздники.",

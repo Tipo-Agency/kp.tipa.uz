@@ -162,7 +162,7 @@ export const chigatoyMall: ProposalData = {
       { label: "Посты / карусели", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
       { label: "Промо-активности", value: "розыгрыши и акции по плану" },
-      { label: "Аналитика", value: "еженедельный отчёт" },
+      { label: "Аналитика", value: "ежемесячный отчёт" },
     ],
   },
 };

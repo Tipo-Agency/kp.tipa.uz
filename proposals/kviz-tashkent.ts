@@ -80,7 +80,7 @@ export const kvizTashkent: ProposalData = {
       { label: "Reels", value: "8–10" },
       { label: "Посты", value: "4–6" },
       { label: "Stories", value: "ежедневно в анонсные недели" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
   },
 };

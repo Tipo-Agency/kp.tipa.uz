@@ -150,7 +150,7 @@ export const laminatPremiumPol: ProposalData = {
       { label: "Reels", value: "6–8" },
       { label: "Посты", value: "4–6" },
       { label: "Stories", value: "ежедневно" },
-      { label: "Отчёт", value: "еженедельно" },
+      { label: "Отчёт", value: "ежемесячно" },
     ],
   },
 };
