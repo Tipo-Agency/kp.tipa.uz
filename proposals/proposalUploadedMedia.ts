@@ -114,6 +114,34 @@ export const FIRUZA_IMAGES = [
   "ff01136b6f707ee78ec05aa6518df9cc.jpg",
 ] as const;
 
+export const VIBE_RECEPTION_IMAGES = [
+  "00ee1678df1fcdf1bbd1be2c5b9d48b6.jpg",
+  "0648dc50111ae4921833c7f1a5e6a78e.jpg",
+  "0f15e093b807640d4b500c9f8d8c3a8a.jpg",
+  "18ad50d1d7d8234dc4d439848696b057.jpg",
+  "19baacebe876638ff23e351a33232cbe.jpg",
+  "1c421d8a0581a57b848b1a15dba0f64d.jpg",
+  "266a2661ccdf9973c98c09776584f8fe.jpg",
+  "2b877306f5c253fb33e1c0c4366985b2.jpg",
+  "2cafcbfa792e64220542941d1a574ac2.jpg",
+  "3899314e43106a29bf43af83b6a871f6.jpg",
+  "40f7eae14d5ded2d95a82e1620549610.jpg",
+  "4dfc8753e48dc5b419618de7ff2c94a4.jpg",
+  "4ea6ca505565af9676e7ebfd14033951.jpg",
+  "848076d43510a94af1ca4c418c8efc3c.jpg",
+  "855c45134a59d9fa2f6219396b0bd269.jpg",
+  "96eb0460a2d9a3e54ac5b4a5f8644144.jpg",
+  "b03026a6b348757a42c634cae61a8bc6.jpg",
+  "b88e1f3f4d297fe3e2dcc5e625f11b6c.jpg",
+  "c6927f253857a32cbeaddf021940058f.jpg",
+  "cdc7e15408fbce017d0b3e631e2ee797.jpg",
+  "ce0e2fc7204e55e84508d092b5f96651.jpg",
+  "d61af19b526054482a9c98a28fe7b687.jpg",
+  "d88e69f8f4d7cccc0a18a52cce546e36.jpg",
+  "ec4e6844fb37ad17b16129c7673863c0.jpg",
+  "fc5792c9a5dc9b58e3699e1854cec850.jpg",
+] as const;
+
 export const HERBALIFE_IMAGES = [
   "1c1819fe6d648b11bb900f63371b353a (1).jpg",
   "1c1819fe6d648b11bb900f63371b353a.jpg",

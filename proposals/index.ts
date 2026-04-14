@@ -70,6 +70,7 @@ import { ecomebelss } from "./ecomebelss";
 import { rineraUz } from "./rinera-uz";
 import { chinaSupplyUz } from "./china-supply-uz";
 import { glassFacadesMebel } from "./glass-facades-mebel";
+import { vibeReception } from "./vibe-reception";
 
 export const PROPOSALS: Record<
   string,
@@ -140,6 +141,7 @@ export const PROPOSALS: Record<
   "rinera-uz": rineraUz,
   "china-supply-uz": chinaSupplyUz,
   "glass-facades-mebel": glassFacadesMebel,
+  "vibe-reception": vibeReception,
 };
 
 export type AnyProposal =
