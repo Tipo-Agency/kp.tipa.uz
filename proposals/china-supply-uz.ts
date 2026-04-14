@@ -1,9 +1,10 @@
 import type { ProposalData } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-const V = "/proposals/virtopay";
+const B = "/proposals/china-supply-uz";
+const m = (f: string) => `${B}/${f}`;
 
-/** КП: SMM для компании с поставками товаров из Китая (B2B / закупки). Референсные кадры — Virtopay. */
+/** КП: SMM для компании с поставками товаров из Китая (B2B / закупки). */
 export const chinaSupplyUz: ProposalData = {
   clientName: "Поставки товаров из Китая — закупки под ключ",
   hero: {
@@ -35,7 +36,7 @@ export const chinaSupplyUz: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Ниже — пример матрицы рубрик и референсный визуальный ряд; после согласования заменим на ваши фото процесса, склада и отгрузок.",
+    "Ниже — матрица рубрик и ваши кадры: логистика, груз и работа с поставками.",
   growthTool: {
     title: "От вопроса в Direct к расчёту",
     description:
@@ -54,52 +55,56 @@ export const chinaSupplyUz: ProposalData = {
       "Те, кто уже «обжёгся» и ищет прозрачного партнёра",
     ],
   },
-  rubricBlockImages: [`${V}/a3_analytics.jpg`, `${V}/a10_card.jpg`, `${V}/a17_phone.jpg`],
+  rubricBlockImages: [
+    m("fc109d595853a374d4155e96131f140b.jpg"),
+    m("ceb9396da62141da8dd4ec9c2a6d0ec8.jpg"),
+    m("447da5375241554aa90eae11127616ff.jpg"),
+  ],
   rubrics: [
     {
       title: "Как мы ведём поставку",
       description: "Этапы от запроса до выдачи: коротко и по шагам.",
-      imageUrl: `${V}/a3_analytics.jpg`,
+      imageUrl: m("db645c4a1333167603be96198ed9300e.jpg"),
     },
     {
       title: "Категории и опыт",
       description: "В каких нишах крепче всего процессы и контроль качества.",
-      imageUrl: `${V}/a10_card.jpg`,
+      imageUrl: m("76ca5953ec1cf75c672d5324b52f37f0.jpg"),
     },
     {
       title: "Логистика и сроки",
       description: "Маршруты, типовые сроки, что влияет на цену.",
-      imageUrl: `${V}/a17_phone.jpg`,
+      imageUrl: m("aedf789814bad42eda7815fc2298ba57.jpg"),
     },
     {
       title: "Документы и прозрачность",
       description: "Договор, инвойсы, отслеживание — без юридического перегруза в каждом посте.",
-      imageUrl: `${V}/a16_wallet.jpg`,
+      imageUrl: m("b0e21fe0b020a95c51abf9e9691a36a3.jpg"),
     },
     {
       title: "Кейсы и отзывы",
       description: "Социальное доказательство B2B: цитаты, цифры в допустимых рамках.",
-      imageUrl: `${V}/a19_handshake.jpg`,
+      imageUrl: m("215e13c934d84bda096a37ab59485778.jpg"),
     },
     {
       title: "Риски и контроль качества",
       description: "Честно о том, как избегаем брака и недопостав.",
-      imageUrl: "",
+      imageUrl: m("259daf5e0e12c22b8ac781a4410aa97c.jpg"),
     },
     {
       title: "Reels: закулисье",
       description: "Короткие ролики про работу с фабрикой и проверку партии.",
-      imageUrl: "",
+      imageUrl: m("438df4416b42081990ad22db403df926.jpg"),
     },
     {
       title: "FAQ",
       description: "Минимальная партия, предоплата, гарантии, споры.",
-      imageUrl: `${V}/a20_office.jpg`,
+      imageUrl: m("5f7a6f92f4297278fe32b4d157a1bff5.jpg"),
     },
     {
       title: "Контакты и консультация",
       description: "Как начать диалог и что подготовить до первого звонка.",
-      imageUrl: `${V}/a11_support.jpg`,
+      imageUrl: m("b7d69ed809709bf27c4527eb6546d2c1.jpg"),
     },
   ],
   positioning: {
@@ -107,25 +112,25 @@ export const chinaSupplyUz: ProposalData = {
     description:
       "Позиционируем компанию не как «контакт на Вичат», а как операционного партнёра: структура, коммуникация, измеримые этапы и человек, который ведёт сделку.",
     images: [
-      `${V}/a1_mobile_payment.jpg`,
-      `${V}/a2_online_shopping.jpg`,
-      `${V}/a4_phone_hand.jpg`,
-      `${V}/a13_crypto.jpg`,
+      m("c01e84e097a770397109afb1a006c076.jpg"),
+      m("fc109d595853a374d4155e96131f140b.jpg"),
+      m("ceb9396da62141da8dd4ec9c2a6d0ec8.jpg"),
+      m("447da5375241554aa90eae11127616ff.jpg"),
     ],
   },
   visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-    `${V}/a17_phone.jpg`,
+    m("db645c4a1333167603be96198ed9300e.jpg"),
+    m("76ca5953ec1cf75c672d5324b52f37f0.jpg"),
+    m("aedf789814bad42eda7815fc2298ba57.jpg"),
+    m("b0e21fe0b020a95c51abf9e9691a36a3.jpg"),
+    m("215e13c934d84bda096a37ab59485778.jpg"),
+    m("259daf5e0e12c22b8ac781a4410aa97c.jpg"),
+    m("438df4416b42081990ad22db403df926.jpg"),
+    m("5f7a6f92f4297278fe32b4d157a1bff5.jpg"),
+    m("b7d69ed809709bf27c4527eb6546d2c1.jpg"),
+    m("c01e84e097a770397109afb1a006c076.jpg"),
+    m("fc109d595853a374d4155e96131f140b.jpg"),
+    m("447da5375241554aa90eae11127616ff.jpg"),
   ],
   ads: [
     {

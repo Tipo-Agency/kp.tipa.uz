@@ -1,9 +1,10 @@
 import type { ProposalData } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-const V = "/proposals/virtopay";
+const B = "/proposals/the-burgeruz";
+const m = (f: string) => `${B}/${f}`;
 
-/** КП: SMM для The Burger (@the_burgeruz). Референсные кадры — Virtopay; в работе заменим на съёмки бренда. */
+/** КП: SMM для The Burger (@the_burgeruz). */
 export const theBurgeruz: ProposalData = {
   clientName: "The Burger — бургерная (@the_burgeruz)",
   hero: {
@@ -35,7 +36,7 @@ export const theBurgeruz: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Ниже — пример матрицы рубрик и референсный визуальный ряд; после съёмок заменим кадры на фото и видео The Burger.",
+    "Ниже — матрица рубрик и кадры бренда: меню, кухня, атмосфера и доставка.",
   growthTool: {
     title: "От просмотра к заказу",
     description:
@@ -54,52 +55,56 @@ export const theBurgeruz: ProposalData = {
       "Туристы и гости города",
     ],
   },
-  rubricBlockImages: [`${V}/a3_analytics.jpg`, `${V}/a10_card.jpg`, `${V}/a17_phone.jpg`],
+  rubricBlockImages: [
+    m("628a597e3e409a9a916a4b7bd5960bdc.jpg"),
+    m("fc8b9e5f9a46ee7d68c8ead899487d39.jpg"),
+    m("2b52315ae24f2f6acf494ed838e8d445.jpg"),
+  ],
   rubrics: [
     {
       title: "Хиты меню и бургеры",
       description: "Карточки флагманов: состав, соусы, порция, CTA на заказ.",
-      imageUrl: `${V}/a3_analytics.jpg`,
+      imageUrl: m("509e264b3c423e198716498c3eca03b0.jpg"),
     },
     {
       title: "Процесс и кухня",
       description: "Reels: котлеты, сыр, подача, закулисье — без «грязного» хайпа.",
-      imageUrl: `${V}/a10_card.jpg`,
+      imageUrl: m("ae2ed5e00d715c8bf35f840e02391695.jpg"),
     },
     {
       title: "Атмосфера точки",
       description: "Интерьер, команда, вайб вечера и дневного формата.",
-      imageUrl: `${V}/a17_phone.jpg`,
+      imageUrl: m("36c6d42186e1f56e0c8efbabeb86ad65.jpg"),
     },
     {
       title: "Доставка и самовывоз",
       description: "Зоны, время, как заказать, что входит в упаковку.",
-      imageUrl: `${V}/a16_wallet.jpg`,
+      imageUrl: m("625f042c8f441301d403f2684fe76c1e.jpg"),
     },
     {
       title: "Отзывы и UGC",
       description: "Социальное доказательство: гости, сторис, репосты с согласия.",
-      imageUrl: `${V}/a19_handshake.jpg`,
+      imageUrl: m("1d2cf3dbe3fa5c11ef9dd8cf84d263cf.jpg"),
     },
     {
       title: "Комбо и акции",
       description: "Сезонные и событийные офферы — дозировано, чтобы не убить маржу.",
-      imageUrl: "",
+      imageUrl: m("fe69cdb0868776d8ce2c5cc9ad02937e.jpg"),
     },
     {
       title: "Reels и тренды",
       description: "Короткие ролики под алгоритм: звук, хук, CTA в профиль.",
-      imageUrl: "",
+      imageUrl: m("99559a313f9369843acf70be7ab47112.jpg"),
     },
     {
       title: "FAQ",
       description: "Адрес, часы, аллергены, способы оплаты — в сторис и хайлайтах.",
-      imageUrl: `${V}/a20_office.jpg`,
+      imageUrl: m("af3b9df9fcd0a1e8550f1f63f697ed8a.jpg"),
     },
     {
       title: "Коллаборации",
       description: "Совместные активности с локальными блогерами и брендами.",
-      imageUrl: `${V}/a11_support.jpg`,
+      imageUrl: m("0416aa31fea7e9a1f4f5592f581d055a.jpg"),
     },
   ],
   positioning: {
@@ -107,25 +112,22 @@ export const theBurgeruz: ProposalData = {
     description:
       "Позиционируем бренд как место с характером: честная подача еды, понятный заказ и живое общение в Direct. Не «ещё одна сетка», а своя подача и узнаваемый стиль кадра.",
     images: [
-      `${V}/a1_mobile_payment.jpg`,
-      `${V}/a2_online_shopping.jpg`,
-      `${V}/a4_phone_hand.jpg`,
-      `${V}/a13_crypto.jpg`,
+      m("f8e31f4e53469b88d157532ebec5e619.jpg"),
+      m("76332bb4eea92e269fa8b2450b98ce5b.jpg"),
+      m("b3b5d5b7b6b87ad3c26a8fa9d56a0b58.jpg"),
+      m("07aa0f27e41d1b4c78c91e99dde71697.jpg"),
     ],
   },
   visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-    `${V}/a17_phone.jpg`,
+    m("125bec489a3b747dc53f8820b67f8323.jpg"),
+    m("1aadbdca5eb59adabb8f23b6a54eadd5.jpg"),
+    m("6d96d8ff342cb60010cf546be8d0ac21.jpg"),
+    m("9a2122922e533c03089b5fea03c3395b.jpg"),
+    m("b2ca466399d92eb5d622568fa99ec5ed.jpg"),
+    m("f5ead68e04b046e07bc3a0d83cbdaa47.jpg"),
+    m("fc061b788572b0264988cc4fca4c3772.jpg"),
+    m("f8e31f4e53469b88d157532ebec5e619.jpg"),
+    m("76332bb4eea92e269fa8b2450b98ce5b.jpg"),
   ],
   ads: [
     {

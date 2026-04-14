@@ -1,9 +1,10 @@
 import type { ProposalData } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-const V = "/proposals/virtopay";
+const B = "/proposals/glass-facades-mebel";
+const m = (f: string) => `${B}/${f}`;
 
-/** КП: SMM для производства стеклянных фасадов для мебели (B2B). Референсные кадры — Virtopay. */
+/** КП: SMM для производства стеклянных фасадов для мебели (B2B). */
 export const glassFacadesMebel: ProposalData = {
   clientName: "Стеклянные фасады для мебели — производство (B2B)",
   hero: {
@@ -35,7 +36,7 @@ export const glassFacadesMebel: ProposalData = {
   ],
   servicesImageUrl: "/shared/services.png",
   servicesDescription:
-    "Ниже — пример матрицы рубрик и референсный визуальный ряд; заменим на фото ваших серий, цветовых карт и производства.",
+    "Ниже — матрица рубрик и кадры производства: стекло, фурнитура, серии и объекты.",
   growthTool: {
     title: "От Direct к техзаданию",
     description:
@@ -54,52 +55,56 @@ export const glassFacadesMebel: ProposalData = {
       "Крупные застройщики и подрядчики отделки (проектные партии)",
     ],
   },
-  rubricBlockImages: [`${V}/a3_analytics.jpg`, `${V}/a10_card.jpg`, `${V}/a17_phone.jpg`],
+  rubricBlockImages: [
+    m("6436c7c3da9878bc865f3c6f33fdad88.jpg"),
+    m("f1f7cb2927b50aba9d04602a629bf4ca.jpg"),
+    m("fad269d918fea96385d245c17bd42609.jpg"),
+  ],
   rubrics: [
     {
       title: "Серии и цвета",
       description: "Палитры, матовость, глянец, комбинации с корпусом.",
-      imageUrl: `${V}/a3_analytics.jpg`,
+      imageUrl: m("e703d8bd4aac8ac9833fb779c5e7f3e8.jpg"),
     },
     {
       title: "Фурнитура и монтаж",
       description: "Петли, направляющие, толщина, типовые комплекты.",
-      imageUrl: `${V}/a10_card.jpg`,
+      imageUrl: m("82aa67f5bf12f2acfee23f6558d75cca.jpg"),
     },
     {
       title: "Производство",
       description: "Цех, контроль качества, упаковка, отгрузка.",
-      imageUrl: `${V}/a17_phone.jpg`,
+      imageUrl: m("d78511429d2f46e6ddfc2a69d91f6c32.jpg"),
     },
     {
       title: "Объекты партнёров",
       description: "Готовые кухни и шкафы с вашими фасадами — с согласия бренда.",
-      imageUrl: `${V}/a16_wallet.jpg`,
+      imageUrl: m("7ccce6ebc4ede0b4082123c05d5fed88.jpg"),
     },
     {
       title: "Отзывы B2B",
       description: "Цитаты мебельщиков и студий, циклы повторных заказов.",
-      imageUrl: `${V}/a19_handshake.jpg`,
+      imageUrl: m("bd42f4f9fc2027dac53233c673b7f6a5.jpg"),
     },
     {
       title: "Технические гайды",
       description: "Коротко о допусках, замере, логистике на объект.",
-      imageUrl: "",
+      imageUrl: m("b8cf9d59cafe1ae2cb8301c9b5d95de2.jpg"),
     },
     {
       title: "Reels с производства",
       description: "Динамика станка, полировка, контроль — для охвата и доверия.",
-      imageUrl: "",
+      imageUrl: m("686b2bab828020c67f496ec22ea92a2d.jpg"),
     },
     {
       title: "FAQ",
       description: "Сроки, минимальная партия, рекламации, гарантия.",
-      imageUrl: `${V}/a20_office.jpg`,
+      imageUrl: m("9810cc8108a81f57998b9ad45809d087.jpg"),
     },
     {
       title: "Сотрудничество",
       description: "Как стать партнёром: образцы, условия, контакты отдела продаж.",
-      imageUrl: `${V}/a11_support.jpg`,
+      imageUrl: m("4a507beddd5d0a67a63399fdf228677b.jpg"),
     },
   ],
   positioning: {
@@ -107,25 +112,22 @@ export const glassFacadesMebel: ProposalData = {
     description:
       "Позиционируем производство как надёжного поставщика для тех, кто отвечает перед конечным клиентом: стабильное качество, предсказуемые сроки и говор на языке техзаданий.",
     images: [
-      `${V}/a1_mobile_payment.jpg`,
-      `${V}/a2_online_shopping.jpg`,
-      `${V}/a4_phone_hand.jpg`,
-      `${V}/a13_crypto.jpg`,
+      m("786f62a64087abd9ba89a6bc101ec123.jpg"),
+      m("17be54af31f31087cd561bcc9f771bdb.jpg"),
+      m("870779d729c6edfe6b06262968147c6a.jpg"),
+      m("0ca9375393dfe7edf66d484602d34fdb.jpg"),
     ],
   },
   visuals: [
-    `${V}/a5_smartphones.jpg`,
-    `${V}/a6_money.jpg`,
-    `${V}/a7_laptop.jpg`,
-    `${V}/a8_team.jpg`,
-    `${V}/a9_developer_laptop.jpg`,
-    `${V}/a12_meeting.jpg`,
-    `${V}/a14_chart.jpg`,
-    `${V}/a15_contactless.jpg`,
-    `${V}/a18_invoice.jpg`,
-    `${V}/a3_analytics.jpg`,
-    `${V}/a10_card.jpg`,
-    `${V}/a17_phone.jpg`,
+    m("1f9add127948dcc961171a187b80dfe4.jpg"),
+    m("7fe54a33e70cabb3930fce0dffeafcb9.jpg"),
+    m("b3420e2976765ddbc409516a29409d9d.jpg"),
+    m("c999214803ef3ee731f216d769531b07.jpg"),
+    m("6436c7c3da9878bc865f3c6f33fdad88.jpg"),
+    m("f1f7cb2927b50aba9d04602a629bf4ca.jpg"),
+    m("786f62a64087abd9ba89a6bc101ec123.jpg"),
+    m("e703d8bd4aac8ac9833fb779c5e7f3e8.jpg"),
+    m("82aa67f5bf12f2acfee23f6558d75cca.jpg"),
   ],
   ads: [
     {
