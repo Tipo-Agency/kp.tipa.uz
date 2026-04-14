@@ -1,4 +1,4 @@
-КП Vibe Reception (ИИ-ресепшен, UK + Australia) — https://kp.tipa.uz/vibe-reception
+КП Vibereception (ИИ-ресепшен, UK + Australia) — https://kp.tipa.uz/vibe-reception
 
 Сюда добавляйте фото, имена — в proposals/proposalUploadedMedia.ts (VIBE_RECEPTION_IMAGES), распределение — в proposals/vibe-reception.ts.
 
