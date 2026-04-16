@@ -6,41 +6,36 @@ import type {
 } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
+/** Единые кадры агентства для блоков «Услуги» и «Аудитория» (public/shared/) */
+const SHARED = "/shared/services.png";
+const AUD = "/shared/audience.png";
+
 const B = "/proposals/mc-clean";
-/** Сторис-макеты (имена с пробелами — в URL закодированы) */
-const MC_STORY_8 = `${B}/Instagram%20story%20-%208.png`;
-const MC_STORY_9 = `${B}/Instagram%20story%20-%209.png`;
 
 const MC_POSITIONING = [
-  `${B}/e168b81e5f426fe3d14da8ebf86f042e.jpg`,
-  `${B}/70f6f1538d32f88e6e6654d359c6e7ed.jpg`,
-  `${B}/videoframe_32871.png`,
-  `${B}/16e5b952adef379d498e2dc1ad011f05.jpg`,
+  `${B}/positioning/e168b81e5f426fe3d14da8ebf86f042e.jpg`,
+  `${B}/positioning/70f6f1538d32f88e6e6654d359c6e7ed.jpg`,
+  `${B}/positioning/videoframe_32871.png`,
+  `${B}/positioning/16e5b952adef379d498e2dc1ad011f05.jpg`,
 ];
 
 const MC_RUBRIC_BLOCK = [
-  `${B}/cd2cda50c31b3065dd1414ccbc6696a4.jpg`,
-  `${B}/db0e1fab52dda77b60d485c1b61016c0.jpg`,
-  `${B}/e3d6b34f95e241687229f185411b9231.jpg`,
+  `${B}/rubrics/cd2cda50c31b3065dd1414ccbc6696a4.jpg`,
+  `${B}/rubrics/db0e1fab52dda77b60d485c1b61016c0.jpg`,
+  `${B}/rubrics/e3d6b34f95e241687229f185411b9231.jpg`,
 ];
 
-const MC_VISUALS = [
-  `${B}/videoframe_846.png`,
-  `${B}/videoframe_10219.png`,
-  `${B}/videoframe_15790.png`,
-  `${B}/videoframe_25729.png`,
-  `${B}/videoframe_32871.png`,
-  `${B}/e168b81e5f426fe3d14da8ebf86f042e.jpg`,
-  MC_STORY_8,
-  MC_STORY_9,
-  `${B}/3ccb52345da44009e6c393b420dc971e.jpg`,
-  `${B}/cd2cda50c31b3065dd1414ccbc6696a4.jpg`,
-  `${B}/99d3f1454ab4ace40f9f0c25d088cd08.jpg`,
-  `${B}/70f6f1538d32f88e6e6654d359c6e7ed.jpg`,
-  `${B}/16e5b952adef379d498e2dc1ad011f05.jpg`,
-  `${B}/e3d6b34f95e241687229f185411b9231.jpg`,
-  `${B}/db0e1fab52dda77b60d485c1b61016c0.jpg`,
+/** Кадры из visuals/; в конце — повторы из positioning и rubrics, чтобы сетка была плотнее */
+const MC_VISUALS_BASE = [
+  `${B}/visuals/videoframe_846.png`,
+  `${B}/visuals/videoframe_10219.png`,
+  `${B}/visuals/videoframe_15790.png`,
+  `${B}/visuals/videoframe_25729.png`,
+  `${B}/visuals/3ccb52345da44009e6c393b420dc971e.jpg`,
+  `${B}/visuals/99d3f1454ab4ace40f9f0c25d088cd08.jpg`,
 ];
+
+const MC_VISUALS = [...MC_VISUALS_BASE, ...MC_POSITIONING, ...MC_RUBRIC_BLOCK];
 
 const smmTab: ProposalData = {
   clientName: "MC Clean — SMM",
@@ -72,16 +67,16 @@ const smmTab: ProposalData = {
         "Meta: интересы дом, ремонт, клининг, HoReCa (по задаче). Ответы в Direct, ежемесячный отчёт.",
     },
   ],
-  servicesImageUrl: `${B}/e168b81e5f426fe3d14da8ebf86f042e.jpg`,
+  servicesImageUrl: SHARED,
   servicesDescription:
-    "Пакет по объёму как в премиум-модели агентства: плотное присутствие в сторис и ленте, регулярные Reels и съёмка. Ниже — медиа из вашего набора для MC Clean.",
+    "Пакет по объёму как в премиум-модели агентства: плотное присутствие в сторис и ленте, регулярные Reels и съёмка. Клиентские кадры — в позиционировании, рубриках и сетке визуалов ниже.",
   growthTool: {
     title: "От узнаваемости к покупке в 2 клика",
     description:
       "Сценарии ведут к понятному CTA: где купить, какой объём, вопрос в Direct. Снижаем трение между «увидел» и «добавил в корзину».",
   },
   growthFunnel: smmTripleFunnel,
-  audienceImageUrl: `${B}/3ccb52345da44009e6c393b420dc971e.jpg`,
+  audienceImageUrl: AUD,
   audience: {
     primary: [
       "Домохозяйства и семьи, решающие бытовые засоры без вызова мастера",
@@ -98,47 +93,47 @@ const smmTab: ProposalData = {
     {
       title: "Продукт и линейка",
       description: "Состав, назначение, отличия SKU. Одна карусель — одна понятная польза.",
-      imageUrl: MC_VISUALS[5],
+      imageUrl: MC_VISUALS_BASE[0],
     },
     {
       title: "Как пользоваться",
       description: "Пошагово: дозировка, время ожидания, промывка. Снижаем негатив из-за «не сработало».",
-      imageUrl: MC_VISUALS[6],
+      imageUrl: MC_VISUALS_BASE[1],
     },
     {
       title: "Безопасность и быт",
       description: "Предосторожности, вентиляция, что нельзя смешивать. Спокойный тон без паники.",
-      imageUrl: MC_VISUALS[7],
+      imageUrl: MC_VISUALS_BASE[2],
     },
     {
       title: "До и после (аккуратно)",
       description: "Реальные сценарии без шок-контента. Согласование кадров и формулировок.",
-      imageUrl: MC_VISUALS[8],
+      imageUrl: MC_RUBRIC_BLOCK[0],
     },
     {
       title: "Где купить",
       description: "Точки, маркетплейсы, промокоды. Актуальные ссылки в шапке и сторис.",
-      imageUrl: MC_VISUALS[9],
+      imageUrl: MC_RUBRIC_BLOCK[1],
     },
     {
       title: "Отзывы и вопросы",
       description: "UGC и FAQ: типовые возражения, сравнения, гарантии.",
-      imageUrl: MC_VISUALS[10],
+      imageUrl: MC_RUBRIC_BLOCK[2],
     },
     {
       title: "Производство и бренд",
       description: "Завод/упаковка/контроль качества — если есть материалы с площадки.",
-      imageUrl: MC_VISUALS[11],
+      imageUrl: MC_POSITIONING[0],
     },
     {
       title: "Сезон и профилактика",
       description: "Напоминания про профилактику засоров, сезонные триггеры.",
-      imageUrl: MC_VISUALS[12],
+      imageUrl: MC_POSITIONING[1],
     },
     {
       title: "Закулисье и команда",
       description: "Люди бренда, офис, логистика — человеческое лицо MC Clean.",
-      imageUrl: MC_VISUALS[13],
+      imageUrl: MC_POSITIONING[2],
     },
   ],
   positioning: {

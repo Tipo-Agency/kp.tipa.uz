@@ -6,7 +6,10 @@ import type {
 } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-/** Только медиа из `public/proposals/mattresses/` — positioning, visuals, rubrics */
+const SHARED = "/shared/services.png";
+const AUD = "/shared/audience.png";
+
+/** Клиентские кадры — только из `public/proposals/mattresses/` (positioning, visuals, rubrics) */
 const B_MT = "/proposals/mattresses";
 
 const MT_POSITIONING = [
@@ -22,7 +25,7 @@ const MT_RUBRICS_COVER = [
   `${B_MT}/rubrics/XXXL.webp`,
 ] as const;
 
-const MT_VISUALS = [
+const MT_VISUALS_BASE = [
   `${B_MT}/visuals/f499e7257e11132f2708dd5de82b0b7c.jpg`,
   `${B_MT}/visuals/238d2802a7cc74708f1c0c18443ee4d9.jpg`,
   `${B_MT}/visuals/da0ccef8476c2ecb23100bd26df23bea.jpg`,
@@ -38,6 +41,9 @@ const MT_VISUALS = [
   `${B_MT}/visuals/ecb263b549289b2306cbd622085b08c2.jpg`,
   `${B_MT}/visuals/85cc57bada82803e5e4e469693ce9c74.jpg`,
 ];
+
+/** Сетка: кадры из visuals + повторы из positioning и rubrics */
+const MT_VISUALS = [...MT_VISUALS_BASE, ...MT_POSITIONING, ...MT_RUBRICS_COVER];
 
 const smmTab: ProposalData = {
   clientName: "Матрасы — SMM",
@@ -69,16 +75,16 @@ const smmTab: ProposalData = {
         "Meta: интересы мебель, ремонт, переезд, семья, сон. Direct и комментарии, ежемесячный отчёт.",
     },
   ],
-  servicesImageUrl: MT_VISUALS[4],
+  servicesImageUrl: SHARED,
   servicesDescription:
-    "Пакет по объёму как в премиум-модели агентства. Кадры — только из ваших папок visuals / positioning / rubrics.",
+    "Пакет по объёму как в премиум-модели агентства. Клиентские кадры — в позиционировании, рубриках и сетке visuals / positioning / rubrics.",
   growthTool: {
     title: "От сомнений к «запишите на тест в шоуруме»",
     description:
       "Сценарии контента закрывают типовые вопросы: размер, жёсткость, гарантия, доставка, оплата. CTA под вашу модель продаж.",
   },
   growthFunnel: smmTripleFunnel,
-  audienceImageUrl: MT_VISUALS[1],
+  audienceImageUrl: AUD,
   audience: {
     primary: [
       "Семьи при покупке матраса при переезде или обновлении спальни",
@@ -92,15 +98,15 @@ const smmTab: ProposalData = {
   },
   rubricBlockImages: [...MT_RUBRICS_COVER],
   rubrics: [
-    { title: "Линейки и сравнения", description: "Таблицы «модель — задача — жёсткость».", imageUrl: MT_RUBRICS_COVER[0] },
-    { title: "Материалы и качество", description: "Наполнители, сертификаты, защита чехла.", imageUrl: MT_RUBRICS_COVER[1] },
-    { title: "Сон и здоровье", description: "Без медобещаний: комфорт, поддержка, гигиена.", imageUrl: MT_RUBRICS_COVER[2] },
+    { title: "Линейки и сравнения", description: "Таблицы «модель — задача — жёсткость».", imageUrl: MT_VISUALS_BASE[0] },
+    { title: "Материалы и качество", description: "Наполнители, сертификаты, защита чехла.", imageUrl: MT_VISUALS_BASE[3] },
+    { title: "Сон и здоровье", description: "Без медобещаний: комфорт, поддержка, гигиена.", imageUrl: MT_VISUALS_BASE[6] },
     { title: "Доставка и сервис", description: "Сроки, подъём, сборка, гарантия.", imageUrl: MT_RUBRICS_COVER[0] },
     { title: "Шоурум и тест", description: "Запись на просмотр, правила теста.", imageUrl: MT_RUBRICS_COVER[1] },
     { title: "Отзывы", description: "UGC, истории покупателей.", imageUrl: MT_RUBRICS_COVER[2] },
-    { title: "Производство", description: "Цех, контроль, упаковка.", imageUrl: MT_RUBRICS_COVER[0] },
-    { title: "Акции и сезон", description: "Переезд, школьный сезон, праздники.", imageUrl: MT_RUBRICS_COVER[1] },
-    { title: "Закулисье", description: "Команда и сервис.", imageUrl: MT_RUBRICS_COVER[2] },
+    { title: "Производство", description: "Цех, контроль, упаковка.", imageUrl: MT_POSITIONING[0] },
+    { title: "Акции и сезон", description: "Переезд, школьный сезон, праздники.", imageUrl: MT_POSITIONING[1] },
+    { title: "Закулисье", description: "Команда и сервис.", imageUrl: MT_POSITIONING[2] },
   ],
   positioning: {
     title: "Матрасы вашего производства — понятный выбор в ленте",

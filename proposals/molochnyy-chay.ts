@@ -6,71 +6,63 @@ import type {
 } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
+const SHARED = "/shared/services.png";
+const AUD = "/shared/audience.png";
+
 const B_CH = "/proposals/molochnyy-chay";
-/** Все кадры из корня папки — равномерно распределены по блокам */
-const CH = [
-  `${B_CH}/0059237be25972b80ac77433a32d3778.jpg`,
-  `${B_CH}/034b32045b74146a81d49c38cf566fa3.jpg`,
-  `${B_CH}/1b223a7428e46bc241e46a7ca75ba1ff.jpg`,
-  `${B_CH}/20ab1b29536dccfe0706954c5aa024bb.jpg`,
-  `${B_CH}/2662f4da7c2dead31c12b3bf6bcdfb17.jpg`,
-  `${B_CH}/27ca5690e3a7d08801a9546a077e36c8.jpg`,
-  `${B_CH}/2fbb2bb5ce6166e33e6513d180630ac6.jpg`,
-  `${B_CH}/3ad7b85ed16df29d699ad80dbc488bff.jpg`,
-  `${B_CH}/4a121903d4afaa3520832cab17757827.jpg`,
-  `${B_CH}/4eea018e4af54a4a05891c79004bbd0a.jpg`,
-  `${B_CH}/50aaa3ab152126d7a26eabf742c4dd28.jpg`,
-  `${B_CH}/5452785ca066f5962233ba14a8d96857.jpg`,
-  `${B_CH}/57af3ebcc5886bdc3d22b0ee0befd064.jpg`,
-  `${B_CH}/65b0a3c3f6fa4e1911fb8f305d1b5516.jpg`,
-  `${B_CH}/6967b055bda856e9400277589a0eda23.jpg`,
-  `${B_CH}/6d8fdc9d77cfa75d96cfba075cb1ab02.jpg`,
-  `${B_CH}/7246fedd13764db46aebab5e95882c36.jpg`,
-  `${B_CH}/77657709e3c26716b1ab0d5a359ccdf2.jpg`,
-  `${B_CH}/7a849b3c9953650057d7e2d28a953752.jpg`,
-  `${B_CH}/7eff1f4c3504f1f13b1a53519054472f.jpg`,
-  `${B_CH}/8642b67556aa564b88197dba87eda488.jpg`,
-  `${B_CH}/8cea0934fe478c165fb54c4e1fc88dee.jpg`,
-  `${B_CH}/951d66470ce74a9112214f45c86c1518.jpg`,
-  `${B_CH}/986f52a10220927e92b5d5e01b6a49c6.jpg`,
-  `${B_CH}/9e96fe6b300c96b0d85b8475b277b4d8.jpg`,
-  `${B_CH}/a6631d295e27566ce718b647c1df177d.jpg`,
-  `${B_CH}/a85a65f62b871a5fff817ad298a95837.jpg`,
-  `${B_CH}/b3370ca218631a4e346895e4189aaad8.jpg`,
-  `${B_CH}/b562042c49441fbcd8b9d30e24956301%20(1).jpg`,
-  `${B_CH}/b562042c49441fbcd8b9d30e24956301.jpg`,
-  `${B_CH}/ba13e4c04043f059552ccfa8e9ea64b9.jpg`,
-  `${B_CH}/bebba41e1291c784c93a831df7daa6cb.jpg`,
-  `${B_CH}/bf06530d49e8f864dc6c923ffa68e8d8.jpg`,
-  `${B_CH}/c23b63478ec94ac564ad497a1f67f22a.jpg`,
-  `${B_CH}/c3b56d0fed74d7667292d5aa4486bc23.jpg`,
-  `${B_CH}/ca6cd01995d36ebed25566e7aa807179.jpg`,
-  `${B_CH}/cf2c8d09c1c07d69cf6d687f233f8356.jpg`,
-  `${B_CH}/d58df5347976fb2f05ee97abec051b6d.jpg`,
-  `${B_CH}/eacaebc1095b4cb7538ddd7a3fa87644.jpg`,
-  `${B_CH}/f3a4e048db45ebfbde6f862548f5cb54.jpg`,
+
+const CH_POSITIONING = [
+  `${B_CH}/positioning/27ca5690e3a7d08801a9546a077e36c8.jpg`,
+  `${B_CH}/positioning/7246fedd13764db46aebab5e95882c36.jpg`,
+  `${B_CH}/positioning/b562042c49441fbcd8b9d30e24956301.jpg`,
+  `${B_CH}/positioning/d58df5347976fb2f05ee97abec051b6d.jpg`,
 ] as const;
 
-const CH_POSITIONING = [CH[7], CH[16], CH[25], CH[34]] as const;
+const CH_RUBRIC_BLOCK = [
+  `${B_CH}/rubrics/50aaa3ab152126d7a26eabf742c4dd28.jpg`,
+  `${B_CH}/rubrics/951d66470ce74a9112214f45c86c1518.jpg`,
+  `${B_CH}/rubrics/bf06530d49e8f864dc6c923ffa68e8d8.jpg`,
+] as const;
 
-const CH_RUBRIC_BLOCK = [CH[2], CH[13], CH[23]] as const;
-
-const CH_VISUALS = [
-  CH[0],
-  CH[3],
-  CH[6],
-  CH[9],
-  CH[12],
-  CH[15],
-  CH[18],
-  CH[21],
-  CH[24],
-  CH[27],
-  CH[30],
-  CH[33],
-  CH[36],
-  CH[39],
+/** Все кадры из `public/.../visuals/` (корень slug не используем для jpg) */
+const CH_VISUALS_BASE = [
+  `${B_CH}/visuals/0059237be25972b80ac77433a32d3778.jpg`,
+  `${B_CH}/visuals/034b32045b74146a81d49c38cf566fa3.jpg`,
+  `${B_CH}/visuals/1b223a7428e46bc241e46a7ca75ba1ff.jpg`,
+  `${B_CH}/visuals/20ab1b29536dccfe0706954c5aa024bb.jpg`,
+  `${B_CH}/visuals/2662f4da7c2dead31c12b3bf6bcdfb17.jpg`,
+  `${B_CH}/visuals/2fbb2bb5ce6166e33e6513d180630ac6.jpg`,
+  `${B_CH}/visuals/3ad7b85ed16df29d699ad80dbc488bff.jpg`,
+  `${B_CH}/visuals/4a121903d4afaa3520832cab17757827.jpg`,
+  `${B_CH}/visuals/4eea018e4af54a4a05891c79004bbd0a.jpg`,
+  `${B_CH}/visuals/5452785ca066f5962233ba14a8d96857.jpg`,
+  `${B_CH}/visuals/57af3ebcc5886bdc3d22b0ee0befd064.jpg`,
+  `${B_CH}/visuals/65b0a3c3f6fa4e1911fb8f305d1b5516.jpg`,
+  `${B_CH}/visuals/6967b055bda856e9400277589a0eda23.jpg`,
+  `${B_CH}/visuals/6d8fdc9d77cfa75d96cfba075cb1ab02.jpg`,
+  `${B_CH}/visuals/77657709e3c26716b1ab0d5a359ccdf2.jpg`,
+  `${B_CH}/visuals/7a849b3c9953650057d7e2d28a953752.jpg`,
+  `${B_CH}/visuals/7eff1f4c3504f1f13b1a53519054472f.jpg`,
+  `${B_CH}/visuals/8642b67556aa564b88197dba87eda488.jpg`,
+  `${B_CH}/visuals/8cea0934fe478c165fb54c4e1fc88dee.jpg`,
+  `${B_CH}/visuals/986f52a10220927e92b5d5e01b6a49c6.jpg`,
+  `${B_CH}/visuals/9e96fe6b300c96b0d85b8475b277b4d8.jpg`,
+  `${B_CH}/visuals/a6631d295e27566ce718b647c1df177d.jpg`,
+  `${B_CH}/visuals/a85a65f62b871a5fff817ad298a95837.jpg`,
+  `${B_CH}/visuals/b3370ca218631a4e346895e4189aaad8.jpg`,
+  `${B_CH}/visuals/b562042c49441fbcd8b9d30e24956301%20(1).jpg`,
+  `${B_CH}/visuals/ba13e4c04043f059552ccfa8e9ea64b9.jpg`,
+  `${B_CH}/visuals/bebba41e1291c784c93a831df7daa6cb.jpg`,
+  `${B_CH}/visuals/c23b63478ec94ac564ad497a1f67f22a.jpg`,
+  `${B_CH}/visuals/c3b56d0fed74d7667292d5aa4486bc23.jpg`,
+  `${B_CH}/visuals/ca6cd01995d36ebed25566e7aa807179.jpg`,
+  `${B_CH}/visuals/cf2c8d09c1c07d69cf6d687f233f8356.jpg`,
+  `${B_CH}/visuals/eacaebc1095b4cb7538ddd7a3fa87644.jpg`,
+  `${B_CH}/visuals/f3a4e048db45ebfbde6f862548f5cb54.jpg`,
 ];
+
+/** Сетка: все visuals + дубли из positioning и rubrics для плотной сетки */
+const CH_VISUALS = [...CH_VISUALS_BASE, ...CH_POSITIONING, ...CH_RUBRIC_BLOCK];
 
 const smmTab: ProposalData = {
   clientName: "Молочный чай — SMM",
@@ -102,16 +94,16 @@ const smmTab: ProposalData = {
         "Meta: интересы напитки, кофейни, студенты, семьи. Ответы в Direct, ежемесячный отчёт.",
     },
   ],
-  servicesImageUrl: CH[26],
+  servicesImageUrl: SHARED,
   servicesDescription:
-    "Пакет по объёму как в премиум-модели агентства. Ниже — визуалы из вашей папки: линейка, lifestyle и сценарии потребления.",
+    "Пакет по объёму как в премиум-модели агентства. Клиентские визуалы — в позиционировании, рубриках и сетке ниже.",
   growthTool: {
     title: "От лайка к «где купить?»",
     description:
       "Каждый блок контента ведёт к понятному следующему шагу: карта продаж, маркетплейс, промо в сети, вопрос в Direct для опта.",
   },
   growthFunnel: smmTripleFunnel,
-  audienceImageUrl: CH[11],
+  audienceImageUrl: AUD,
   audience: {
     primary: [
       "Молодёжь и офисные сценарии потребления",
@@ -125,15 +117,15 @@ const smmTab: ProposalData = {
   },
   rubricBlockImages: [...CH_RUBRIC_BLOCK],
   rubrics: [
-    { title: "Линейка и новинки", description: "Презентация вкусов, лимитки, limited edition.", imageUrl: CH[1] },
-    { title: "Состав и честность", description: "Простыми словами: что внутри, без перегруза.", imageUrl: CH[4] },
-    { title: "Где купить", description: "Точки, полки, онлайн — актуальные ссылки.", imageUrl: CH[6] },
-    { title: "Рецепты и миксы", description: "С чем пить, лёд, сироп — мягкие идеи без алкогольного контекста.", imageUrl: CH[9] },
-    { title: "Производство", description: "Цех, контроль, гигиена — если есть доступ с площадки.", imageUrl: CH[14] },
-    { title: "Отзывы", description: "UGC, челленджи, вопросы подписчиков.", imageUrl: CH[17] },
-    { title: "Бренд и история", description: "Почему чай, миссия, локальность.", imageUrl: CH[20] },
-    { title: "Партнёры и промо", description: "Совместные активности, витрины в сетях.", imageUrl: CH[22] },
-    { title: "Закулисье", description: "Команда, офис, логистика.", imageUrl: CH[29] },
+    { title: "Линейка и новинки", description: "Презентация вкусов, лимитки, limited edition.", imageUrl: CH_VISUALS_BASE[2] },
+    { title: "Состав и честность", description: "Простыми словами: что внутри, без перегруза.", imageUrl: CH_VISUALS_BASE[8] },
+    { title: "Где купить", description: "Точки, полки, онлайн — актуальные ссылки.", imageUrl: CH_VISUALS_BASE[14] },
+    { title: "Рецепты и миксы", description: "С чем пить, лёд, сироп — мягкие идеи без алкогольного контекста.", imageUrl: CH_RUBRIC_BLOCK[0] },
+    { title: "Производство", description: "Цех, контроль, гигиена — если есть доступ с площадки.", imageUrl: CH_RUBRIC_BLOCK[1] },
+    { title: "Отзывы", description: "UGC, челленджи, вопросы подписчиков.", imageUrl: CH_RUBRIC_BLOCK[2] },
+    { title: "Бренд и история", description: "Почему чай, миссия, локальность.", imageUrl: CH_POSITIONING[0] },
+    { title: "Партнёры и промо", description: "Совместные активности, витрины в сетях.", imageUrl: CH_POSITIONING[1] },
+    { title: "Закулисье", description: "Команда, офис, логистика.", imageUrl: CH_POSITIONING[2] },
   ],
   positioning: {
     title: "Молочный чай — вкус, который хочется повторить",
