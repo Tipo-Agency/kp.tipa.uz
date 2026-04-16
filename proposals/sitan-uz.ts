@@ -10,7 +10,7 @@ const SHARED = "/shared/services.png";
 
 /** Вкладка SMM — пакет «Премиум» (объёмы под sitan.uz). */
 const smmTab: ProposalData = {
-  clientName: "SITAN — Instagram (пакет «Премиум»)",
+  clientName: "SITAN — SMM",
   createdAt: "2026-04-08",
   hero: {
     title: "Instagram для завода, который хотят видеть заказчики и партнёры",
@@ -262,7 +262,7 @@ const websiteTab: WebsiteProposalData = {
 /** Вкладка: контекст Яндекс + Google. */
 const contextTab: ContextAdsProposalData = {
   type: "context-ads",
-  clientName: "SITAN — контекстная реклама",
+  clientName: "SITAN — интернет реклама",
   createdAt: "2026-04-08",
   hero: {
     title: "Яндекс и Google: спрос на оборудование переводим в заявки",
@@ -340,7 +340,7 @@ export const sitanUz: MultiServiceProposalData = {
   tabs: [
     {
       id: "smm",
-      label: "SMM «Премиум»",
+      label: "SMM",
       serviceType: "smm",
       proposal: smmTab,
     },
@@ -352,7 +352,7 @@ export const sitanUz: MultiServiceProposalData = {
     },
     {
       id: "context",
-      label: "Контекст",
+      label: "Интернет реклама",
       serviceType: "context-ads",
       proposal: contextTab,
     },
@@ -362,7 +362,7 @@ export const sitanUz: MultiServiceProposalData = {
     subtitle: "Три направления в одном предложении — единый блок стоимости ниже. Детали по каждому направлению — во вкладках.",
     services: [
       {
-        name: "Instagram SMM — пакет «Премиум»",
+        name: "Instagram SMM",
         amount: "20 000 000",
         currency: "сум",
         period: "месяц",
@@ -386,7 +386,7 @@ export const sitanUz: MultiServiceProposalData = {
         ],
       },
       {
-        name: "Контекст — Яндекс и Google",
+        name: "Интернет реклама — Яндекс и Google",
         amount: "7 000 000",
         currency: "сум",
         period: "1-й месяц",
