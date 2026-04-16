@@ -158,7 +158,7 @@ const smmTab: ProposalData = {
     },
   ],
   pricing: {
-    amount: "20 000 000",
+    amount: "12 000 000",
     currency: "сум",
     period: "месяц",
     team: [
@@ -179,7 +179,8 @@ const smmTab: ProposalData = {
       { label: "Аналитика", value: "ежемесячный детальный отчёт" },
     ],
     notes: [
-      "При предоплате за 3 месяца — 18 000 000 сум / месяц.",
+      "Первый месяц ведения SMM — 15 000 000 сум.",
+      "При предоплате за 3 месяца — пакет и скидка фиксируются в договоре.",
       "Итоговые условия — в едином блоке внизу страницы.",
     ],
   },
@@ -323,6 +324,51 @@ const contextTab: ContextAdsProposalData = {
   },
 };
 
+const marketplaceTab: ContextAdsProposalData = {
+  type: "context-ads",
+  clientName: "MC Clean — маркетплейсы",
+  createdAt: "2026-04-16",
+  hero: {
+    title: "Маркетплейсы: карточки, промо и рост продаж в категории",
+    subtitle:
+      "Uzum Market и другие площадки по брифу: оформление карточек, SEO внутри маркетплейса, акции, аналитика и связка с вашим сайтом и Instagram.",
+  },
+  markets: {
+    title: "Площадки и география",
+    regions: ["Узбекистан — приоритет", "Расширение по договорённости", "FMCG и бытовая химия"],
+  },
+  productSummary: {
+    title: "Продукт",
+    items: ["Линейка MC Clean и SKU", "Конкурентная полка и отзывы", "Цели: заказы, рейтинг, доля полки"],
+  },
+  contextStrategy: {
+    title: "Стратегия на маркетплейсе",
+    search: ["Карточка товара и медиа", "Ключевые запросы внутри площадки", "A+ контент и сравнения"],
+    performance: ["Акции и промо-механики", "Реклама внутри маркетплейса — по площадке", "Сегменты покупателей"],
+    remarketing: ["Корзина и просмотры", "Повторные покупки", "Связка с внешним трафиком"],
+  },
+  landingWork: {
+    title: "Контент и процессы",
+    items: ["Гайд по инфографике и упаковке на полке", "Шаблоны ответов на отзывы", "Склады и остатки — по доступам"],
+  },
+  analytics: {
+    title: "Отчётность",
+    items: ["Ежемесячный отчёт по заказам и позициям", "Гипотезы на следующий месяц"],
+  },
+  pricing: {
+    amount: "3 000 000",
+    currency: "сум",
+    period: "месяц",
+    description:
+      "Ведение — 3 000 000 сум / месяц. Первый месяц запуска — 6 000 000 сум (как при старте контекста). Промо и реклама внутри кабинетов маркетплейса — отдельно.",
+    deliverables: [
+      { label: "Площадки", value: "Uzum Market и др. по брифу" },
+      { label: "1-й месяц", value: "6 000 000 сум — запуск" },
+      { label: "Карточки и медиа", value: "по графику согласований" },
+    ],
+  },
+};
+
 const seoTab: ContextAdsProposalData = {
   type: "context-ads",
   clientName: "MC Clean — SEO продвижение",
@@ -375,15 +421,17 @@ export const mcClean: MultiServiceProposalData = {
     { id: "smm", label: "SMM", serviceType: "smm", proposal: smmTab },
     { id: "website", label: "Сайт", serviceType: "website", proposal: websiteTab },
     { id: "context", label: "Интернет реклама", serviceType: "context-ads", proposal: contextTab },
+    { id: "marketplace", label: "Маркетплейсы", serviceType: "marketplace", proposal: marketplaceTab },
     { id: "seo", label: "SEO продвижение", serviceType: "context-ads", proposal: seoTab },
   ],
   unifiedPricing: {
     title: "Коммерческие условия",
-    subtitle: "Направления в одном предложении — единый блок стоимости ниже. Детали — во вкладках.",
+    subtitle:
+      "Сайт — 12 000 000 сум проект. Абонентские направления после запуска: SMM 12 млн/мес (1-й месяц SMM — 15 млн), контекст 5 млн/мес (1-й месяц — 7 млн), маркетплейсы 3 млн/мес (1-й месяц — 6 млн), SEO 4 млн/мес. Предоплата SMM за 3 месяца — по договору.",
     services: [
       {
         name: "Instagram SMM",
-        amount: "20 000 000",
+        amount: "12 000 000",
         currency: "сум",
         period: "месяц",
         deliverables: [
@@ -393,7 +441,8 @@ export const mcClean: MultiServiceProposalData = {
           { label: "Съёмка", value: "проф. камера" },
           { label: "Таргет Meta", value: "настройка и ведение" },
           { label: "Meta бюджет", value: "отдельно; ориентир 300–400 USD в 1-й месяц" },
-          { label: "Скидка", value: "18 000 000 сум/мес при предоплате за 3 месяца" },
+          { label: "1-й месяц SMM", value: "15 000 000 сум" },
+          { label: "Предоплата 3 мес.", value: "по договору (скидка к помесячной)" },
         ],
       },
       {
@@ -417,6 +466,16 @@ export const mcClean: MultiServiceProposalData = {
         ],
       },
       {
+        name: "Маркетплейсы",
+        amount: "3 000 000",
+        currency: "сум",
+        period: "месяц",
+        deliverables: [
+          { label: "1-й месяц", value: "6 000 000 сум — запуск" },
+          { label: "Промо в кабинетах", value: "отдельно по площадке" },
+        ],
+      },
+      {
         name: "SEO продвижение",
         amount: "4 000 000",
         currency: "сум",
@@ -433,11 +492,13 @@ export const mcClean: MultiServiceProposalData = {
       "Дизайнер и motion",
       "Таргетолог (Meta)",
       "Специалист по контексту (Яндекс + Google)",
+      "Специалист по маркетплейсам",
       "Веб-разработчик и UX",
     ],
     conditions: [
       "Предоплата и этапы оплаты согласуем при старте.",
       "Медиабюджеты в кабинетах не входят в абонентскую часть.",
+      "Промо и реклама на маркетплейсах — отдельно от абонентской части ведения.",
       "SEO: TOP-1/2 — по согласованному списку запросов и при внедрении правок.",
     ],
   },

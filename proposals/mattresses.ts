@@ -25,7 +25,8 @@ const MT_RUBRICS_COVER = [
   `${B_MT}/rubrics/XXXL.webp`,
 ] as const;
 
-const MT_VISUALS_BASE = [
+/** Ровно 14 кадров из `public/proposals/mattresses/visuals/` — без дублей из других папок */
+const MT_VISUALS = [
   `${B_MT}/visuals/f499e7257e11132f2708dd5de82b0b7c.jpg`,
   `${B_MT}/visuals/238d2802a7cc74708f1c0c18443ee4d9.jpg`,
   `${B_MT}/visuals/da0ccef8476c2ecb23100bd26df23bea.jpg`,
@@ -41,9 +42,6 @@ const MT_VISUALS_BASE = [
   `${B_MT}/visuals/ecb263b549289b2306cbd622085b08c2.jpg`,
   `${B_MT}/visuals/85cc57bada82803e5e4e469693ce9c74.jpg`,
 ];
-
-/** Сетка: кадры из visuals + повторы из positioning и rubrics */
-const MT_VISUALS = [...MT_VISUALS_BASE, ...MT_POSITIONING, ...MT_RUBRICS_COVER];
 
 const smmTab: ProposalData = {
   clientName: "Матрасы — SMM",
@@ -98,9 +96,9 @@ const smmTab: ProposalData = {
   },
   rubricBlockImages: [...MT_RUBRICS_COVER],
   rubrics: [
-    { title: "Линейки и сравнения", description: "Таблицы «модель — задача — жёсткость».", imageUrl: MT_VISUALS_BASE[0] },
-    { title: "Материалы и качество", description: "Наполнители, сертификаты, защита чехла.", imageUrl: MT_VISUALS_BASE[3] },
-    { title: "Сон и здоровье", description: "Без медобещаний: комфорт, поддержка, гигиена.", imageUrl: MT_VISUALS_BASE[6] },
+    { title: "Линейки и сравнения", description: "Таблицы «модель — задача — жёсткость».", imageUrl: MT_VISUALS[0] },
+    { title: "Материалы и качество", description: "Наполнители, сертификаты, защита чехла.", imageUrl: MT_VISUALS[3] },
+    { title: "Сон и здоровье", description: "Без медобещаний: комфорт, поддержка, гигиена.", imageUrl: MT_VISUALS[6] },
     { title: "Доставка и сервис", description: "Сроки, подъём, сборка, гарантия.", imageUrl: MT_RUBRICS_COVER[0] },
     { title: "Шоурум и тест", description: "Запись на просмотр, правила теста.", imageUrl: MT_RUBRICS_COVER[1] },
     { title: "Отзывы", description: "UGC, истории покупателей.", imageUrl: MT_RUBRICS_COVER[2] },
@@ -121,7 +119,7 @@ const smmTab: ProposalData = {
     { title: "Связка с продажами", description: "Лиды в Direct, запись в шоурум, звонок. Бюджеты в кабинетах — отдельно." },
   ],
   pricing: {
-    amount: "20 000 000",
+    amount: "12 000 000",
     currency: "сум",
     period: "месяц",
     team: [
@@ -141,7 +139,11 @@ const smmTab: ProposalData = {
       { label: "Комьюнити", value: "ответы на сообщения и комментарии" },
       { label: "Аналитика", value: "ежемесячный детальный отчёт" },
     ],
-    notes: ["При предоплате за 3 месяца — 18 000 000 сум / месяц.", "Итоговые условия — в едином блоке внизу страницы."],
+    notes: [
+      "Первый месяц ведения SMM — 15 000 000 сум.",
+      "При предоплате за 3 месяца — пакет и скидка фиксируются в договоре.",
+      "Итоговые условия — в едином блоке внизу страницы.",
+    ],
   },
 };
 
@@ -244,6 +246,51 @@ const contextTab: ContextAdsProposalData = {
   },
 };
 
+const marketplaceTab: ContextAdsProposalData = {
+  type: "context-ads",
+  clientName: "Матрасы — маркетплейсы",
+  createdAt: "2026-04-16",
+  hero: {
+    title: "Маркетплейсы: матрас в карточке, который доверяют и покупают",
+    subtitle:
+      "Uzum Market и другие площадки по брифу: модели и размеры, медиа, отзывы, акции и внутренняя выдача — вместе с сайтом и Instagram.",
+  },
+  markets: {
+    title: "Площадки",
+    regions: ["Узбекистан", "Мебель и сон", "B2C и дилеры по модели площадки"],
+  },
+  productSummary: {
+    title: "Продукт",
+    items: ["Линейка матрасов и SKU", "Жёсткость, размеры, сервис", "Цели: заказы, рейтинг, консультации"],
+  },
+  contextStrategy: {
+    title: "Стратегия на маркетплейсе",
+    search: ["Карточка и характеристики", "Медиа и сравнение моделей", "Ключевые запросы внутри площадки"],
+    performance: ["Акции и промо", "Реклама внутри маркетплейса", "Сегменты покупателей"],
+    remarketing: ["Корзина и избранное", "Просмотр размеров", "Связка с внешним трафиком"],
+  },
+  landingWork: {
+    title: "Контент и процессы",
+    items: ["Гайд по визуалу и гарантии на карточке", "Ответы на отзывы", "Доставка и склады — по доступам"],
+  },
+  analytics: {
+    title: "Отчётность",
+    items: ["Ежемесячный отчёт по заказам и позициям", "Гипотезы на следующий месяц"],
+  },
+  pricing: {
+    amount: "3 000 000",
+    currency: "сум",
+    period: "месяц",
+    description:
+      "Ведение — 3 000 000 сум / месяц. Первый месяц запуска — 6 000 000 сум. Промо и реклама в кабинетах маркетплейса — отдельно.",
+    deliverables: [
+      { label: "Площадки", value: "Uzum Market и др. по брифу" },
+      { label: "1-й месяц", value: "6 000 000 сум — запуск" },
+      { label: "Карточки", value: "по графику согласований" },
+    ],
+  },
+};
+
 const seoTab: ContextAdsProposalData = {
   type: "context-ads",
   clientName: "Матрасы — SEO продвижение",
@@ -294,15 +341,17 @@ export const mattresses: MultiServiceProposalData = {
     { id: "smm", label: "SMM", serviceType: "smm", proposal: smmTab },
     { id: "website", label: "Сайт", serviceType: "website", proposal: websiteTab },
     { id: "context", label: "Интернет реклама", serviceType: "context-ads", proposal: contextTab },
+    { id: "marketplace", label: "Маркетплейсы", serviceType: "marketplace", proposal: marketplaceTab },
     { id: "seo", label: "SEO продвижение", serviceType: "context-ads", proposal: seoTab },
   ],
   unifiedPricing: {
     title: "Коммерческие условия",
-    subtitle: "Направления в одном предложении — единый блок стоимости ниже. Детали — во вкладках.",
+    subtitle:
+      "Сайт — 12 000 000 сум проект. Абонентские направления после запуска: SMM 12 млн/мес (1-й месяц SMM — 15 млн), контекст 5 млн/мес (1-й месяц — 7 млн), маркетплейсы 3 млн/мес (1-й месяц — 6 млн), SEO 4 млн/мес. Предоплата SMM за 3 месяца — по договору.",
     services: [
       {
         name: "Instagram SMM",
-        amount: "20 000 000",
+        amount: "12 000 000",
         currency: "сум",
         period: "месяц",
         deliverables: [
@@ -312,7 +361,8 @@ export const mattresses: MultiServiceProposalData = {
           { label: "Съёмка", value: "проф. камера" },
           { label: "Таргет Meta", value: "ведение" },
           { label: "Meta бюджет", value: "отдельно; 300–400 USD в 1-й месяц" },
-          { label: "Скидка", value: "18 000 000 сум/мес при предоплате за 3 месяца" },
+          { label: "1-й месяц SMM", value: "15 000 000 сум" },
+          { label: "Предоплата 3 мес.", value: "по договору (скидка к помесячной)" },
         ],
       },
       {
@@ -336,6 +386,16 @@ export const mattresses: MultiServiceProposalData = {
         ],
       },
       {
+        name: "Маркетплейсы",
+        amount: "3 000 000",
+        currency: "сум",
+        period: "месяц",
+        deliverables: [
+          { label: "1-й месяц", value: "6 000 000 сум — запуск" },
+          { label: "Промо в кабинетах", value: "отдельно по площадке" },
+        ],
+      },
+      {
         name: "SEO продвижение",
         amount: "4 000 000",
         currency: "сум",
@@ -352,11 +412,13 @@ export const mattresses: MultiServiceProposalData = {
       "Дизайнер и motion",
       "Таргетолог (Meta)",
       "Специалист по контексту (Яндекс + Google)",
+      "Специалист по маркетплейсам",
       "Веб-разработчик и UX",
     ],
     conditions: [
       "Предоплата и этапы согласуем при старте.",
       "Медиабюджеты в кабинетах не входят в абонентскую часть.",
+      "Промо и реклама на маркетплейсах — отдельно от абонентской части ведения.",
       "SEO: TOP-1/2 по согласованному списку запросов и при внедрении правок.",
     ],
   },

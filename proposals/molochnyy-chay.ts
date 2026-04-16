@@ -140,7 +140,7 @@ const smmTab: ProposalData = {
     { title: "Связка с продажами", description: "Ссылки на маркетплейсы и карту точек. Бюджеты в кабинетах — отдельно." },
   ],
   pricing: {
-    amount: "20 000 000",
+    amount: "12 000 000",
     currency: "сум",
     period: "месяц",
     team: [
@@ -160,7 +160,11 @@ const smmTab: ProposalData = {
       { label: "Комьюнити", value: "ответы на сообщения и комментарии" },
       { label: "Аналитика", value: "ежемесячный детальный отчёт" },
     ],
-    notes: ["При предоплате за 3 месяца — 18 000 000 сум / месяц.", "Итоговые условия — в едином блоке внизу страницы."],
+    notes: [
+      "Первый месяц ведения SMM — 15 000 000 сум.",
+      "При предоплате за 3 месяца — пакет и скидка фиксируются в договоре.",
+      "Итоговые условия — в едином блоке внизу страницы.",
+    ],
   },
 };
 
@@ -263,6 +267,51 @@ const contextTab: ContextAdsProposalData = {
   },
 };
 
+const marketplaceTab: ContextAdsProposalData = {
+  type: "context-ads",
+  clientName: "Молочный чай — маркетплейсы",
+  createdAt: "2026-04-16",
+  hero: {
+    title: "Маркетплейсы: чай на полке, который покупают",
+    subtitle:
+      "Uzum Market и другие площадки по брифу: карточки вкусов и форматов, медиа, акции, внутренняя выдача и отзывы — в связке с сайтом и Instagram.",
+  },
+  markets: {
+    title: "Площадки",
+    regions: ["Узбекистан", "Напитки и FMCG", "B2C и опт по модели площадки"],
+  },
+  productSummary: {
+    title: "Продукт",
+    items: ["Молочный чай и линейка SKU", "Вкусы и упаковки", "Цели: заказы, рейтинг, повторные покупки"],
+  },
+  contextStrategy: {
+    title: "Стратегия на маркетплейсе",
+    search: ["Карточка и ключевые слова внутри площадки", "Медиа и инфографика", "Сравнение с конкурентами"],
+    performance: ["Акции и промо", "Реклама внутри маркетплейса", "Сегменты покупателей"],
+    remarketing: ["Корзина и избранное", "Подписчики бренда на площадке", "Связка с внешним трафиком"],
+  },
+  landingWork: {
+    title: "Контент и процессы",
+    items: ["Гайд по визуалу и составу на карточке", "Ответы на отзывы", "Остатки и поставки — по доступам"],
+  },
+  analytics: {
+    title: "Отчётность",
+    items: ["Ежемесячный отчёт по заказам и позициям", "Гипотезы на следующий месяц"],
+  },
+  pricing: {
+    amount: "3 000 000",
+    currency: "сум",
+    period: "месяц",
+    description:
+      "Ведение — 3 000 000 сум / месяц. Первый месяц запуска — 6 000 000 сум. Промо и реклама в кабинетах маркетплейса — отдельно.",
+    deliverables: [
+      { label: "Площадки", value: "Uzum Market и др. по брифу" },
+      { label: "1-й месяц", value: "6 000 000 сум — запуск" },
+      { label: "Карточки", value: "по графику согласований" },
+    ],
+  },
+};
+
 const seoTab: ContextAdsProposalData = {
   type: "context-ads",
   clientName: "Молочный чай — SEO продвижение",
@@ -313,15 +362,17 @@ export const molochnyyChay: MultiServiceProposalData = {
     { id: "smm", label: "SMM", serviceType: "smm", proposal: smmTab },
     { id: "website", label: "Сайт", serviceType: "website", proposal: websiteTab },
     { id: "context", label: "Интернет реклама", serviceType: "context-ads", proposal: contextTab },
+    { id: "marketplace", label: "Маркетплейсы", serviceType: "marketplace", proposal: marketplaceTab },
     { id: "seo", label: "SEO продвижение", serviceType: "context-ads", proposal: seoTab },
   ],
   unifiedPricing: {
     title: "Коммерческие условия",
-    subtitle: "Направления в одном предложении — единый блок стоимости ниже. Детали — во вкладках.",
+    subtitle:
+      "Сайт — 12 000 000 сум проект. Абонентские направления после запуска: SMM 12 млн/мес (1-й месяц SMM — 15 млн), контекст 5 млн/мес (1-й месяц — 7 млн), маркетплейсы 3 млн/мес (1-й месяц — 6 млн), SEO 4 млн/мес. Предоплата SMM за 3 месяца — по договору.",
     services: [
       {
         name: "Instagram SMM",
-        amount: "20 000 000",
+        amount: "12 000 000",
         currency: "сум",
         period: "месяц",
         deliverables: [
@@ -331,7 +382,8 @@ export const molochnyyChay: MultiServiceProposalData = {
           { label: "Съёмка", value: "проф. камера" },
           { label: "Таргет Meta", value: "ведение" },
           { label: "Meta бюджет", value: "отдельно; 300–400 USD в 1-й месяц" },
-          { label: "Скидка", value: "18 000 000 сум/мес при предоплате за 3 месяца" },
+          { label: "1-й месяц SMM", value: "15 000 000 сум" },
+          { label: "Предоплата 3 мес.", value: "по договору (скидка к помесячной)" },
         ],
       },
       {
@@ -355,6 +407,16 @@ export const molochnyyChay: MultiServiceProposalData = {
         ],
       },
       {
+        name: "Маркетплейсы",
+        amount: "3 000 000",
+        currency: "сум",
+        period: "месяц",
+        deliverables: [
+          { label: "1-й месяц", value: "6 000 000 сум — запуск" },
+          { label: "Промо в кабинетах", value: "отдельно по площадке" },
+        ],
+      },
+      {
         name: "SEO продвижение",
         amount: "4 000 000",
         currency: "сум",
@@ -371,11 +433,13 @@ export const molochnyyChay: MultiServiceProposalData = {
       "Дизайнер и motion",
       "Таргетолог (Meta)",
       "Специалист по контексту (Яндекс + Google)",
+      "Специалист по маркетплейсам",
       "Веб-разработчик и UX",
     ],
     conditions: [
       "Предоплата и этапы согласуем при старте.",
       "Медиабюджеты в кабинетах не входят в абонентскую часть.",
+      "Промо и реклама на маркетплейсах — отдельно от абонентской части ведения.",
       "SEO: TOP-1/2 по согласованному списку запросов и при внедрении правок.",
     ],
   },

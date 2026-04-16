@@ -515,7 +515,8 @@ export interface ServiceTab {
     | "automation"
     | "maps-serm"
     | "telegram-bot"
-    | "context-ads";
+    | "context-ads"
+    | "marketplace";
   /** Данные предложения (полноценный KP без ценового блока — pricing игнорируется) */
   proposal: SingleProposalType;
 }

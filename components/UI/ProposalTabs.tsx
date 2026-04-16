@@ -51,6 +51,12 @@ const SERVICE_ICONS: Record<string, React.ReactNode> = {
       <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
     </svg>
   ),
+  marketplace: (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 9h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+      <path d="M3 9V7a2 2 0 012-2h4l2-2h4l2 2h4a2 2 0 012 2v2" />
+    </svg>
+  ),
 };
 
 interface ProposalTabsProps {
