@@ -35,7 +35,7 @@ const MT_VISUALS = [
   `${B_MT}/visuals/5223ff876c5194bd5eefd1bb6d5c334b.jpg`,
   `${B_MT}/visuals/f6a4f49e8e5f23ded53795930e1cfc59.jpg`,
   `${B_MT}/visuals/6cc120d28b147fc90b34f25e0e3f1327.jpg`,
-  `${B_MT}/visuals/ba1255a66b4d5c83ed4cfcdee7a3e189%20(1).jpg`,
+  `${B_MT}/visuals/ba1255a66b4d5c83ed4cfcdee7a3e189-1.jpg`,
   `${B_MT}/visuals/568c46bb04c01e4da0d0919bf4d3d18d.jpg`,
   `${B_MT}/visuals/bd71a3981f6c30c4474eca53cf5bb99b.jpg`,
   `${B_MT}/visuals/9ea45fd954b95597e517fc8d4d77011c.jpg`,
@@ -119,7 +119,7 @@ const smmTab: ProposalData = {
     { title: "Связка с продажами", description: "Лиды в Direct, запись в шоурум, звонок. Бюджеты в кабинетах — отдельно." },
   ],
   pricing: {
-    amount: "12 000 000",
+    amount: "12 500 000",
     currency: "сум",
     period: "месяц",
     team: [
@@ -130,9 +130,9 @@ const smmTab: ProposalData = {
       "Комьюнити-менеджер",
     ],
     deliverables: [
-      { label: "Stories", value: "90 в месяц" },
-      { label: "Reels", value: "10 в месяц" },
-      { label: "Посты в ленту", value: "6 статичных (карусели) в месяц" },
+      { label: "Stories", value: "60 в месяц" },
+      { label: "Reels", value: "8 в месяц" },
+      { label: "Посты в ленту", value: "4 статичных (карусели) в месяц" },
       { label: "Съёмка", value: "на профессиональную камеру (выезды по графику)" },
       { label: "Контент-план", value: "на каждый месяц" },
       { label: "Таргет", value: "настройка и ведение" },
@@ -347,17 +347,17 @@ export const mattresses: MultiServiceProposalData = {
   unifiedPricing: {
     title: "Коммерческие условия",
     subtitle:
-      "Сайт — 12 000 000 сум проект. Абонентские направления после запуска: SMM 12 млн/мес (1-й месяц SMM — 15 млн), контекст 5 млн/мес (1-й месяц — 7 млн), маркетплейсы 3 млн/мес (1-й месяц — 6 млн), SEO 4 млн/мес. Предоплата SMM за 3 месяца — по договору.",
+      "Сайт — 12 000 000 сум проект. Абонентские направления после запуска: SMM 12,5 млн/мес (1-й месяц SMM — 15 млн), контекст 5 млн/мес (1-й месяц — 7 млн), маркетплейсы 3 млн/мес (1-й месяц — 6 млн), SEO 4 млн/мес. Предоплата SMM за 3 месяца — по договору.",
     services: [
       {
         name: "Instagram SMM",
-        amount: "12 000 000",
+        amount: "12 500 000",
         currency: "сум",
         period: "месяц",
         deliverables: [
-          { label: "Stories", value: "90 / месяц" },
-          { label: "Reels", value: "10 / месяц" },
-          { label: "Посты", value: "6 каруселей / месяц" },
+          { label: "Stories", value: "60 / месяц" },
+          { label: "Reels", value: "8 / месяц" },
+          { label: "Посты", value: "4 карусели / месяц" },
           { label: "Съёмка", value: "проф. камера" },
           { label: "Таргет Meta", value: "ведение" },
           { label: "Meta бюджет", value: "отдельно; 300–400 USD в 1-й месяц" },
