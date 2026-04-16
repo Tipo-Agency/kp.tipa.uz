@@ -4,6 +4,11 @@ import type {
   TelegramBotProposalData,
   PlatformProposalData,
   ContextAdsProposalData,
+  ProductionProposalData,
+  BrandingProposalData,
+  AutomationProposalData,
+  MapsSermProposalData,
+  MultiServiceProposalData,
 } from "../types";
 import { yangiOzbekistonRestaurant } from "./yangi-ozbekiston-restaurant";
 import { jaquarUzbSantehnika } from "./jaquar-uzb-santehnika";
@@ -71,11 +76,21 @@ import { rineraUz } from "./rinera-uz";
 import { chinaSupplyUz } from "./china-supply-uz";
 import { glassFacadesMebel } from "./glass-facades-mebel";
 import { vibeReception } from "./vibe-reception";
+import { sitanUz } from "./sitan-uz";
 
-export const PROPOSALS: Record<
-  string,
-  ProposalData | WebsiteProposalData | TelegramBotProposalData | PlatformProposalData | ContextAdsProposalData
-> = {
+export type AnyProposal =
+  | ProposalData
+  | WebsiteProposalData
+  | TelegramBotProposalData
+  | PlatformProposalData
+  | ContextAdsProposalData
+  | ProductionProposalData
+  | BrandingProposalData
+  | AutomationProposalData
+  | MapsSermProposalData
+  | MultiServiceProposalData;
+
+export const PROPOSALS: Record<string, AnyProposal> = {
   "yangi-ozbekiston-restaurant": yangiOzbekistonRestaurant,
   "jaquar-uzb-santehnika": jaquarUzbSantehnika,
   "onlyou-tashkent": onlyouTashkent,
@@ -142,14 +157,8 @@ export const PROPOSALS: Record<
   "china-supply-uz": chinaSupplyUz,
   "glass-facades-mebel": glassFacadesMebel,
   "vibe-reception": vibeReception,
+  "sitan-uz": sitanUz,
 };
-
-export type AnyProposal =
-  | ProposalData
-  | WebsiteProposalData
-  | TelegramBotProposalData
-  | PlatformProposalData
-  | ContextAdsProposalData;
 
 export function getProposal(slug: string | undefined): AnyProposal | undefined {
   if (!slug) return undefined;
@@ -170,4 +179,34 @@ export function isPlatformProposal(p: AnyProposal | undefined): p is PlatformPro
 
 export function isContextAdsProposal(p: AnyProposal | undefined): p is ContextAdsProposalData {
   return p != null && "type" in p && p.type === "context-ads";
+}
+
+/** Проверяет, истёк ли срок КП (21 день с createdAt) */
+export function isProposalExpired(proposal: AnyProposal): boolean {
+  const createdAt = (proposal as { createdAt?: string }).createdAt;
+  if (!createdAt) return false;
+  const created = new Date(createdAt).getTime();
+  const now = Date.now();
+  const msIn21Days = 21 * 24 * 60 * 60 * 1000;
+  return now - created > msIn21Days;
+}
+
+export function isProductionProposal(p: AnyProposal | undefined): p is ProductionProposalData {
+  return p != null && "type" in p && p.type === "production";
+}
+
+export function isBrandingProposal(p: AnyProposal | undefined): p is BrandingProposalData {
+  return p != null && "type" in p && p.type === "branding";
+}
+
+export function isAutomationProposal(p: AnyProposal | undefined): p is AutomationProposalData {
+  return p != null && "type" in p && p.type === "automation";
+}
+
+export function isMapsSermProposal(p: AnyProposal | undefined): p is MapsSermProposalData {
+  return p != null && "type" in p && p.type === "maps-serm";
+}
+
+export function isMultiProposal(p: AnyProposal | undefined): p is MultiServiceProposalData {
+  return p != null && "type" in p && p.type === "multi";
 }

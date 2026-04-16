@@ -78,6 +78,8 @@ export interface TZRequirementItem {
 export interface TelegramBotProposalData {
   type: "telegram-bot";
   clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
   hook: {
     title: string;
     subtitle: string;
@@ -125,6 +127,8 @@ export interface TelegramBotProposalData {
 export interface PlatformProposalData {
   type: "platform";
   clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
   hook: {
     title: string;
     subtitle: string;
@@ -159,6 +163,8 @@ export interface PlatformProposalData {
 export interface WebsiteProposalData {
   type: "website";
   clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
   hook: {
     title: string;
     subtitle: string;
@@ -207,6 +213,8 @@ export interface WebsiteProposalData {
 export interface ContextAdsProposalData {
   type: "context-ads";
   clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
   hero: {
     title: string;
     subtitle: string;
@@ -256,6 +264,8 @@ export interface ContextAdsProposalData {
 
 export interface ProposalData {
   clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
   hero: {
     title: string;
     subtitle: string;
@@ -309,5 +319,230 @@ export interface ProposalData {
       amount: string;
       deliverables: { label: string; value: string }[];
     }[];
+  };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// НОВЫЕ ТИПЫ КП
+// ─────────────────────────────────────────────────────────────────────────────
+
+/** КП под продакшн: фото меню, рилсы, видео под проект */
+export interface ProductionProposalData {
+  type: "production";
+  clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments?: string[];
+  };
+  /** Пакеты съёмки */
+  packages: {
+    title: string;
+    items: {
+      name: string;
+      description: string;
+      deliverables: string[];
+      /** Иконка или emoji для визуала */
+      icon?: string;
+    }[];
+  };
+  /** Процесс работы: бриф → предпродакшн → съёмка → постобработка → сдача */
+  process: {
+    title: string;
+    steps: { name: string; description?: string }[];
+  };
+  /** Примеры работ */
+  portfolio?: string[];
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    deliverables: { label: string; value: string }[];
+    packages?: {
+      title: string;
+      amount: string;
+      deliverables: { label: string; value: string }[];
+    }[];
+    notes?: string[];
+  };
+}
+
+/** КП под брендинг и фирменный стиль */
+export interface BrandingProposalData {
+  type: "branding";
+  clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments?: string[];
+  };
+  /** Что входит в пакет брендинга */
+  scope: {
+    title: string;
+    items: {
+      name: string;
+      description: string;
+      subitems?: string[];
+    }[];
+  };
+  /** Процесс работы */
+  process: {
+    title: string;
+    steps: { name: string; description?: string }[];
+  };
+  /** Примеры работ */
+  examples?: string[];
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    deliverables: { label: string; value: string }[];
+    packages?: {
+      title: string;
+      amount: string;
+      deliverables: { label: string; value: string }[];
+    }[];
+    notes?: string[];
+  };
+}
+
+/** КП под автоматизацию бизнеса (CRM, боты, интеграции, воронки) */
+export interface AutomationProposalData {
+  type: "automation";
+  clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments?: string[];
+  };
+  /** Решения и инструменты автоматизации */
+  solutions: {
+    title: string;
+    items: {
+      name: string;
+      description: string;
+      useCases?: string[];
+    }[];
+  };
+  /** Этапы работы */
+  stages: {
+    title: string;
+    steps: { name: string; description?: string }[];
+  };
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    deliverables: { label: string; value: string }[];
+    notes?: string[];
+  };
+}
+
+/** КП под работу с картами (2GIS, Google, Yandex) и управление репутацией / SERM */
+export interface MapsSermProposalData {
+  type: "maps-serm";
+  clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
+  hook: {
+    title: string;
+    subtitle: string;
+    arguments?: string[];
+  };
+  /** Платформы, с которыми работаем */
+  platforms: {
+    title: string;
+    items: { name: string; description: string }[];
+  };
+  /** Управление репутацией */
+  reputation: {
+    title: string;
+    items: string[];
+  };
+  /** Аналитика и отчётность */
+  analytics: {
+    title: string;
+    items: string[];
+  };
+  pricing: {
+    amount: string;
+    currency: string;
+    period: string;
+    deliverables: { label: string; value: string }[];
+    notes?: string[];
+  };
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// МУЛЬТИ-КП (несколько направлений в одном предложении, вкладки)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type SingleProposalType =
+  | ProposalData
+  | WebsiteProposalData
+  | TelegramBotProposalData
+  | PlatformProposalData
+  | ContextAdsProposalData
+  | ProductionProposalData
+  | BrandingProposalData
+  | AutomationProposalData
+  | MapsSermProposalData;
+
+/** Одна вкладка в мульти-КП */
+export interface ServiceTab {
+  /** Идентификатор вкладки, e.g. "smm", "production" */
+  id: string;
+  /** Отображаемый заголовок вкладки */
+  label: string;
+  /** Тип направления для иконки/цвета */
+  serviceType:
+    | "smm"
+    | "website"
+    | "production"
+    | "branding"
+    | "automation"
+    | "maps-serm"
+    | "telegram-bot"
+    | "context-ads";
+  /** Данные предложения (полноценный KP без ценового блока — pricing игнорируется) */
+  proposal: SingleProposalType;
+}
+
+/** Строка стоимости в едином блоке цены */
+export interface UnifiedPricingService {
+  name: string;
+  amount: string;
+  currency: string;
+  period: string;
+  deliverables?: { label: string; value: string }[];
+}
+
+/** Мульти-КП: несколько направлений в одном документе */
+export interface MultiServiceProposalData {
+  type: "multi";
+  clientName: string;
+  /** ISO-дата создания КП. Через 21 день ссылка становится архивной */
+  createdAt?: string;
+  tabs: ServiceTab[];
+  /** Единый блок цены-конструктора под всеми вкладками */
+  unifiedPricing: {
+    title?: string;
+    subtitle?: string;
+    services: UnifiedPricingService[];
+    /** Общая сумма за весь пакет (если считается) */
+    total?: {
+      amount: string;
+      currency: string;
+      period: string;
+      label?: string;
+    };
+    team?: string[];
+    conditions?: string[];
   };
 }
