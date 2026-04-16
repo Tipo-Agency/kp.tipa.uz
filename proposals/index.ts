@@ -77,6 +77,9 @@ import { chinaSupplyUz } from "./china-supply-uz";
 import { glassFacadesMebel } from "./glass-facades-mebel";
 import { vibeReception } from "./vibe-reception";
 import { sitanUz } from "./sitan-uz";
+import { mcClean } from "./mc-clean";
+import { molochnyyChay } from "./molochnyy-chay";
+import { mattresses } from "./mattresses";
 
 export type AnyProposal =
   | ProposalData
@@ -158,6 +161,9 @@ export const PROPOSALS: Record<string, AnyProposal> = {
   "glass-facades-mebel": glassFacadesMebel,
   "vibe-reception": vibeReception,
   "sitan-uz": sitanUz,
+  "mc-clean": mcClean,
+  "molochnyy-chay": molochnyyChay,
+  mattresses,
 };
 
 export function getProposal(slug: string | undefined): AnyProposal | undefined {
