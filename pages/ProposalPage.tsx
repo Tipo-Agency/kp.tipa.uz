@@ -16,6 +16,7 @@ import GrowthFunnelSection from "../components/ProposalBlocks/GrowthFunnelSectio
 import StrategyGrowth from "../components/ProposalBlocks/StrategyGrowth";
 import Cases from "../components/ProposalBlocks/Cases";
 import Pricing from "../components/ProposalBlocks/Pricing";
+import VideoExample from "../components/ProposalBlocks/VideoExample";
 
 // Website blocks
 import { WebsiteHook } from "../components/WebsiteBlocks/WebsiteHook";
@@ -118,6 +119,9 @@ const renderSmmProposal = (proposal: Extract<AnyProposal, { hero: { title: strin
     <div className="reveal"><Hero clientName={proposal.clientName} title={proposal.hero.title} subtitle={proposal.hero.subtitle} /></div>
     <div className="reveal"><Services services={proposal.services} imageUrl={proposal.servicesImageUrl} description={proposal.servicesDescription} /></div>
     <div className="reveal"><GrowthTool title={proposal.growthTool.title} description={proposal.growthTool.description} /></div>
+    {proposal.videoExample ? (
+      <div className="reveal"><VideoExample title={proposal.videoExample.title} description={proposal.videoExample.description} youtubeUrl={proposal.videoExample.youtubeUrl} /></div>
+    ) : null}
     <div className="reveal"><Audience primary={proposal.audience.primary} secondary={proposal.audience.secondary} imageUrl={proposal.audienceImageUrl} /></div>
     {"strategyGrowth" in proposal && proposal.strategyGrowth ? (
       <div className="reveal"><StrategyGrowth data={proposal.strategyGrowth} /></div>

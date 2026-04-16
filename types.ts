@@ -277,6 +277,12 @@ export interface ProposalData {
     title: string;
     description: string;
   };
+  /** Видео-пример (например, референс обзорного ролика с YouTube) */
+  videoExample?: {
+    title: string;
+    description?: string;
+    youtubeUrl: string;
+  };
   audience: {
     primary: string[];
     secondary: string[];

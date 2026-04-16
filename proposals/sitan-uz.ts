@@ -7,6 +7,34 @@ import type {
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
 const SHARED = "/shared/services.png";
+const B = "/proposals/sitan-uz";
+const POSITIONING_IMAGES = [
+  `${B}/positioning/9fffde3bbed1b58086d5dd3603366459.jpg`,
+  `${B}/positioning/9819a169669b5905c58a35991c57e9f6.jpg`,
+  `${B}/positioning/3746a69afb22699f918998d4c6252d00.jpg`,
+  `${B}/positioning/8b4315bb31fccb3015477e51be31828f.jpg`,
+];
+const RUBRIC_BLOCK_IMAGES = [
+  `${B}/rubrics/a411cb263563ce420b4fa7680d157a59.jpg`,
+  `${B}/rubrics/0857b69dc08087a65c158b974ece8c44.jpg`,
+  `${B}/rubrics/a4a4afb5439d4b2d11c153292c1e5135.jpg`,
+];
+const VISUALS = [
+  `${B}/visuals/7153746a1ef4f8e5fe586bfcdb4d6933.jpg`,
+  `${B}/visuals/53cb2b608414c205310f43e26d373120.jpg`,
+  `${B}/visuals/b3a1cd5d518ce2bc59367fddbc653982.jpg`,
+  `${B}/visuals/c739423d5072aac762ce570147d662c1.jpg`,
+  `${B}/visuals/1e3108486d4419299f8c7c9c087ef83d.jpg`,
+  `${B}/visuals/9230dd21cad075d94577b2333d3b8c28.jpg`,
+  `${B}/visuals/68363ac3284f6323a85b4261a953f38c.jpg`,
+  `${B}/visuals/24202064e10c51263df35d2ed1fce1fc.jpg`,
+  `${B}/visuals/298c6c0c41c63a9fc18176856b1ecc8a.jpg`,
+  `${B}/visuals/596143e97676882a124bbc617f75c219.jpg`,
+  `${B}/visuals/c4e53d9b2cdd61968bd99f8fb957f8fd.jpg`,
+  `${B}/visuals/f5991e10383d914e4c693faf3042d2fd.jpg`,
+  `${B}/visuals/5ad2bcb8721cb4e557f76d9f8cbdf0e7.jpg`,
+  `${B}/visuals/482181feb732ecab4c1377bf884cb34e.jpg`,
+];
 
 /** Вкладка SMM — пакет «Премиум» (объёмы под sitan.uz). */
 const smmTab: ProposalData = {
@@ -47,6 +75,12 @@ const smmTab: ProposalData = {
     description:
       "Сценарии роликов и сторис ведут к понятному следующему шагу: каталог, типовой опросник для расчёта, связь с отделом продаж. Снижаем разрыв между «узнали о вас» и «написали».",
   },
+  videoExample: {
+    title: "Пример обзорного видео, которое можем снять для SITAN",
+    description:
+      "Референс по формату: обзор производства и продукта, который усиливает доверие к бренду и даёт материал для Reels, сайта и рекламных креативов.",
+    youtubeUrl: "https://www.youtube.com/watch?v=9QvT5E230hI",
+  },
   growthFunnel: smmTripleFunnel,
   audienceImageUrl: "/shared/audience.png",
   audience: {
@@ -60,70 +94,70 @@ const smmTab: ProposalData = {
       "Участники отраслевых выставок и тендеров, перепроверяющие компанию по соцсетям",
     ],
   },
-  rubricBlockImages: ["/shared/services.png", "/shared/audience.png", "/shared/services.png"],
+  rubricBlockImages: RUBRIC_BLOCK_IMAGES,
   rubrics: [
     {
       title: "Продукция и серии",
       description:
         "Трансформаторы, НКУ, комплектующие: что производите, для каких задач, отличия серий. Карусели «одна линейка — один пост».",
-      imageUrl: "",
+      imageUrl: VISUALS[0],
     },
     {
       title: "Завод и лаборатория",
       description:
         "Производственные площади, аккредитованная испытательная лаборатория, контроль качества. Доказательство для B2B.",
-      imageUrl: "",
+      imageUrl: VISUALS[1],
     },
     {
       title: "Sitan в цифрах",
       description:
         "1996 год на рынке, площади, команда, территория — короткие факты с сайта, обновляемые по согласованию.",
-      imageUrl: "",
+      imageUrl: VISUALS[2],
     },
     {
       title: "Партнёры и объекты",
       description:
         "Логотипы партнёров, типовые сценарии поставок (без раскрытия NDA), акцент на надёжности сотрудничества.",
-      imageUrl: "",
+      imageUrl: VISUALS[3],
     },
     {
       title: "Команда и экспертиза",
       description:
         "Опытный персонал как конкурентное преимущество: цеха, инженеры, сервис. Человеческое лицо завода.",
-      imageUrl: "",
+      imageUrl: VISUALS[4],
     },
     {
       title: "Качество и стандарты",
       description:
         "Темы качества, испытаний, соответствия требованиям — в доступной подаче, без перегруза нормами в одном кадре.",
-      imageUrl: "",
+      imageUrl: VISUALS[5],
     },
     {
       title: "Закупка и логистика",
       description:
         "Как с вами связаться, сроки, типовые вопросы закупщиков. FAQ в сторис и каруселях.",
-      imageUrl: "",
+      imageUrl: VISUALS[6],
     },
     {
       title: "Отрасль и новости",
       description:
         "Законодательство, рынок электроэнергетики, тенденции — аккуратно, с позицией эксперта, без политики.",
-      imageUrl: "",
+      imageUrl: VISUALS[7],
     },
     {
       title: "Закулисье и события",
       description:
         "Смены, поставки, участие в выставках, жизнь завода. Повышаем вовлечённость и узнаваемость.",
-      imageUrl: "",
+      imageUrl: VISUALS[8],
     },
   ],
   positioning: {
     title: "SITAN — надёжное оборудование, которое видно не только в паспорте изделия",
     description:
       "Позиционируем аккаунт как продолжение официального сайта sitan.uz: те же факты и серьёзность, но быстрее и ближе к тому, как люди реально ищут поставщика сегодня — через ленту, Reels и диалог в Direct.",
-    images: ["", "", "", ""],
+    images: POSITIONING_IMAGES,
   },
-  visuals: [SHARED, SHARED, SHARED, SHARED, SHARED, SHARED],
+  visuals: VISUALS,
   ads: [
     {
       title: "Таргет Meta",
