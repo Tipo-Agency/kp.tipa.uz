@@ -61,8 +61,14 @@ const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
           {/* Column 1 (Сделана значительно медленнее по просьбе пользователя) */}
           <div className="flex flex-col gap-1 md:gap-2 animate-scroll-vertical-slowest">
             {col1.map((url, i) => (
-              <div key={i} className="w-full aspect-[4/5] overflow-hidden">
-                <img src={url} className="w-full h-full object-cover" alt="" />
+              <div key={`c1-${url}-${i}`} className="w-full aspect-[4/5] overflow-hidden">
+                <img
+                  src={url}
+                  className="h-full w-full object-cover [transform:translate3d(0,0,0)] [backface-visibility:hidden]"
+                  alt=""
+                  loading="eager"
+                  decoding="async"
+                />
               </div>
             ))}
           </div>
@@ -70,8 +76,14 @@ const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
           {/* Column 2 */}
           <div className="flex flex-col gap-1 md:gap-2 animate-scroll-vertical-slow">
             {col2.map((url, i) => (
-              <div key={i} className="w-full aspect-[4/5] overflow-hidden">
-                <img src={url} className="w-full h-full object-cover" alt="" />
+              <div key={`c2-${url}-${i}`} className="w-full aspect-[4/5] overflow-hidden">
+                <img
+                  src={url}
+                  className="h-full w-full object-cover [transform:translate3d(0,0,0)] [backface-visibility:hidden]"
+                  alt=""
+                  loading="eager"
+                  decoding="async"
+                />
               </div>
             ))}
           </div>
@@ -79,8 +91,14 @@ const VisualGrid: React.FC<VisualGridProps> = ({ images }) => {
           {/* Column 3 */}
           <div className="flex flex-col gap-1 md:gap-2 animate-scroll-vertical-med">
             {col3.map((url, i) => (
-              <div key={i} className="w-full aspect-[4/5] overflow-hidden">
-                <img src={url} className="w-full h-full object-cover" alt="" />
+              <div key={`c3-${url}-${i}`} className="w-full aspect-[4/5] overflow-hidden">
+                <img
+                  src={url}
+                  className="h-full w-full object-cover [transform:translate3d(0,0,0)] [backface-visibility:hidden]"
+                  alt=""
+                  loading="eager"
+                  decoding="async"
+                />
               </div>
             ))}
           </div>
