@@ -77,6 +77,8 @@ import { chinaSupplyUz } from "./china-supply-uz";
 import { glassFacadesMebel } from "./glass-facades-mebel";
 import { vibeReception } from "./vibe-reception";
 import { sitanUz } from "./sitan-uz";
+import { tazTashkent } from "./taz-tashkent";
+import { academyRizomulk } from "./academy-rizomulk";
 import { mcClean } from "./mc-clean";
 import { molochnyyChay } from "./molochnyy-chay";
 import { mattresses } from "./mattresses";
@@ -161,6 +163,8 @@ export const PROPOSALS: Record<string, AnyProposal> = {
   "glass-facades-mebel": glassFacadesMebel,
   "vibe-reception": vibeReception,
   "sitan-uz": sitanUz,
+  "taz-tashkent": tazTashkent,
+  "academy-rizomulk": academyRizomulk,
   "mc-clean": mcClean,
   "molochnyy-chay": molochnyyChay,
   mattresses,
