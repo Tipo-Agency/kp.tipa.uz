@@ -7,8 +7,8 @@ import type {
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
 const SHARED = "/shared/services.png";
-/** Плейсхолдер: промышленные фото как в КП SITAN до отдельной съёмки TAZ. */
-const B = "/proposals/sitan-uz";
+/** Медиа: `public/proposals/taz-tashkent/` (сейчас — копия референсов с площадки SITAN; замените на съёмку ТАЗ). */
+const B = "/proposals/taz-tashkent";
 const POSITIONING_IMAGES = [
   `${B}/positioning/9fffde3bbed1b58086d5dd3603366459.jpg`,
   `${B}/positioning/9819a169669b5905c58a35991c57e9f6.jpg`,

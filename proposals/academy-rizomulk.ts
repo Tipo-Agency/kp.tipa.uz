@@ -1,7 +1,8 @@
 import type { ProposalData } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-const K = "/proposals/katta-tanaffus-school";
+/** Медиа: `public/proposals/academy-rizomulk/` (сейчас — копии из Katta Tanaffus; замените на фото/видео академии). */
+const K = "/proposals/academy-rizomulk";
 
 /** КП: SMM для академии риелторов Academy Rizomulk — набор на 7 поток, экспертиза + развлекательный контент + Telegram-комьюнити. */
 export const academyRizomulk: ProposalData = {
