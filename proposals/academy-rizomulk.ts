@@ -150,7 +150,7 @@ export const academyRizomulk: ProposalData = {
     },
   ],
   pricing: {
-    amount: "14 000 000",
+    amount: "15 000 000",
     currency: "сум",
     period: "месяц",
     team: [
@@ -161,13 +161,12 @@ export const academyRizomulk: ProposalData = {
       "Комьюнити (Instagram + Telegram)",
     ],
     deliverables: [
-      { label: "Reels", value: "12 в месяц (смесь экспертных и развлекательных)" },
-      { label: "Посты в ленту", value: "8 каруселей / месяц" },
-      { label: "Stories", value: "ежедневно, план на неделю" },
+      { label: "Reels", value: "8 в месяц" },
+      { label: "Посты в ленту", value: "4 карусели в месяц" },
+      { label: "Stories", value: "90 в месяц" },
       { label: "Telegram", value: "ведение канала/чата под комьюнити и лиды" },
-      { label: "Съёмки", value: "до 3 выездов / мес. по графику" },
+      { label: "Съёмки", value: "2 выезда в месяц по графику" },
       { label: "Таргет", value: "настройка, ведение, отчёт" },
-      { label: "Контент-план", value: "на месяц с привязкой к 7 потоку" },
     ],
     notes: [
       "При предоплате за 3 месяца — скидка 10% на абонентскую часть (обсуждаемо в договоре).",
