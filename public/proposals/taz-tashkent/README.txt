@@ -1,4 +1,4 @@
 Папка медиа для КП «ТАЗ» (slug: taz-tashkent).
 
-Сейчас здесь копии кадров из КП SITAN как временный референс промзоны.
-После съёмки завода замените файлы в positioning/, rubrics/, visuals/ и при необходимости обновите имена в proposals/taz-tashkent.ts.
+Фото для страницы задаются в proposals/taz-tashkent.ts — пути вида /proposals/taz-tashkent/<имя>.jpg (файлы в корне этой папки).
+Подпапки positioning/, rubrics/, visuals/ можно не использовать, если всё лежит в корне.

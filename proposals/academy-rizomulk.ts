@@ -1,7 +1,7 @@
 import type { ProposalData } from "../types";
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
-/** Медиа: `public/proposals/academy-rizomulk/` (сейчас — копии из Katta Tanaffus; замените на фото/видео академии). */
+/** Медиа: `public/proposals/academy-rizomulk/` — фото из корня папки (позиционирование, рубрики, визуал). */
 const K = "/proposals/academy-rizomulk";
 
 /** КП: SMM для академии риелторов Academy Rizomulk — набор на 7 поток, экспертиза + развлекательный контент + Telegram-комьюнити. */
@@ -58,55 +58,55 @@ export const academyRizomulk: ProposalData = {
     ],
   },
   rubricBlockImages: [
-    `${K}/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg`,
-    `${K}/rubrics/6301a9f7a17510a3dd71d363dcf4c047.jpg`,
-    `${K}/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg`,
+    `${K}/1091b6377d12525c3b41969d4ea6c7b3.jpg`,
+    `${K}/29884e33a8b4de760e6bdaa86cd3d559.jpg`,
+    `${K}/3a7851a5fd956907ab437ab103899556.jpg`,
   ],
   rubrics: [
     {
       title: "7 поток: набор и дедлайны",
       description: "Анонсы старта, мест, рассрочки, бонусов ранней регистрации. Срочность без токсичного давления.",
-      imageUrl: `${K}/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg`,
+      imageUrl: `${K}/492cbe801d7f8bd8609c2df85a3bb191.jpg`,
     },
     {
       title: "Мифы и факты про аттестацию",
       description: "Короткие разборы заблуждений, что спрашивают на экзамене, как не слить попытку.",
-      imageUrl: `${K}/rubrics/6301a9f7a17510a3dd71d363dcf4c047.jpg`,
+      imageUrl: `${K}/506767c07ea80094a237c2ee35a06e5b.jpg`,
     },
     {
       title: "Экспертные карусели",
       description: "Сделки, документы, риски, переговоры с клиентом — визуально просто, по делу.",
-      imageUrl: `${K}/rubrics/606c6eb70f8a53816dffd6e06e00ff54.jpg`,
+      imageUrl: `${K}/507758559644aa89e6789a37b6cf5ae6.jpg`,
     },
     {
       title: "Закулисье академии",
       description: "Уроки, разборы, атмосфера потока — чтобы будущий студент «примерил» обучение.",
-      imageUrl: `${K}/visuals/6b7213775dfc039954b294a31a607617.jpg`,
+      imageUrl: `${K}/54c9480e739d4ca53af0714e3ec294c0.jpg`,
     },
     {
       title: "Преподаватели и методика",
       description: "Лица школы, уникальная система подготовки, отличие от «типовых курсов».",
-      imageUrl: `${K}/visuals/86a02fe3ca5507d5d2537844ae40644c.jpg`,
+      imageUrl: `${K}/5fae6704cbb6e372a326cefec22a1865.jpg`,
     },
     {
       title: "Истории выпускников",
       description: "Кейсы сдачи аттестации и выхода на сделки — социальное доказательство.",
-      imageUrl: `${K}/visuals/87a4aea35f540225297ffc135a524f45.jpg`,
+      imageUrl: `${K}/616b7487d692e71e46374cc474bc3700.jpg`,
     },
     {
       title: "Развлекательный контент",
       description: "Скетчи, тренды, юмор про офис агентства и клиентов — для охвата и узнаваемости бренда.",
-      imageUrl: `${K}/visuals/8941fbed5c2b8e52207c29462a8e748f.jpg`,
+      imageUrl: `${K}/63207a03902795ddcd8eed26e8d8de80.jpg`,
     },
     {
       title: "Эфиры и Q&A",
       description: "Прямые эфиры, ответы на вопросы в сторис, голосования — рост доверия и комментариев.",
-      imageUrl: `${K}/visuals/8b2a46cecc2fca87cf415d320feb751a.jpg`,
+      imageUrl: `${K}/6684a7867e296ede6c139c9dad6c2d84.jpg`,
     },
     {
       title: "Telegram: польза каждый день",
       description: "Мини-инсайты, напоминания, закрытые анонсы для подписчиков, мостик в заявку.",
-      imageUrl: `${K}/visuals/956b2d314602528dc6b34b7d94b5861f.jpg`,
+      imageUrl: `${K}/6d29d6d231f311f4e5804e88f66b7a94.jpg`,
     },
   ],
   positioning: {
@@ -114,25 +114,25 @@ export const academyRizomulk: ProposalData = {
     description:
       "В позиционировании соединяем амбицию ученика («хочу уверенно вести сделки и сдать аттестацию») с доказательствами: опыт школы, структура программы, 7 поток как понятная точка входа. Визуально — современная образовательная бренд-среда.",
     images: [
-      `${K}/positioning/0312ecc86b9c4ef940b63f59119df3a1.jpg`,
-      `${K}/positioning/06d9fb26f8578fa88e2281cb03a6f628.jpg`,
-      `${K}/positioning/09d07237d08f71adeb94ece024cc71ac.jpg`,
-      `${K}/positioning/0e10a8f41905952bc78b25e9c0495660.jpg`,
+      `${K}/01fd749d36d9f80c121e0d8f7fd55aa7.jpg`,
+      `${K}/0379a4bc2dc097bdd1de02d3a57297e8.jpg`,
+      `${K}/0860abcd9185f7caca31757e89fb6128.jpg`,
+      `${K}/0df3ca59961e5eded24f0c4677204ac6.jpg`,
     ],
   },
   visuals: [
-    `${K}/visuals/6b7213775dfc039954b294a31a607617.jpg`,
-    `${K}/visuals/86a02fe3ca5507d5d2537844ae40644c.jpg`,
-    `${K}/visuals/87a4aea35f540225297ffc135a524f45.jpg`,
-    `${K}/visuals/8941fbed5c2b8e52207c29462a8e748f.jpg`,
-    `${K}/visuals/8b2a46cecc2fca87cf415d320feb751a.jpg`,
-    `${K}/visuals/956b2d314602528dc6b34b7d94b5861f.jpg`,
-    `${K}/visuals/aa7cc98bb367354b4128452fe6d3ec3a.jpg`,
-    `${K}/visuals/afaba617ba3443699d003308ffdbf4de.jpg`,
-    `${K}/visuals/b5cdb1662a103b448994af80ec478609.jpg`,
-    `${K}/visuals/b8839b164561f2ffd3d39b7a4b180f57.jpg`,
-    `${K}/visuals/c4710899d8cbe32a8c247b6b0103a283.jpg`,
-    `${K}/visuals/d2c9b7a1ea6d1306b217b0f3016ad265.jpg`,
+    `${K}/6fb826bb4e1f3c7aff9e927d4e23ce46.jpg`,
+    `${K}/7a19b749a8016598b5d9675efa93e4f9.jpg`,
+    `${K}/7d1c26c3ad7ef5acf6b93b7bfe799c94.jpg`,
+    `${K}/850f0224d64476a6449b086040e4a777.jpg`,
+    `${K}/86bcc9923dbb0d7cd7e8ee88e105a700.jpg`,
+    `${K}/8b18a68dfd148e5186912f8d19007316.jpg`,
+    `${K}/8beb569176d16154839acb3a03295a91.jpg`,
+    `${K}/a031c0e1e49bf24a34cc2645eda3e1ce.jpg`,
+    `${K}/ac3739148ebdd97c5533714a9f8ad614.jpg`,
+    `${K}/ba1fac5924e7285d705da89d5cfefcea.jpg`,
+    `${K}/c177b924bf954c2964b2fa7f1495ec9a.jpg`,
+    `${K}/c8bf9c7b28f5e2523a141fdc801b6683.jpg`,
   ],
   ads: [
     {

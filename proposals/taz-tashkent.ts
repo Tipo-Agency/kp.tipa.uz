@@ -7,34 +7,34 @@ import type {
 import { smmTripleFunnel } from "./smm-triple-funnel";
 
 const SHARED = "/shared/services.png";
-/** Медиа: `public/proposals/taz-tashkent/` (сейчас — копия референсов с площадки SITAN; замените на съёмку ТАЗ). */
+/** Медиа: `public/proposals/taz-tashkent/` — позиционирование, рубрики и визуал из загруженных фото (корень папки). */
 const B = "/proposals/taz-tashkent";
 const POSITIONING_IMAGES = [
-  `${B}/positioning/9fffde3bbed1b58086d5dd3603366459.jpg`,
-  `${B}/positioning/9819a169669b5905c58a35991c57e9f6.jpg`,
-  `${B}/positioning/3746a69afb22699f918998d4c6252d00.jpg`,
-  `${B}/positioning/8b4315bb31fccb3015477e51be31828f.jpg`,
+  `${B}/0e6808668d81d6cbe32efc15c6bb56e6.jpg`,
+  `${B}/1119250375efb561db8f97fa4d7b2a61.jpg`,
+  `${B}/300b6f45d5c6106b999f48a196cc731f.jpg`,
+  `${B}/314503388a1896e43d2a4438a378f0f7.jpg`,
 ];
 const RUBRIC_BLOCK_IMAGES = [
-  `${B}/rubrics/a411cb263563ce420b4fa7680d157a59.jpg`,
-  `${B}/rubrics/0857b69dc08087a65c158b974ece8c44.jpg`,
-  `${B}/rubrics/a4a4afb5439d4b2d11c153292c1e5135.jpg`,
+  `${B}/319386f3885131ec4ba651976be4775c.jpg`,
+  `${B}/3316559319e97c3ef4faf7b6ca33ceb2.jpg`,
+  `${B}/3d140baca1c561930663391cb39b4506.jpg`,
 ];
 const VISUALS = [
-  `${B}/visuals/7153746a1ef4f8e5fe586bfcdb4d6933.jpg`,
-  `${B}/visuals/53cb2b608414c205310f43e26d373120.jpg`,
-  `${B}/visuals/b3a1cd5d518ce2bc59367fddbc653982.jpg`,
-  `${B}/visuals/c739423d5072aac762ce570147d662c1.jpg`,
-  `${B}/visuals/1e3108486d4419299f8c7c9c087ef83d.jpg`,
-  `${B}/visuals/9230dd21cad075d94577b2333d3b8c28.jpg`,
-  `${B}/visuals/68363ac3284f6323a85b4261a953f38c.jpg`,
-  `${B}/visuals/24202064e10c51263df35d2ed1fce1fc.jpg`,
-  `${B}/visuals/298c6c0c41c63a9fc18176856b1ecc8a.jpg`,
-  `${B}/visuals/596143e97676882a124bbc617f75c219.jpg`,
-  `${B}/visuals/c4e53d9b2cdd61968bd99f8fb957f8fd.jpg`,
-  `${B}/visuals/f5991e10383d914e4c693faf3042d2fd.jpg`,
-  `${B}/visuals/5ad2bcb8721cb4e557f76d9f8cbdf0e7.jpg`,
-  `${B}/visuals/482181feb732ecab4c1377bf884cb34e.jpg`,
+  `${B}/56034f29ac38aef98508b5c2c0b491b4.jpg`,
+  `${B}/625ece3f0d95a87bfd0cc0dd01501d67.jpg`,
+  `${B}/6c8ff8216218d01c3dac90739c10dec6.jpg`,
+  `${B}/71071ed39f94101709c891a2756e9e3f.jpg`,
+  `${B}/75f6bd6c42f777c1adb8876c430a0be2.jpg`,
+  `${B}/85f465c27a141248915710b0dee02144.jpg`,
+  `${B}/88c8c326acfdb9e5e4861dafb68f4622.jpg`,
+  `${B}/919ce970477031fc0e5b4eab4ecb9b04.jpg`,
+  `${B}/945a23da0ea72818049b9898ec913741.jpg`,
+  `${B}/99cd5994e2ff317b8bd5af4ac187498b.jpg`,
+  `${B}/b7edee3080d980fdf6db9fe68210c9f9.jpg`,
+  `${B}/b9624ddec660411525203475d4d6e2aa.jpg`,
+  `${B}/c457b851edefeca9238ceee0a2aedc28.jpg`,
+  `${B}/e872e499b94e0a04f958ab05f7d2ed34.jpg`,
 ];
 
 /** Вкладка SMM — пакет «Премиум»; гео и интересы таргета ориентированы на экспортные рынки, не на «только Узбекистан». */
