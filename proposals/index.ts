@@ -79,6 +79,9 @@ import { vibeReception } from "./vibe-reception";
 import { sitanUz } from "./sitan-uz";
 import { tazTashkent } from "./taz-tashkent";
 import { academyRizomulk } from "./academy-rizomulk";
+import { zenaBahce } from "./zena-bahce";
+import { corradoUz } from "./corrado-uz";
+import { artfactUzum } from "./artfact-uzum";
 import { mcClean } from "./mc-clean";
 import { molochnyyChay } from "./molochnyy-chay";
 import { mattresses } from "./mattresses";
@@ -165,6 +168,9 @@ export const PROPOSALS: Record<string, AnyProposal> = {
   "sitan-uz": sitanUz,
   "taz-tashkent": tazTashkent,
   "academy-rizomulk": academyRizomulk,
+  "zena-bahce": zenaBahce,
+  "corrado-uz": corradoUz,
+  "artfact-uzum": artfactUzum,
   "mc-clean": mcClean,
   "molochnyy-chay": molochnyyChay,
   mattresses,
