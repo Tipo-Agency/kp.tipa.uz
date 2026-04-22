@@ -3,6 +3,15 @@ import { smmTripleFunnel } from "./smm-triple-funnel";
 
 const B = "/proposals/artfact-uzum";
 
+const A_POSITIONING = [
+  `${B}/positioning/01.jpg`,
+  `${B}/positioning/02.jpg`,
+  `${B}/positioning/03.jpg`,
+  `${B}/positioning/04.jpg`,
+];
+const A_RUBRIC_BLOCKS = [`${B}/rubrics/block-01.jpg`, `${B}/rubrics/block-02.jpg`, `${B}/rubrics/block-03.jpg`];
+const A_VISUALS = Array.from({ length: 12 }, (_, i) => `${B}/visuals/${String(i + 1).padStart(2, "0")}.jpg`);
+
 /**
  * КП: только Instagram / SMM — магазин Artfact на Uzum.
  * Отдельного Instagram у магазина нет: предложение про запуск и ведение аккаунта с нуля.
@@ -58,25 +67,25 @@ export const artfactUzum: ProposalData = {
       "Малый бизнес на подарки команде и клиентам",
     ],
   },
-  rubricBlockImages: [`${B}/rubrics/block-01.jpg`, `${B}/rubrics/block-02.jpg`, `${B}/rubrics/block-03.jpg`],
+  rubricBlockImages: A_RUBRIC_BLOCKS,
   rubrics: [
-    { title: "Новинки в магазине", description: "Свежие позиции на Uzum — показываем в ленте первыми.", imageUrl: `${B}/visuals/01.jpg` },
-    { title: "Подборки под интерьер", description: "Сеты постеров, цветовые истории, «как собрать стену».", imageUrl: `${B}/visuals/02.jpg` },
-    { title: "Подарки и поводы", description: "Дни рождения, новоселье, праздники — готовые идеи с ценой в описании.", imageUrl: `${B}/visuals/03.jpg` },
-    { title: "Распаковка и детали", description: "Качество печати, упаковка, фактура — снижаем страх заказа онлайн.", imageUrl: `${B}/visuals/04.jpg` },
-    { title: "Авторы и коллаборации", description: "Если в ассортименте есть авторские работы — аккуратно раскрываем истории.", imageUrl: `${B}/visuals/05.jpg` },
-    { title: "Отзывы и соцдоказательства", description: "Скрины отзывов с Uzum (по правилам площадки и согласованию).", imageUrl: `${B}/visuals/06.jpg` },
-    { title: "Закулисье", description: "Как собираем заказы, что на складе, человеческий бренд.", imageUrl: `${B}/visuals/07.jpg` },
-    { title: "Акции Uzum", description: "Напоминания о скидках маркетплейса и ваших промокодах, если есть.", imageUrl: `${B}/visuals/08.jpg` },
-    { title: "Ссылка и CTA", description: "Закрепы, актуальное, напоминание пути: профиль → Uzum.", imageUrl: `${B}/visuals/09.jpg` },
+    { title: "Новинки в магазине", description: "Свежие позиции на Uzum — показываем в ленте первыми.", imageUrl: A_VISUALS[0] },
+    { title: "Подборки под интерьер", description: "Сеты постеров, цветовые истории, «как собрать стену».", imageUrl: A_VISUALS[1] },
+    { title: "Подарки и поводы", description: "Дни рождения, новоселье, праздники — готовые идеи с ценой в описании.", imageUrl: A_VISUALS[2] },
+    { title: "Распаковка и детали", description: "Качество печати, упаковка, фактура — снижаем страх заказа онлайн.", imageUrl: A_VISUALS[3] },
+    { title: "Авторы и коллаборации", description: "Если в ассортименте есть авторские работы — аккуратно раскрываем истории.", imageUrl: A_VISUALS[4] },
+    { title: "Отзывы и соцдоказательства", description: "Скрины отзывов с Uzum (по правилам площадки и согласованию).", imageUrl: A_VISUALS[5] },
+    { title: "Закулисье", description: "Как собираем заказы, что на складе, человеческий бренд.", imageUrl: A_VISUALS[6] },
+    { title: "Акции Uzum", description: "Напоминания о скидках маркетплейса и ваших промокодах, если есть.", imageUrl: A_VISUALS[7] },
+    { title: "Ссылка и CTA", description: "Закрепы, актуальное, напоминание пути: профиль → Uzum.", imageUrl: A_VISUALS[8] },
   ],
   positioning: {
     title: "Artfact — характер бренда вне витрины маркетплейса",
     description:
       "Instagram даёт эмоциональную связь и повторные касания: покупатель узнаёт стиль магазина, возвращается к новинкам и делится с друзьями. Позиционирование — доступный арт-декор и подарки с понятной подачей.",
-    images: [`${B}/positioning/01.jpg`, `${B}/positioning/02.jpg`, `${B}/positioning/03.jpg`, `${B}/positioning/04.jpg`],
+    images: A_POSITIONING,
   },
-  visuals: Array.from({ length: 12 }, (_, i) => `${B}/visuals/${String(i + 1).padStart(2, "0")}.jpg`),
+  visuals: A_VISUALS,
   ads: [
     { title: "Запуск и таргет", description: "Первичный обогрев аккаунта и кампании на холодную и тёплую аудиторию." },
     { title: "Трафик на Uzum", description: "Объявления с целью переходы по ссылке; ретаргет на посетителей профиля." },

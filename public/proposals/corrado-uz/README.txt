@@ -2,7 +2,5 @@
 
 Актуальный профиль: https://www.instagram.com/corrado.uz/
 
-Замените файлы-заглушки своими фото (имена сохраните):
-  positioning/01.jpg … 04.jpg
-  rubrics/block-01.jpg … block-03.jpg
-  visuals/01.jpg … 12.jpg
+Пути к медиа — в proposals/corrado-uz.ts (имена файлов с хешами в positioning/, rubrics/, visuals/).
+Замените файл, сохранив имя, или добавьте новое и обновите константы в .ts.
