@@ -106,14 +106,14 @@ export const corradoUz: ProposalData = {
     { title: "Лидогенерация", description: "Лид-формы и сообщения по согласованной воронке." },
   ],
   pricing: {
-    amount: "12 000 000",
+    amount: "15 000 000",
     currency: "сум",
     period: "месяц",
     team: ["SMM-стратег / менеджер проекта", "Видеограф / мобилограф", "Дизайнер", "Таргетолог", "Комьюнити-менеджер"],
     deliverables: [
       { label: "Reels", value: "8 в месяц" },
-      { label: "Посты (карусели)", value: "6 в месяц" },
-      { label: "Stories", value: "по согласованному графику" },
+      { label: "Посты", value: "4 в месяц" },
+      { label: "Stories", value: "60–90 в месяц" },
       { label: "Съёмки", value: "2 выезда в месяц" },
       { label: "Таргет", value: "настройка и ведение" },
       { label: "Отчёт", value: "ежемесячно" },
