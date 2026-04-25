@@ -85,6 +85,7 @@ import { artfactUzum } from "./artfact-uzum";
 import { mcClean } from "./mc-clean";
 import { molochnyyChay } from "./molochnyy-chay";
 import { mattresses } from "./mattresses";
+import { bibigonBox } from "./bibigon-box";
 
 export type AnyProposal =
   | ProposalData
@@ -171,6 +172,7 @@ export const PROPOSALS: Record<string, AnyProposal> = {
   "zena-bahce": zenaBahce,
   "corrado-uz": corradoUz,
   "artfact-uzum": artfactUzum,
+  "bibigon-box": bibigonBox,
   "mc-clean": mcClean,
   "molochnyy-chay": molochnyyChay,
   mattresses,
